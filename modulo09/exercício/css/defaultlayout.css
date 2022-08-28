@@ -1,0 +1,515 @@
+/**
+*   LAYOUT DA ESTRUTURA PRINCIPAL DA PÁGINA
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+html {
+  background: url("../images/background-pattern2.jpg") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #6e33f5;
+}
+
+a:hover {
+  color: #261f36;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Comfortaa", cursive;
+}
+
+#header {
+  font-family: "Rubik Marker Hatch", cursive;
+  background-color: #261f36;
+  font-size: 4vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+#footer {
+  text-align: center;
+  background-color: #261f36;
+  font-size: 1.5vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+section {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#navbar {
+  height: 100%;
+  width: 10%;
+  border-right: 1px black groove;
+  background: rgb(204, 204, 204, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#navbar-section-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  height: fit-content;
+  color: #6e33f5;
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+#navbar-section-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  height: 100%;
+  font-size: 1.5vh;
+}
+
+#navbar-section-item a {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  color: #261f36;
+}
+
+#navbar-section-item a:hover {
+  color: #6e33f5;
+}
+
+#navbar-section-aulas {
+  border-top: 1px black groove;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 50%;
+}
+
+#navbar-section-redes {
+  border-top: 1px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: auto;
+}
+
+#navbar-section-redes-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  height: 100%;
+  font-size: 1.5vh;
+}
+
+#navbar-section-redes-item a {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  color: #261f36;
+}
+
+#navbar-section-redes-item a:hover {
+  color: #6e33f5;
+}
+
+#page-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+/* Md Tablet (Landscape) */
+@media (min-width: 769px) {
+  body {
+    height: 100%;
+  }
+
+  /* #header {
+    padding-left: 1%;
+  }
+
+#footer {
+  padding-left: 0%;
+} */
+
+  #navbar {
+    width: 24%;
+  }
+
+}
+
+
+
+
+
+
+
+/* Lg Tablet (Landscape) */
+@media (min-width: 1024px) {
+
+  /* #header {
+    padding-left: 16%;
+  }
+
+#footer {
+  padding-left: 7.5%;
+  width: 100%;
+} */
+
+  #navbar {
+    width: 16%;
+  }
+
+
+  #navbar-section-redes {
+    height: auto;
+  }
+
+  #navbar-section-redes-item {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #navbar-section-redes-item a {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+
+
+
+
+
+/* Macbook Air (Landscape) */
+@media (min-width: 1280px) {
+  #navbar {
+    width: 13%;
+  }
+}
+
+
+
+
+
+
+
+/* 1366x768 - Md Desktop / Laptop (Landscape) */
+@media (min-width: 1366px) {
+  /* #header {
+    padding-left: 15%;
+  }
+
+#footer {
+  padding-left: 7%;
+} */
+
+  #navbar {
+    width: 13%;
+  }
+
+}
+
+
+
+
+
+
+
+/* 1440x1080 - Lg Desktop / Laptop (Landscape) */
+@media (min-width: 1440px) {
+  /* #header {
+    padding-left: 15%;
+  }
+
+#footer {
+  padding-left: 6%;
+} */
+
+  #navbar {
+    width: 10%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Sm Tablet (Portrait) */
+@media (max-width: 769px) {
+  body {
+    height: fit-content;
+  }
+
+  #header {
+    font-size: 2.5vh;
+  }
+
+  section {
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #navbar {
+    height: 100%;
+    width: 100%;
+    border-right: 1px black groove;
+    background: rgb(204, 204, 204, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #navbar-section-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 1%;
+    color: #6e33f5;
+    font-weight: bold;
+    font-size: 2vh;
+  }
+
+  #navbar-section-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    height: 100%;
+    font-size: 1.5vh;
+  }
+
+  #navbar-section-item a {
+    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    color: #261f36;
+  }
+
+  #navbar-section-item a:hover {
+    color: #6e33f5;
+  }
+
+  #navbar-section-aulas {
+    border-top: 1px black groove;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 60%;
+  }
+
+  #navbar-section-redes {
+    border-top: 1px black groove;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 35%;
+    margin-bottom: 2%;
+    padding: 0;
+  }
+
+  #navbar-section-redes-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    height: 100%;
+    width: 50%;
+    font-size: 1.5vh;
+  }
+
+  #navbar-section-redes-item a {
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: #261f36;
+  }
+
+  #navbar-section-redes-item a:hover {
+    color: #6e33f5;
+  }
+
+}
+
+
+
+
+
+
+/* Sm Smartphone (Portrait) */
+@media (max-width: 425px) {
+
+  #header {
+    font-size: 2.5vh;
+  }
+
+  section {
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #navbar {
+    height: fit-content;
+    width: 100%;
+    border-right: 1px black groove;
+    background: rgb(204, 204, 204, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #navbar-section-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: fit-content;
+    color: #6e33f5;
+    font-weight: bold;
+    font-size: 2vh;
+  }
+
+  #navbar-section-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    height: 100%;
+    font-size: 1.5vh;
+  }
+
+  #navbar-section-item a {
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: #261f36;
+  }
+
+  #navbar-section-item a:hover {
+    color: #6e33f5;
+  }
+
+  #navbar-section-aulas {
+    border-top: 1px black groove;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 60%;
+  }
+
+  #navbar-section-redes {
+    border-top: 1px black groove;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 4%;
+    height: 25%;
+    padding: 0;
+  }
+
+  #navbar-section-redes-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+    height: 100%;
+    width: 50%;
+    font-size: 1.5vh;
+  }
+
+  #navbar-section-redes-item a {
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+    text-align: center;
+    color: #261f36;
+  }
+
+  #navbar-section-redes-item a:hover {
+    color: #6e33f5;
+  }
+
+}

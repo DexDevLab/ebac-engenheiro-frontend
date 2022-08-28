@@ -1,0 +1,630 @@
+@import url("reset.css");
+@import url("defaultlayout.css");
+
+/**
+* CSS DA PÁGINA DO MÓDULO 08
+*/
+
+#main-block {
+  padding-top: 10%;
+}
+
+#page-content h1 {
+  font-size: xx-large;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  color: #261f36;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#container-photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  height: 50vh;
+  border-radius: 3%;
+  box-shadow: 5px 10px #261f36;
+  background-image: url("../images/coffee-square.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  width: 50%;
+  box-shadow: 5px 10px 10px 5px #261f36;
+  border-radius: 3%;
+}
+
+#container-text-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#container-text-main > p {
+  margin-top: 5vh;
+  width: 80%;
+  font-family: "Comfortaa", cursive;
+  font-size: 3vh;
+  text-align: center;
+}
+
+#container-text-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#container-text-contact > p {
+  padding-bottom: 5vh;
+  margin-top: 5vh;
+  width: 80%;
+  font-family: "Comfortaa", cursive;
+  font-size: 3vh;
+  text-align: center;
+}
+
+#container-contact-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 1vh;
+}
+
+#container-contact-wpp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+#img-wpp {
+  background-image: url("../images/whatsapp.svg");
+  max-width: 100%;
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 35px;
+  margin-right: 0.5vw;
+}
+
+#container-contact-wpp > p {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-weight: bold;
+  color: #6e33f5;
+}
+
+#container-contact-owa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+#img-owa {
+  background-image: url("../images/outlook.svg");
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 35px;
+  width: 35px;
+  margin-right: 0.5vw;
+}
+
+#container-contact-owa > p {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-weight: bold;
+  color: #6e33f5;
+}
+
+
+
+
+
+
+/* 769x1366 - Big Smartphone or Tablet (Landscape) */
+@media (min-width: 769px) {
+  #main-header > h2 {
+    font-size: 3vh;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    margin-left: 16vw;
+    justify-content: center;
+  }
+
+  #main-container {
+    flex-direction: column;
+    height: 75vh;
+  }
+
+  #container-photo {
+    width: 50%;
+    height: 30vh;
+    background-size: cover;
+  }
+
+  #container-text {
+    width: 60%;
+    height: 30vh;
+  }
+
+  #container-text-main > p {
+    font-size: 1.2vh;
+  }
+
+  #container-text-contact > p {
+    font-size: 1.2vh;
+    margin: 0;
+    padding-bottom: 3vh;
+  }
+
+  #container-contact-wpp {
+    height: 4vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-wpp {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-wpp > p {
+    font-size: 1vh;
+  }
+
+  #container-contact-owa {
+    height: 4vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-owa {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-owa > p {
+    font-size: 1vh;
+  }
+}
+
+
+
+
+
+/* 1024x768 - Small laptop (Landscape) */
+@media (min-width: 1024px) {
+
+  #page-content h1 {
+    padding-top: 10%;
+  }
+
+  #main-container {
+    flex-direction: row;
+    height: 80%;
+    width: 100%;
+  }
+
+  #container-photo {
+    width: 45%;
+    height: 45vh;
+    background-size: cover;
+  }
+
+  #container-text {
+    width: 50%;
+    height: 45vh;
+  }
+
+  #container-text-main > p {
+    font-size: 1.9vh;
+  }
+
+  #container-text-contact > p {
+    font-size: 1.9vh;
+  }
+
+  #container-contact-wpp {
+    height: 6vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-wpp {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-wpp > p {
+    font-size: 1.5vh;
+  }
+
+  #container-contact-owa {
+    height: 6vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-owa {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-owa > p {
+    font-size: 1.5vh;
+  }
+}
+
+/* Macbook Air (Landscape) */
+@media (min-width: 1280px) {
+
+  
+#main-block {
+  padding-top: 5%;
+}
+
+
+  #page-content h1 {
+    padding-top: 10%;
+  }
+
+  #main-container {
+    flex-direction: row;
+    height: 80%;
+  }
+
+  #container-photo {
+    width: 40%;
+    height: 45vh;
+    background-size: cover;
+  }
+
+  #container-text {
+    width: 50%;
+    height: 45vh;
+  }
+
+  #container-text-main > p {
+    font-size: 1.9vh;
+  }
+
+  #container-text-contact > p {
+    font-size: 1.9vh;
+  }
+
+  #container-contact-wpp {
+    height: 6vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-wpp {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-wpp > p {
+    font-size: 1.5vh;
+  }
+
+  #container-contact-owa {
+    height: 6vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-owa {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-owa > p {
+    font-size: 1.5vh;
+  }
+}
+
+/* 1366x768 - Avg Desktop / Laptop (Landscape) */
+@media (min-width: 1366px) {
+
+  #page-content h1 {
+    padding-top: 10%;
+  }
+
+  #main-container {
+    flex-direction: row;
+    height: 50%;
+  }
+
+  #container-photo {
+    width: 40%;
+    height: 45vh;
+    background-size: cover;
+  }
+
+  #container-text {
+    width: 40%;
+    height: 45vh;
+  }
+
+  #container-text-main > p {
+    font-size: 1.9vh;
+  }
+
+  #container-text-contact > p {
+    font-size: 1.9vh;
+  }
+
+  #container-contact-wpp {
+    height: 6vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-wpp {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-wpp > p {
+    font-size: 1.5vh;
+  }
+
+  #container-contact-owa {
+    height: 6vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-owa {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-owa > p {
+    font-size: 1.5vh;
+  }
+}
+
+/* 1440x1080 - Large Desktop / Laptop (Landscape) */
+@media (min-width: 1440px) {
+
+
+  #page-content h1 {
+    padding-top: 5%;
+  }
+
+  #main-container {
+    flex-direction: row;
+    height: 50%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #container-photo {
+    width: 40%;
+    height: 45vh;
+    background-size: cover;
+  }
+
+  #container-text {
+    width: 40%;
+    height: 45vh;
+  }
+
+  #container-text-main > p {
+    font-size: 1.9vh;
+  }
+
+  #container-text-contact > p {
+    font-size: 1.9vh;
+  }
+
+  #container-contact-wpp {
+    height: 6vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-wpp {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-wpp > p {
+    font-size: 1.5vh;
+  }
+
+  #container-contact-owa {
+    height: 6vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-owa {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-owa > p {
+    font-size: 1.5vh;
+  }
+}
+
+
+
+/* iPad Mini (Portrait) */
+@media (max-width: 769px) {
+  #main-block {
+    padding-top: 5%;
+  }
+
+
+  #page-content h1 {
+    font-size: x-large;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #main-container {
+    flex-direction: column;
+    height: 85vh;
+    padding-bottom: 20%;
+  }
+
+  #container-photo {
+    width: 40%;
+    height: 100%;
+    margin-bottom: 5%;
+    background-size: cover;
+  }
+
+  #container-text {
+    width: 40%;
+    height: 100%;
+  }
+
+  #container-text-main > p {
+    font-size: 1.3vh;
+  }
+
+  #container-text-contact > p {
+    font-size: 1.3vh;
+  }
+
+  #container-contact-wpp {
+    height: 4vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-wpp {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-wpp > p {
+    font-size: 1vh;
+  }
+
+  #container-contact-owa {
+    height: 4vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-owa {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-owa > p {
+    font-size: 1vh;
+  }
+}
+
+
+/* iPhone 12 PRO (Portrait) */
+@media (max-width: 425px) {
+
+  #page-content h1 {
+    font-size: xx-large;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    color: #261f36;
+  }
+
+  #main-container {
+    flex-direction: column;
+    height: 85vh;
+    padding-bottom: 20%;
+  }
+
+  #container-photo {
+    width: 65%;
+    height: 30vh;
+    background-size: cover;
+  }
+
+  #container-text {
+    width: 70%;
+    height: 50vh;
+  }
+
+  #container-text-main > p {
+    font-size: 1.75vh;
+  }
+
+  #container-text-contact > p {
+    font-size: 1.75vh;
+  }
+
+  #container-contact-wpp {
+    height: 5vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-wpp {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-wpp > p {
+    font-size: 1.2vh;
+  }
+
+  #container-contact-owa {
+    height: 5vh;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #img-owa {
+    height: 20px;
+    width: 20px;
+  }
+
+  #container-contact-owa > p {
+    font-size: 1.1vh;
+  }
+}
