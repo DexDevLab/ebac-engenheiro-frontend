@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {  
+    height: 100vh;
+    background-color: #efefef;
+    overflow: overlay;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+div {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.width-100 {
+    width: 100%;
+    width: 100vw; /* viewport width */
+    background-color: aqua;
+    
+    padding: 20px 0;
+    height: 400px;
+}
+
+nav {
+    background-color: grey;
+    width: 20%;
+    float: left;
+    display: table;
+    display: block;
+    height: 100%;
+}
+
+article {
+    background-color: ivory;
+    width: 80%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box; /* considera o padding e border na largura e altura */
+    
+}
+
+.fixed-width {
+    background-color: lawngreen;
+    width: 200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.background {
+    background-color: lightcoral;
+    background-image: url(../images/pattern.png);
+    background-repeat: repeat-y; /* vertical */ 
+    background-repeat: repeat-x; /* horizontal */ 
+    width: 100%;
+    height: 50vh;
+}
+
+div img {
+    width: 100%;
+}

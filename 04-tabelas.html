@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Curso Front-end - Tabelas</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/04-tabelas.css" />
+  </head>
+  <body>
+    <div id="header">
+      <p>Curso Front-end - HTML</p>
+    </div>
+    <section>
+      <div id="navbar">
+        <div id="navbar-section-label">
+          <a href="./homepage.html">Home</a>
+        </div>
+        <div id="navbar-section-aulas">
+          <div id="navbar-section-label">Aulas</div>
+          <div id="navbar-section-item">
+            <a href="./01-introducao.html">Introdução</a>
+            <a href="./02-listas-e-links.html">Listas e Links</a>
+            <a href="./03-formatacao-de-texto.html">Formatação de Texto</a>
+            <a href="./04-tabelas.html">Tabelas</a>
+            <a href="./05-layouts.html">Layouts</a>
+            <a href="./06-formularios.html">Formulários</a>
+            <a href="./07-tabela-financas.html">Tabela Finanças</a>
+            <a href="./08-layouts-fluidos.html">Layouts Fluídos</a>
+            <a href="./09-elementos-graficos.html">Elementos Gráficos</a>
+            <a href="./10-layouts-web.html">Layouts Web</a>
+          </div>
+        </div>
+        <div id="navbar-section-redes">
+          <div id="navbar-section-label">Redes Sociais</div>
+          <div id="navbar-section-redes-item">
+            <a
+              href="https://www.linkedin.com/in/daniel-augusto-almeida/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://www.instagram.com/ei_dex/" target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="page-content">
+        <h1>Tabelas</h1>
+        <table border="1" width="100%">
+          <thead>
+            <tr>
+              <th>Coluna 1</th>
+              <th>Coluna 2</th>
+              <th>Coluna 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr align="center">
+              <td>1A</td>
+              <td>1B</td>
+              <td>1C</td>
+            </tr>
+            <tr align="right">
+              <td>2A</td>
+              <td>2B</td>
+              <td>2C</td>
+            </tr>
+            <tr>
+              <td>3A</td>
+              <td colspan="2">3BC</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Rodapé da tabela</td>
+            </tr>
+          </tfoot>
+        </table>
+        <h2>Tabela como layout</h2>
+        <table width="600">
+          <tr height="90">
+            <td colspan="4" bgcolor="#BBCCEE" align="center">Cabeçalho</td>
+          </tr>
+          <tr height="300">
+            <td width="20" bgcolor="#0000FF"></td>
+            <td width="60%" bgcolor="#DDDDDD">
+              <h2>Título</h2>
+              <p>fdajfkdj jfdjfodsapodhgdo odihofdfhsdooi</p>
+            </td>
+            <td bgcolor="#EEEEEE">Coluna 2</td>
+            <td width="20" bgcolor="#0000FF"></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FF0000" colspan="4" align="center">Rodapé</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <div id="footer">
+      <p>
+        Desenvolvido por
+        <a href="https://github.com/DexDevLab" target="_blank"
+          >Daniel Almeida</a
+        >
+      </p>
+    </div>
+  </body>
+</html>

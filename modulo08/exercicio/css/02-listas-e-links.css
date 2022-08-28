@@ -1,0 +1,60 @@
+@import url("reset.css");
+@import url("defaultlayout.css");
+
+/**
+* CSS DA PÁGINA DA AULA DE LISTAS E LINKS
+*/
+
+/* 769x1366 - Big Smartphone or Tablet (Landscape) */
+@media (min-width: 769px) {
+}
+
+
+
+/* iPad Air 4 (Landscape) */
+@media (min-width: 800px) {
+}
+
+
+
+/* 1024x768 - Small laptop (Landscape) */
+@media (min-width: 1024px) {
+}
+
+
+
+
+/* Macbook Air (Landscape) */
+@media (min-width: 1280px) {
+}
+
+
+
+
+/* 1366x768 - Avg Desktop / Laptop (Landscape) */
+@media (min-width: 1366px) {
+}
+
+
+
+/* 1440x1080 - Large Desktop / Laptop (Landscape) */
+@media (min-width: 1440px) {
+}
+
+
+
+/* 1920x1080 - Large Desktop / Laptop (Landscape) */
+@media (min-width: 1920px) {
+}
+
+
+
+/* iPad Mini (Portrait) */
+@media (max-width: 769px) {
+}
+
+
+
+/* iPhone 12 PRO (Portrait) */
+@media (max-width: 425px) {
+}
