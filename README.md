@@ -12,7 +12,7 @@
 <br>
 <a href="">[![Last Commit](https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend)](https://github.com/dexdevlab/ebac-engenheiro-frontend) </a>
 <a href="">[![Fork](https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend)](https://github.com/dexdevlab/ebac-engenheiro-frontend/fork) </a>
-<a href="">![Version](https://img.shields.io/badge/version-0.0.1-005bff) </a>
+<a href="">![Version](https://img.shields.io/badge/version-0.0.9-005bff) </a>
 
 <br>
 
@@ -40,7 +40,7 @@ Repositório contendo o conteúdo relevante das aulas do curso "Profissão: Enge
 
 ## Notas de versão
 
-Para ver as notas de versão, clique [aqui](https://github.com/frtechdev/flem-ppe-backend/blob/docs/CHANGELOG.md).
+Para ver as notas de versão, clique [aqui](https://github.com/frtechdev/flem-ppe-backend/blob/master/CHANGELOG.md).
 
 <br>
 
