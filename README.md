@@ -40,7 +40,7 @@ Repositório contendo o conteúdo relevante das aulas do curso "Profissão: Enge
 
 ## Notas de versão
 
-Para ver as notas de versão, clique [aqui](https://github.com/frtechdev/flem-ppe-backend/blob/master/CHANGELOG.md).
+Para ver as notas de versão, clique [aqui](https://github.com/frtechdev/flem-ppe-backend/blob/docs/CHANGELOG.md).
 
 <br>
 
