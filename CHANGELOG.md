@@ -71,3 +71,16 @@
 - Atualização do README
 
 <br>
+
+## v0.0.10-220830
+
+- Alteração do encurtador para bitly para melhor compatibilidade
+
+<br>
+
+## v0.0.11-220830
+
+- Atualização do README
+- Atualização do CHANGELOG
+
+<br>
