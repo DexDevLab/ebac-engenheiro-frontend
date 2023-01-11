@@ -1,0 +1,223 @@
+/**
+*   LAYOUT DA ESTRUTURA PRINCIPAL DA PÁGINA
+*/
+
+:root {
+  --nav-width: 10%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #6e33f5;
+}
+
+li > a:hover {
+  color: #261f36;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Style the header */
+header {
+  background-color: #261f36;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+header > h2 {
+  margin: 0;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: var(--nav-width);
+  height: 64rem;
+  background: #ccc;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border-right: 0.1rem solid #261f36;
+}
+
+nav h3 {
+  font-size: 1rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+nav h3 a {
+  font-size: 1.5rem;
+}
+
+.profilepicture {
+  border-radius: 100px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  padding-bottom: 25px;
+  width: calc(100% - var(--nav-width));
+}
+
+article h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Clear floats after the columns */
+section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  height: 2rem;
+  background-color: #261f36;
+  text-align: center;
+  color: white;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  margin: 0;
+}
+
+footer > p {
+  line-height: 2rem;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 1920px) {
+  :root {
+    --nav-width: 10.1%;
+  }
+
+  nav {
+    width: var(--nav-width);
+    height: 63rem;
+  }
+
+  article {
+    width: calc(100% - var(--nav-width));
+  }
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --nav-width: 13.5%;
+  }
+
+  nav {
+    width: var(--nav-width);
+  }
+
+  article {
+    width: calc(100% - var(--nav-width));
+  }
+}
+
+@media (max-width: 1367px) {
+  :root {
+    --nav-width: 14.5%;
+  }
+
+  nav {
+    width: var(--nav-width);
+  }
+
+  article {
+    width: calc(100% - var(--nav-width));
+  }
+}
+
+@media (max-width: 1280px) {
+  :root {
+    --nav-width: 15.2%;
+  }
+
+  nav {
+    width: var(--nav-width);
+  }
+
+  article {
+    width: calc(100% - var(--nav-width));
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --nav-width: 19%;
+  }
+
+  nav {
+    width: var(--nav-width);
+  }
+
+  article {
+    width: calc(100% - var(--nav-width));
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --nav-width: 24.5%;
+  }
+
+  nav {
+    width: var(--nav-width);
+  }
+
+  article {
+    width: calc(100% - var(--nav-width));
+  }
+}
+
+/* iPhone 12 PRO (Portrait) */
+@media (max-width: 425px) {
+  nav {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 0.1rem solid #261f36;
+  }
+
+  article {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5rem;
+  }
+}

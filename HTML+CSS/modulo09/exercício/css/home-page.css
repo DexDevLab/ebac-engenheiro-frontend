@@ -1,0 +1,99 @@
+@import url("reset.css");
+@import url("defaultlayout.css");
+
+/**
+  CSS DA HOME PAGE
+*/
+
+#card {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 10%;
+}
+
+#img-profile-picture {
+  border-radius: 100%;
+}
+
+#card p {
+  text-align: center;
+  width: 25%;
+}
+
+
+
+/* Md Tablet (Landscape) */
+@media (min-width: 769px) {
+
+  #card p{
+    width: 80%;
+  }
+}
+
+
+
+
+/* Lg Tablet (Landscape) */
+@media (min-width: 1024px) {
+
+  #card p{
+    width: 50%;
+  }
+  
+}
+
+
+
+/* Macbook Air (Landscape) */
+@media (min-width: 1280px) {
+
+  #card p{
+    width: 50%;
+  }
+  
+}
+
+
+/* 1366x768 - Md Desktop / Laptop (Landscape) */
+@media (min-width: 1366px) {
+
+  #card p{
+    width: 25%;
+  }
+  
+}
+
+
+
+/* Sm Tablet (Portrait) */
+@media (max-width: 769px) {
+  
+  #card{
+    height: 40vh;
+  }
+
+  #card p{
+    width: 80%;
+  }
+  
+}
+
+
+
+
+/* Sm Smartphone (Portrait) */
+@media (max-width: 425px) {
+  
+#card{
+  height: 40vh;
+}
+
+#card p{
+  width: 100%;
+}
+
+}
