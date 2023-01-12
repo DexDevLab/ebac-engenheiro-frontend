@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <title>Curso Front-end - Exercício</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">Formulário de Dados</div>
+      <form action="#">
+        <div class="form-row2">
+          <div class="alert-box">
+            <div class="mensagem"></div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-data">
+            <input type="text" class="obrigatorio" name="nome" />
+            <div class="underline"></div>
+            <label for="nome">Nome</label>
+          </div>
+          <div class="input-data">
+            <input type="text" class="email" name="email" />
+            <div class="underline"></div>
+            <label for="email">Email</label>
+          </div>
+          <div class="input-data">
+            <input type="text" name="telefone" class="telefone" />
+            <div class="underline"></div>
+            <label for="telefone">Telefone</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-data">
+            <input type="text" name="cep" class="cep" />
+            <div class="underline"></div>
+            <label for="cep">CEP</label>
+          </div>
+          <div class="input-data">
+            <input type="text" name="cidade" class="cidade" />
+            <div class="underline"></div>
+            <label for="cidade">Cidade</label>
+          </div>
+          <div class="input-data">
+            <input type="text" name="uf" class="uf" />
+            <div class="underline"></div>
+            <label for="uf">UF</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-row submit-btn">
+            <div class="input-data">
+              <div class="inner"></div>
+              <input type="submit" onclick="enviar();" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
