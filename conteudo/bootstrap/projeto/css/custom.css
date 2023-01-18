@@ -34,6 +34,10 @@ nav .navbar-nav li a:hover {
   transition: 0.6s;
 }
 
+#sobre {
+  padding-top: 160px;
+}
+
 .navbar-brand {
   font-size: 20px;
   font-weight: bold;
@@ -46,10 +50,6 @@ nav .navbar-nav li a:hover {
 
 #navbar {
   padding-left: 5px;
-}
-
-#sobre {
-  padding-top: 9%;
 }
 
 #card-frame:hover {
@@ -79,6 +79,10 @@ nav .navbar-nav li a:hover {
 
   #img-card-product {
     height: 400px;
+  }
+
+  #sobre {
+    padding-top: 100px;
   }
 }
 
@@ -122,10 +126,18 @@ nav .navbar-nav li a:hover {
   #img-card-product {
     height: 150px;
   }
+
+  #sobre {
+    padding-top: 125px;
+  }
 }
 
 @media (min-width: 1400px) {
   #img-card-product {
     height: 190px;
+  }
+
+  #sobre {
+    padding-top: 160px;
   }
 }

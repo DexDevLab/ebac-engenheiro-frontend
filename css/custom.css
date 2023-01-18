@@ -12,8 +12,8 @@ header {
 }
 
 section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 nav .navbar-nav li a {
@@ -27,7 +27,7 @@ nav .navbar-nav li a:hover {
 }
 
 #section-sobre {
-  padding-top: 8rem;
+  padding-top: 160px;
 }
 
 #section-sobre-title,
@@ -113,6 +113,11 @@ nav .navbar-nav li a:hover {
   #header-container {
     margin-left: 0;
   }
+
+  #section-sobre {
+    padding-top: 100px;
+  }
+
 }
 
 @media (min-width: 576px) {
@@ -137,6 +142,9 @@ nav .navbar-nav li a:hover {
 }
 
 @media (min-width: 1200px) {
+  #section-sobre {
+    padding-top: 160px;
+  }
 }
 
 @media (min-width: 1400px) {
