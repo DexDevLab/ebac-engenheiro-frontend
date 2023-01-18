@@ -1,0 +1,313 @@
+@import url("reset.css");
+@import url("main.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+header{
+  width: 97.5%;
+}
+
+
+section {
+  width: 97.7%;
+}
+
+footer {
+  width: 97.7%;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #b8c8d6;
+}
+
+a:hover {
+  color: black;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#container-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#core-container {
+  background-image: url("../images/management3.jpg");
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container2 {
+  display: flex;
+  justify-content: right;
+  padding-top: 1%;
+  padding-right: 3%;
+}
+
+
+#slogan2 {
+  font-size: 6vh;
+  font-weight: bold;
+  color:white;
+}
+
+#slogan3 {
+  width: 50%;
+  font-size: 2.5vh;
+  color:white;
+}
+
+#img-banner {
+  height: 100%;
+}
+
+#main-img1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  height: 40vh;
+}
+
+#form-container {
+  padding-top: 5% !important;
+}
+
+#cog-0-label,
+#cog-1-label,
+#cog-2-label {
+  color: white !important;
+}
+
+#slogan {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#tenho-interesse {
+  width: 97.7%;
+}
+
+p {
+  text-align: justify;
+}
+
+.container-interesse {
+  display: block;
+  float: left;
+  padding: 20px;
+  margin: 0 auto;
+  margin-left: 3%;
+  margin-right: 0;
+}
+
+.cog-heading {
+  text-align: center !important;
+  padding-top: 2% !important;
+  color: white !important;
+}
+
+.cog-row {
+  width: 103% !important;
+  padding-left: 5% !important;
+}
+
+.cog-page__navigation {
+  width: 100% !important;
+  justify-content: center !important;
+}
+
+.cog-form__container {
+  background-color: #254159 !important;
+  border-radius: 10px !important;
+}
+
+.cog-branding__powered {
+  background-color: #254159 !important;
+  color: white !important;
+}
+
+.cog-abuse * {
+  color: white !important;
+}
+
+.cog-confirmation-message {
+  text-align: center !important;
+  padding-left: auto !important;
+  padding-right: auto !important;
+  color: white !important;
+}
+
+/* Sm Tablet (Portrait) */
+@media (min-width: 769px) {
+  .cog-row {
+    width: 95% !important;
+  }
+
+  #container-img {
+    padding-top: 0%;
+  }
+
+  #main-img1 {
+    height: 35vh;
+  }
+}
+
+/* Lg Tablet (Landscape) */
+@media (min-width: 1024px) {
+  .container-interesse {
+    width: 75%;
+  }
+
+  .cog-row {
+    width: 95% !important;
+  }
+
+  #main-img1 {
+    height: 40vh;
+  }
+}
+
+/* Macbook Air (Landscape) */
+@media (min-width: 1280px) {
+  .container-interesse {
+    width: 50%;
+  }
+
+  .cog-row {
+    width: 95% !important;
+  }
+}
+
+/* 1366x768 - Md Desktop / Laptop (Landscape) */
+@media (min-width: 1366px) {
+  .container-interesse {
+    width: 50%;
+  }
+
+  .cog-row {
+    width: 95% !important;
+  }
+}
+
+/* 1440x1080 - Lg Desktop / Laptop (Landscape) */
+@media (min-width: 1440px) {
+  .container-interesse {
+    width: 50%;
+  }
+
+  .cog-row {
+    width: 95% !important;
+  }
+}
+
+/* Sm Tablet (Portrait) */
+@media (max-width: 769px) {
+  .cog-row {
+    width: 95% !important;
+  }
+
+  #container-img {
+    padding-top: 10%;
+  }
+
+  #main-img1 {
+    height: 30vh;
+  }
+
+.container2 {
+  display: flex;
+  justify-content: right;
+  padding-top: 5%;
+  padding-right: 3%;
+}
+
+
+#slogan2 {
+  font-size: 4vh;
+  font-weight: bold;
+  color:white;
+}
+
+#slogan3 {
+  width: 50%;
+  font-size: 2.5vh;
+  color:white;
+}
+}
+
+/* Sm Smartphone (Portrait) */
+@media (max-width: 425px) {
+  li {
+    margin-right: 0 !important;
+  }
+
+  section {
+    width: 87%;
+  }
+
+  footer {
+    width: 87%;
+  }
+
+  header {
+    width: 87.5%;
+  }
+
+  .container-interesse {
+    float: center;
+    padding: 0;
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0%;
+    margin-right: 0;
+  }
+
+  #tenho-interesse {
+    width: 87%;
+  }
+
+  .cog-row {
+    width: 95% !important;
+  }
+
+  #container-img {
+    padding-top: 10%;
+  }
+
+  #main-img1 {
+    height: 30vh;
+  }
+
+  .container2 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 3%;
+    padding-top: 15%;
+    padding-right: 8%;
+  }
+
+  #slogan2 {
+    width: 100%;
+    font-size: 3vh;
+    font-weight: bold;
+  }
+  
+  #slogan3 {
+    width: 100%;
+    font-size: 2vh;
+  }
+}

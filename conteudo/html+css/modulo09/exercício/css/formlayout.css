@@ -1,0 +1,143 @@
+#container-form {
+  margin-right: 0;
+  width: 40rem;
+  /* background-color: #ccc; */
+  padding: 1rem;
+  border-radius: 2%;
+  box-shadow: 0.3rem 0.3rem gray;
+  font-family: "Comfortaa", cursive;
+  background: rgb(255, 255, 255, 0.7);
+}
+
+#container-form > p {
+  font-size: 1.7rem;
+  color: #6e33f5;
+  text-align: center;
+}
+
+form div {
+  height: 4rem;
+  margin-bottom: 0.2rem;
+  border-bottom: 0.1rem solid #261f36;
+}
+
+#container-label {
+  border-bottom: 0;
+  height: 2rem;
+}
+
+label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #6e33f5;
+}
+
+[type="submit"] {
+  color: white;
+  background-color: #6e33f5;
+  width: 6rem;
+  text-align: center;
+}
+
+[type="text"],
+[type="email"] {
+  font-size: 0.9rem;
+}
+
+[type="submit"] {
+  font-size: 1.2rem;
+  padding: 0.1rem;
+}
+
+[value="Azul"] {
+  color: blue;
+}
+
+[value="Verde"] {
+  color: green;
+}
+
+[value="Vermelho"] {
+  color: red;
+}
+
+#container-form-fields {
+  height: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+#container-form-fields > input {
+  width: 36rem;
+}
+
+#container-form-message {
+  height: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+#container-form-message > textarea {
+  height: 4rem;
+  width: 36rem;
+}
+
+#container-form-question {
+  padding: 1rem;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  height: auto;
+}
+
+#container-form-question-options {
+  height: auto;
+  border: 0;
+  padding-top: 0.5rem;
+}
+
+#question {
+  padding-right: 0.5rem;
+}
+
+#container-form-question input {
+  transform: scale(1);
+}
+
+#container-form-question input:checked + span {
+  color: #6e33f5;
+}
+
+#container-form-question span {
+  font-size: 1rem;
+  color: black;
+}
+
+#container-form-select {
+  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.6rem;
+  background-color: white;
+  height: auto;
+}
+
+#container-form-select > label {
+  padding-right: 0.5rem;
+}
+
+#container-form-select select {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+#container-form-button {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  height: auto;
+  border-bottom: 0;
+  text-align: center;
+}

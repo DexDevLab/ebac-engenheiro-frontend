@@ -1,0 +1,200 @@
+@import url("reset.css");
+@import url("main.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+header {
+  width: 97.6%;
+}
+
+section {
+  width: 97.7%;
+}
+
+footer {
+  width: 97.7%;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #b8c8d6;
+}
+
+a:hover {
+  color: black;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#container-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#core-container {
+  background-image: url("../images/briefing2.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#secondary-container {
+  margin-top: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: right;
+  padding-top: 1%;
+  padding-right: 3%;
+}
+
+.container3 {
+  display: flex;
+  justify-content: right;
+  padding-top: 3%;
+  padding-right: 3%;
+}
+
+#slogan2 {
+  font-size: 6vh;
+  font-weight: bold;
+  color: white;
+}
+
+#slogan3 {
+  width: 50%;
+  font-size: 2.5vh;
+  color: white;
+}
+
+.button {
+  width: 150px;
+  height: 35px;
+  background-color: #254159;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#img-banner {
+  height: 100%;
+}
+
+/* Sm Tablet (Portrait) */
+@media (min-width: 769px) {
+  #container-img {
+    padding-top: 0%;
+  }
+
+  #main-img1 {
+    height: 35vh;
+  }
+}
+
+/* Lg Tablet (Landscape) */
+@media (min-width: 1024px) {
+  #main-img1 {
+    height: 40vh;
+  }
+}
+
+/* Macbook Air (Landscape) */
+@media (min-width: 1280px) {
+}
+
+/* 1366x768 - Md Desktop / Laptop (Landscape) */
+@media (min-width: 1366px) {
+}
+
+/* 1440x1080 - Lg Desktop / Laptop (Landscape) */
+@media (min-width: 1440px) {
+}
+
+/* Sm Tablet (Portrait) */
+@media (max-width: 769px) {
+  #main-img1 {
+    height: 30vh;
+  }
+
+  .container2 {
+    display: flex;
+    justify-content: right;
+    padding-top: 5%;
+    padding-right: 3%;
+  }
+
+  #slogan2 {
+    font-size: 4vh;
+    font-weight: bold;
+    color: white;
+  }
+
+  #slogan3 {
+    width: 50%;
+    font-size: 2.5vh;
+    color: white;
+  }
+}
+
+/* Sm Smartphone (Portrait) */
+@media (max-width: 425px) {
+  section {
+    width: 87%;
+  }
+
+  footer {
+    width: 87%;
+  }
+
+  header {
+    width: 90.5%;
+  }
+
+  .container2 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-bottom: 15%;
+  }
+
+  .container3 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    padding-right: 3%;
+    padding-bottom: 15%;
+  }
+
+  #slogan2 {
+    width: 100%;
+    font-size: 3vh;
+    font-weight: bold;
+  }
+
+  #slogan3 {
+    width: 100%;
+    font-size: 2vh;
+  }
+}

@@ -11,7 +11,7 @@
 
 <a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="CodeSize"></a> <a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="RepoSize"></a> <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/graphs/contributors"><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Contributors"></a> <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="LastCommit"></a>
 
-<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a> <a href=""><img src="https://img.shields.io/badge/version-0.0.13-005bff?style=plastic" height="20" alt="Version"></a>
+<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a> <a href=""><img src="https://img.shields.io/badge/version-0.0.15-005bff?style=plastic" height="20" alt="Version"></a>
 
 <!-- <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="License"></a> -->
 
@@ -39,11 +39,17 @@
 
 </a>
 
+### v0.0.15-230118
+
+- Atualização do README
+- Alteração da estrutura de pastas
+- Revisão dos hiperlinks para funcionamento dentro do Github Pages
+
 ### v0.0.14-230118
 
 - Atualização do README
 - Alteração da estrutura de pastas
-- Criação de diretório para publicação de site no Github pages contendo os exercícios dos módulos
+- Criação de diretório para publicação de site no Github Pages contendo os exercícios dos módulos
 - Conteúdo do exercício do Módulo 16
 
 ### v0.0.13-230112

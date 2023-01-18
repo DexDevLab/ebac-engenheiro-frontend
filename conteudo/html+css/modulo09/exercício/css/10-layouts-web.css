@@ -1,0 +1,305 @@
+@import url("reset.css");
+@import url("defaultlayout.css");
+
+/**
+* CSS DA PÁGINA DE LAYOUTS WEB
+*/
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+  padding: 0;
+  padding-top: 15vh;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+  height: 60vh;
+  align-items: center;
+}
+
+img {
+  background-size: contain;
+  width: auto;
+  height: 60vh;
+  border-radius: 100%;
+}
+
+.coluna p {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-weight: bold;
+  font-family: "Comfortaa", cursive;
+  color: #6e33f5;
+  font-size: 2vh;
+}
+
+/* 769x1366 - Big Smartphone or Tablet (Landscape) */
+@media (min-width: 769px) {
+  article {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 75vw;
+    height: 30vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 10vh;
+  }
+
+  .coluna {
+    height: 20vh;
+  }
+
+  img {
+    background-size: contain;
+    width: auto;
+    height: 20vh;
+    border-radius: 100%;
+  }
+
+  .coluna p {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    font-size: 1vh;
+  }
+}
+
+/* iPad Air 4 (Landscape) */
+@media (min-width: 800px) {
+  article {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 74vw;
+    height: 30vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 10vh;
+  }
+
+  .coluna {
+    height: 20vh;
+  }
+
+  img {
+    background-size: contain;
+    width: auto;
+    height: 20vh;
+    border-radius: 100%;
+  }
+
+  .coluna p {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    font-size: 1vh;
+  }
+}
+
+/* 1024x768 - Small laptop (Landscape) */
+@media (min-width: 1024px) {
+  article {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 15vh;
+  }
+
+  .coluna {
+    height: 30vh;
+  }
+
+  img {
+    background-size: contain;
+    width: auto;
+    height: 30vh;
+    border-radius: 100%;
+    margin-top: 12vh;
+  }
+
+  .coluna p {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    font-size: 2vh;
+  }
+}
+
+/* Macbook Air (Landscape) */
+@media (min-width: 1280px) {
+  article {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 20vh;
+  }
+
+  .coluna {
+    height: 30vh;
+  }
+
+  img {
+    background-size: contain;
+    width: auto;
+    height: 30vh;
+    border-radius: 100%;
+    margin-top: 12vh;
+  }
+
+  .coluna p {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    font-size: 2vh;
+  }
+}
+
+/* 1366x768 - Avg Desktop / Laptop (Landscape) */
+@media (min-width: 1366px) {
+  article {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 30vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 30vh;
+  }
+
+  .coluna {
+    height: 30vh;
+  }
+
+  img {
+    background-size: contain;
+    width: auto;
+    height: 30vh;
+    border-radius: 100%;
+    margin-top: 10vh;
+  }
+
+  .coluna p {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    font-size: 2vh;
+  }
+}
+
+/* 1440x1080 - Large Desktop / Laptop (Landscape) */
+@media (min-width: 1440px) {
+  article {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 30vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 20vh;
+  }
+
+  .coluna {
+    height: 30vh;
+  }
+
+  img {
+    background-size: contain;
+    width: auto;
+    height: 35vh;
+    border-radius: 100%;
+    margin-top: 7vh;
+  }
+
+  .coluna p {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    font-size: 2vh;
+  }
+}
+
+/* 1920x1080 - Large Desktop / Laptop (Landscape) */
+@media (min-width: 1920px) {
+}
+
+/* iPad Mini (Portrait) */
+@media (max-width: 769px) {
+  article {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+    height: 40vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+  }
+
+  .coluna {
+    height: 20vh;
+  }
+
+  img {
+    background-size: contain;
+    width: auto;
+    height: 20vh;
+    border-radius: 100%;
+  }
+
+  .coluna p {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    font-size: 1vh;
+  }
+}
+
+/* iPhone 12 PRO (Portrait) */
+@media (max-width: 425px) {
+  nav {
+    margin: 0;
+    padding: 5vh;
+    margin-top: 3vh;
+    height: 60vh;
+  }
+
+  article {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+  }
+
+  .coluna {
+    height: 30vh;
+  }
+
+  img {
+    background-size: contain;
+    width: auto;
+    height: 25vh;
+    border-radius: 100%;
+  }
+
+  .coluna p {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    font-size: 1.5vh;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <title>Curso Front-end - Exercício</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script>
+      function Enviar() {
+        let numero1 = parseInt(document.getElementById("num1").value);
+        let numero2 = parseInt(document.getElementById("num2").value);
+        let numero3 = parseInt(document.getElementById("num3").value);
+
+        let media = (numero1 + numero2 + numero3) / 3;
+
+        alert("A média é de " + media);
+      }
+    </script>
+    <form action="" method="post">
+      <div>
+        <label for="num1">Número 1</label>
+        <input type="text" id="num1" />
+      </div>
+      <div>
+        <label for="num2">Número 2</label>
+        <input type="text" id="num2" />
+      </div>
+      <div>
+        <label for="num3">Número 3</label>
+        <input type="text" id="num3" />
+      </div>
+      <div class="button">
+        <button type="submit" onclick="Enviar();">Calcular Média</button>
+      </div>
+    </form>
+  </body>
+</html>

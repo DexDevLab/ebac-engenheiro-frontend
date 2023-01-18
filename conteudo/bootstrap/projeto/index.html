@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/custom.css" />
+    <title>Portfólio de Produtos</title>
+  </head>
+  <body>
+    <header>
+      <div class="container" id="header-container">
+        <div class="row" id="header-container">
+          <nav class="navbar navbar-expand-lg" id="navbar">
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"
+              ><img
+                src="./images/logo.svg"
+                width="30"
+                height="30"
+                alt="LogoSVG"
+            /></a>
+            <div
+              class="collapse navbar-collapse align-content-center justify-content-end"
+            >
+              <ul class="navbar-nav gap-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobre">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#produtos">Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#produtos">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="sobre">
+      <div class="container">
+        <div class="d-flex row justify-content-between">
+          <div class="col-md-5 col-sm-12 pb-4">
+            <h1>Sobre nós</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              labore ipsa recusandae harum, molestias neque doloribus quisquam
+              cupiditate eius dolores possimus. Perspiciatis harum voluptatum
+              culpa incidunt accusantium aperiam inventore nobis.
+            </p>
+            <a
+              href="./pages/404.html"
+              class="btn btn-outline-success"
+              role="button"
+              >Clique Aqui</a
+            >
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img
+              id="img-main"
+              class="img-fluid"
+              src="./images/about.jpg"
+              alt="Imagem Exemplo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos">
+      <div class="container">
+        <div class="row row-cols-sm-2">
+          <div class="col-lg" id="card-frame">
+            <div class="card h-100">
+              <img
+                src="./images/product1.jpeg"
+                alt="cardExemple"
+                class="card-img-top"
+                id="img-card-product"
+              />
+              <div class="container text-center" id="card-container">
+                <div class="row">
+                  <h5 class="card-title">Produto 1</h5>
+                </div>
+                <div class="row" id="card-text-container">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                </div>
+                <div class="row-cols-2">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal1"
+                    >Ver Produto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg" id="card-frame">
+            <div class="card h-100">
+              <img
+                src="./images/product2.jpeg"
+                alt="cardExemple"
+                class="card-img-top"
+                id="img-card-product"
+              />
+              <div class="container text-center" id="card-container">
+                <div class="row">
+                  <h5 class="card-title">Produto 2</h5>
+                </div>
+                <div class="row" id="card-text-container">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                </div>
+                <div class="row-cols-2">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal2"
+                    >Ver Produto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg" id="card-frame">
+            <div class="card h-100">
+              <img
+                src="./images/product3.jpeg"
+                alt="cardExemple"
+                class="card-img-top"
+                id="img-card-product"
+              />
+              <div class="container text-center" id="card-container">
+                <div class="row">
+                  <h5 class="card-title">Produto 3</h5>
+                </div>
+                <div class="row" id="card-text-container">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                </div>
+                <div class="row-cols-2">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal3"
+                    >Ver Produto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg" id="card-frame">
+            <div class="card h-100">
+              <img
+                src="./images/product4.jpg"
+                alt="cardExemple"
+                class="card-img-top"
+                id="img-card-product"
+              />
+              <div class="container text-center" id="card-container">
+                <div class="row">
+                  <h5 class="card-title">Produto 4</h5>
+                </div>
+                <div class="row" id="card-text-container">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                </div>
+                <div class="row-cols-2">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal4"
+                    >Ver Produto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg" id="card-frame">
+            <div class="card h-100">
+              <img
+                src="./images/product5.jpeg"
+                alt="cardExemple"
+                class="card-img-top"
+                id="img-card-product"
+              />
+              <div class="container text-center" id="card-container">
+                <div class="row">
+                  <h5 class="card-title">Produto 5</h5>
+                </div>
+                <div class="row" id="card-text-container">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                </div>
+                <div class="row-cols-2">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal5"
+                    >Ver Produto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h2>Contato</h2>
+            <p>
+              Ficou interessado? Preencha os campos do formulário para receber
+              uma cotação.
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <form action="" id="form1">
+              <div class="mb-3 mt-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome"
+                  placeholder="Digite seu nome"
+                  name="nome"
+                  required
+                />
+                <!-- <div class="valid-feedback">Válido.</div> -->
+                <div class="invalid-feedback">Por favor digite seu nome.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="usuario@provedor.com"
+                  name="email"
+                  required
+                />
+                <!-- <div class="valid-feedback">Valid.</div> -->
+                <div class="invalid-feedback">
+                  Por favor digite um email para contato.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea
+                  name="mensagem"
+                  class="form-control"
+                  id="mensagem"
+                  rows="5"
+                  placeholder="Mensagem..."
+                  required
+                ></textarea>
+                <!-- <div class="valid-feedback">Valid.</div> -->
+                <div class="invalid-feedback">
+                  Por favor preencha a mensagem.
+                </div>
+              </div>
+              <button
+                type="submit"
+                onclick="checkBeforeSubmit();"
+                class="btn btn-sm btn-primary"
+              >
+                Solicitar Cotação
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="modal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Produto 1</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os modelos</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Modelo</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Básico</td>
+                  <td>R$560</td>
+                </tr>
+                <tr>
+                  <td>Intermediário</td>
+                  <td>R$890</td>
+                </tr>
+                <tr>
+                  <td>Avançado</td>
+                  <td>R$1300</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Produto 2</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira as versões</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Versão</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ferrari Red</td>
+                  <td>R$200</td>
+                </tr>
+                <tr>
+                  <td>Crystal White</td>
+                  <td>R$300</td>
+                </tr>
+                <tr>
+                  <td>Black Piano</td>
+                  <td>R$400</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Produto 3</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os tamanhos</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Tamanho</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>P</td>
+                  <td>R$150</td>
+                </tr>
+                <tr>
+                  <td>M</td>
+                  <td>R$280</td>
+                </tr>
+                <tr>
+                  <td>G</td>
+                  <td>R$390</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Produto 4</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os tipos</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Tipo</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Basic</td>
+                  <td>R$120</td>
+                </tr>
+                <tr>
+                  <td>Standard</td>
+                  <td>R$220</td>
+                </tr>
+                <tr>
+                  <td>Elite</td>
+                  <td>R$450</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Produto 5</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira as fragrâncias</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Aroma</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Pine Forest</td>
+                  <td>R$180</td>
+                </tr>
+                <tr>
+                  <td>Daisy Prairie</td>
+                  <td>R$250</td>
+                </tr>
+                <tr>
+                  <td>Lavender Mountain</td>
+                  <td>R$390</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
