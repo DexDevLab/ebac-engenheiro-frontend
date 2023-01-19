@@ -11,7 +11,7 @@
 
 <a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="CodeSize"></a> <a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="RepoSize"></a> <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/graphs/contributors"><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Contributors"></a> <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="LastCommit"></a>
 
-<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a> <a href=""><img src="https://img.shields.io/badge/version-0.0.16-005bff?style=plastic" height="20" alt="Version"></a>
+<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a> <a href=""><img src="https://img.shields.io/badge/version-0.0.17-005bff?style=plastic" height="20" alt="Version"></a>
 
 <!-- <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="License"></a> -->
 
@@ -38,6 +38,13 @@
 ## Notas de versão
 
 </a>
+
+### v0.0.17-230118
+
+- Atualização do README
+- Ajuste no algoritmo do script do exercício do Módulo 15 para correto funcionamento das validações dos campos;
+- Ajuste no HTML do exercício do Módulo 15
+- Ajuste nos botões do Portal de Exercícios
 
 ### v0.0.16-230118
 

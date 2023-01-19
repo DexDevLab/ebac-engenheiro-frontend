@@ -6,7 +6,6 @@ let emptyFieldListener = function (event) {
     document.querySelector(".alert-box").classList.add("error");
     this.classList.add("error");
     this.parentNode.classList.add("error");
-    return false;
   } else {
     document.querySelector(".mensagem").innerHTML = "";
     document.querySelector(".alert-box").classList.remove("error");
@@ -17,22 +16,25 @@ let emptyFieldListener = function (event) {
 
 let numericFieldListener = function (event) {
   event.preventDefault();
-  let numero = this.value.match(/^[\d]5-[\d]3/)
-    ? this.value.replace(/-/, "")
+  let tel = this.value.match(/[()-]+/)
+    ? this.value
+        .replace("-", "")
+        .replace("(", "")
+        .replace(")", "")
+        .replaceAll(" ", "")
     : this.value;
 
-  if (numero != "" && numero.match(/[0-9]*/)) {
+  if (tel.match(/\d{11}/)) {
     document.querySelector(".mensagem").innerHTML = "";
     document.querySelector(".alert-box").classList.remove("error");
     this.classList.remove("error");
     this.parentNode.classList.remove("error");
   } else {
     document.querySelector(".mensagem").innerHTML =
-      "Verifique o preenchimento numérico correto.";
+      "Verifique o número de telefone inserido.";
     document.querySelector(".alert-box").classList.add("error");
     this.classList.add("error");
     this.parentNode.classList.add("error");
-    return false;
   }
 };
 
@@ -50,7 +52,6 @@ let emailFieldListener = function (event) {
     document.querySelector(".alert-box").classList.add("error");
     this.classList.add("error");
     this.parentNode.classList.add("error");
-    return false;
   }
 };
 
@@ -69,23 +70,57 @@ function validateEmptyField(field) {
   field.addEventListener("focusin", emptyFieldListener);
 }
 
-function enviar() {
-  const elements = document.querySelectorAll("input");
-  for (let obj of elements) {
+document.getElementById("form1").addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+
+  let formData = new FormData(this);
+  let invalidFields = [];
+  let formOutput = [];
+
+  for (let key of formData.keys()) {
+    let value = formData.get(key);
     if (
-      obj.classList.contains("error") ||
-      (obj.classList.contains("obrigatorio") && obj.value == "") ||
-      (obj.classList.contains("telefone") && obj.value == "") ||
-      (obj.classList.contains("email") && obj.value == "")
+      (key == "nome" && !value.match(/[\w]/)) ||
+      (key == "email" && !value.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/))
     ) {
+      invalidFields.push(key);
+    } else {
+      if (key == "telefone") {
+        let tel = value.match(/[()-]+/)
+          ? value
+              .replace("-", "")
+              .replace("(", "")
+              .replace(")", "")
+              .replaceAll(" ", "")
+          : value;
+        if (!tel.match(/\d{11}/)) {
+          invalidFields.push(key);
+        } else {
+          formOutput.push([key, tel]);
+        }
+      } else {
+        formOutput.push([key, value]);
+      }
+    }
+  }
+  if (invalidFields.length === 0) {
+    formOutput.forEach((item) => {
+      let selector = "#" + item[0];
+      document.querySelector(selector).value = item[1];
+    });
+    document.getElementById("form1").submit();
+  } else {
+    invalidFields.forEach((item) => {
+      let selector = "#" + item;
+      document.querySelector(selector).classList.add("error");
+      document.querySelector(selector).parentNode.classList.add("error");
       document.querySelector(".mensagem").innerHTML =
         "Verifique o preenchimento dos campos em vermelho.";
       document.querySelector(".alert-box").classList.add("error");
-      obj.classList.add("error");
-      obj.parentNode.classList.add("error");
-    }
+    });
   }
-}
+});
 
 let camposObrigatorios = document.querySelectorAll("input.obrigatorio");
 let camposNumericos = document.querySelectorAll("input.telefone");
