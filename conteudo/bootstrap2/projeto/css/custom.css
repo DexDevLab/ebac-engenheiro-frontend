@@ -1,0 +1,347 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(165deg, #174caf 10%, #000633 90%);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#header-container {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 0;
+}
+
+nav .navbar-nav li a {
+  font-weight: bold;
+  color: black !important;
+}
+
+nav .navbar-nav li a:hover {
+  color: #0d6efd !important;
+  transition: 0.6s;
+}
+
+.carousel-item > img {
+  width: 550px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+#carouselExampleCaptions {
+  width: 60%;
+}
+
+#newTextPosition {
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  height: 110px;
+  width: 550px;
+}
+
+#form-field {
+  width: 45%;
+}
+
+#form-field-sm {
+  width: 15%;
+}
+
+#form-field-md {
+  width: 35%;
+}
+
+#form-field-lg {
+  width: 75%;
+}
+
+#sobre {
+  color: white;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#contato {
+  color: white;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#produtos {
+  color: white;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.carousel-caption {
+  display: none !important;
+  color: black;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#button0:hover {
+  background-color: #000633;
+  color: white;
+  transition: 0.6s;
+}
+
+#button0 {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#button1:hover {
+  background-color: white;
+  color: black;
+  transition: 0.6s;
+}
+
+#button1 {
+  background-color: #174caf;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#button2:hover {
+  background-color: white;
+  color: black;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+#button2 {
+  border-radius: 3px;
+  width: 90px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #174caf;
+  color: white;
+  font-weight: bold;
+}
+
+#button2 > p {
+  padding-top: 4%;
+}
+
+#button-img-container {
+  padding-right: 10px;
+}
+
+#button-main-container {
+  margin: 0;
+  padding: 0;
+  margin-top: 6%;
+}
+
+#img-main {
+  border-radius: 2%;
+}
+
+@media (min-width: 459px) {
+  #header-container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  #sobre,
+  #contato {
+    padding-top: 25%;
+    padding-bottom: 20%;
+  }
+
+  #button-main-container {
+    padding-bottom: 10%;
+  }
+
+  .carousel-item > img {
+    width: 70%;
+    height: 250px;
+  }
+
+  #carouselExampleCaptions {
+    width: 100%;
+  }
+
+  #newTextPosition {
+    width: 70%;
+  }
+}
+
+@media (min-width: 576px) {
+  #header-container {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  #sobre,
+  #contato {
+    padding-top: 20%;
+    padding-bottom: 15%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  #produtos {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .carousel-item > img {
+    width: 70%;
+    height: 250px;
+  }
+
+  #carouselExampleCaptions {
+    width: 100%;
+  }
+
+  #newTextPosition {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  #sobre,
+  #contato {
+    padding-top: 15%;
+    padding-bottom: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .carousel-item > img {
+    width: 70%;
+    height: 350px;
+  }
+
+  #carouselExampleCaptions {
+    width: 100%;
+  }
+
+  #newTextPosition {
+    width: 70%;
+  }
+
+  #produtos {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+@media (min-width: 992px) {
+  #header-container {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+  }
+
+  #sobre,
+  #contato {
+    padding-top: 12%;
+    padding-bottom: 8%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .carousel-item > img {
+    width: 70%;
+    height: 300px;
+  }
+
+  #carouselExampleCaptions {
+    width: 60%;
+  }
+
+  #newTextPosition {
+    width: 42%;
+  }
+
+  #produtos {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #header-container {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  #sobre,
+  #contato {
+    padding-top: 8%;
+    padding-bottom: 6%;
+  }
+
+  #produtos {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #carouselExampleCaptions {
+    width: 50%;
+  }
+
+  .carousel-item > img {
+    width: 70%;
+    height: 300px;
+  }
+
+  #newTextPosition {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .carousel-item > img {
+    width: 70%;
+    height: 350px;
+  }
+
+  #carouselExampleCaptions {
+    width: 50%;
+  }
+
+  #newTextPosition {
+    width: 35%;
+  }
+
+  #produtos {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}

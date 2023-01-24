@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./libs/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/custom.css" />
+    <script src="./libs/jquery/jquery-3.6.3.min.js"></script>
+    <title>PortyBox</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid" id="header-container">
+        <div class="row" id="header-container">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#sobre"
+              ><img
+                src="./images/logo2.svg"
+                width="30"
+                height="30"
+                alt="LogoSVG"
+              />
+              PortyBox
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbar">
+              <ul class="nav navbar-nav ms-auto align-content-start">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-cadastro"
+                    href="#sobre"
+                    >Assinar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#produtos">Nossos Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contato">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="sobre">
+      <div class="container-fluid">
+        <div
+          class="d-flex flex-row flex-wrap flex-md-nowrap justify-content-center"
+        >
+          <div class="col-lg-5 col-sm-10 col-md-6">
+            <h1>Uma caixa exótica com muita sofisticação</h1>
+            <p>
+              Assine um de nossos planos e receba na sua casa uma PortyBox com
+              produtos exclusivos!
+            </p>
+            <div class="container" id="button-main-container">
+              <a
+                type="button"
+                class="btn btn-outline-secondary"
+                id="button0"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-cadastro"
+                target="_blank"
+              >
+                <div class="d-flex flex-md-row">Quero minha PortyBox</div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-10 col-md-6">
+            <img
+              id="img-main"
+              class="img-fluid"
+              src="./images/about1.jpg"
+              alt="Imagem Exemplo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos">
+      <div class="container-fluid">
+        <div
+          class="d-flex flex-column flex-wrap flex-md-nowrap justify-content-center"
+        >
+          <div class="col-lg-5 col-sm-9 col-md-6 pb-5">
+            <h3>Veja alguns dos produtos que esperam você em uma PortyBox</h3>
+          </div>
+          <div class="container justify-content-center">
+            <div class="d-flex text-center justify-content-center">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/product1.jpeg"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                    <div id="caption-0" class="carousel-caption">
+                      <h4 class="text-sm-start">Fujifilm X-T10 "Copines"</h4>
+                      <p>
+                        Câmera profissional assinada pela fotógrafa Aya Nakamura
+                      </p>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal1"
+                        target="_blank"
+                      >
+                        <div
+                          class="d-flex text-center justify-content-center"
+                          id="button2"
+                        >
+                          <p>Saiba Mais</p>
+                        </div>
+                        <!-- <div class="d-flex flex-md-row">Saiba Mais</div> -->
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="./images/product2.jpeg"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                    <div id="caption-1" class="carousel-caption">
+                      <h4 class="text-sm-start">Ferrari Handlight</h4>
+                      <p>
+                        Isqueiro projetado com o design da maior fabricante de
+                        automóveis da europa
+                      </p>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal2"
+                        target="_blank"
+                      >
+                        <div
+                          class="d-flex text-center justify-content-center"
+                          id="button2"
+                        >
+                          <p>Saiba Mais</p>
+                        </div>
+                        <!-- <div class="d-flex flex-md-row">Saiba Mais</div> -->
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="./images/product3.jpeg"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                    <div id="caption-2" class="carousel-caption">
+                      <h4 class="text-sm-start">Biscuit Gourmet</h4>
+                      <p>
+                        Arte extremamente realista e única da Biscuit Gourmet
+                      </p>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal3"
+                        target="_blank"
+                      >
+                        <div
+                          class="d-flex text-center justify-content-center"
+                          id="button2"
+                        >
+                          <p>Saiba Mais</p>
+                        </div>
+                        <!-- <div class="d-flex flex-md-row">Saiba Mais</div> -->
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="./images/product4.jpg"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                    <div id="caption-3" class="carousel-caption">
+                      <h4 class="text-sm-start">ROMBO Space</h4>
+                      <p>Palheta profissional autografada por Jeff Beck</p>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal4"
+                        target="_blank"
+                      >
+                        <div
+                          class="d-flex text-center justify-content-center"
+                          id="button2"
+                        >
+                          <p>Saiba Mais</p>
+                        </div>
+                        <!-- <div class="d-flex flex-md-row">Saiba Mais</div> -->
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img
+                      src="./images/product5.jpeg"
+                      class="img-fluid"
+                      alt="..."
+                    />
+                    <div id="caption-4" class="carousel-caption">
+                      <h4 class="text-sm-start">
+                        Essence of Excelence by Estée Lauder
+                      </h4>
+                      <p>
+                        O óleo essencial multiuso feito com a arte boticária
+                        única de uma das maiores perfumarias do mundo
+                      </p>
+                      <a
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal5"
+                        target="_blank"
+                      >
+                        <div
+                          class="d-flex text-center justify-content-center"
+                          id="button2"
+                        >
+                          <p>Saiba Mais</p>
+                        </div>
+                        <!-- <div class="d-flex flex-md-row">Saiba Mais</div> -->
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div
+              id="newTextPosition"
+              class="new-carousel-caption-position"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container-fluid">
+        <div
+          class="d-flex flex-row flex-wrap flex-md-nowrap justify-content-center"
+        >
+          <div class="col-lg-5 col-sm-10 col-md-5">
+            <h1>Contato</h1>
+            <p>
+              Deseja entrar em contato conosco? Preencha seus dados e nos envie
+              uma mensagem!
+            </p>
+          </div>
+          <div class="col-lg-4 col-sm-10 col-md-6">
+            <form action="" id="form1">
+              <div class="mb-3 mt-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome"
+                  placeholder="Digite seu nome"
+                  name="nome"
+                  required
+                />
+                <!-- <div class="valid-feedback">Válido.</div> -->
+                <div class="invalid-feedback">Por favor digite seu nome.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="usuario@provedor.com"
+                  name="email"
+                  required
+                />
+                <!-- <div class="valid-feedback">Valid.</div> -->
+                <div class="invalid-feedback">
+                  Por favor digite um email para contato.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea
+                  name="mensagem"
+                  class="form-control"
+                  id="mensagem"
+                  rows="5"
+                  placeholder="Mensagem..."
+                  required
+                ></textarea>
+                <!-- <div class="valid-feedback">Valid.</div> -->
+                <div class="invalid-feedback">
+                  Por favor preencha a mensagem.
+                </div>
+              </div>
+              <button
+                type="submit"
+                onclick="checkBeforeSubmit('#form1');"
+                class="btn btn-outline-secondary"
+                id="button1"
+                target="_blank"
+              >
+                <div class="d-flex flex-md-row">Enviar</div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="modal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Fujifilm X-T10 "Copines"</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os preços de mercado dos produtos</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Modelo</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Básico</td>
+                  <td>R$560</td>
+                </tr>
+                <tr>
+                  <td>Intermediário</td>
+                  <td>R$890</td>
+                </tr>
+                <tr>
+                  <td>Avançado</td>
+                  <td>R$1300</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Ferrari Handlight</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os preços de mercado dos produtos</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Versão</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ferrari Red</td>
+                  <td>R$200</td>
+                </tr>
+                <tr>
+                  <td>Crystal White</td>
+                  <td>R$300</td>
+                </tr>
+                <tr>
+                  <td>Black Piano</td>
+                  <td>R$400</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Biscuit Gourmet</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os preços de mercado dos produtos</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Tamanho</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>P</td>
+                  <td>R$150</td>
+                </tr>
+                <tr>
+                  <td>M</td>
+                  <td>R$280</td>
+                </tr>
+                <tr>
+                  <td>G</td>
+                  <td>R$390</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ROMBO Space</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os preços de mercado dos produtos</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Tipo</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Basic</td>
+                  <td>R$120</td>
+                </tr>
+                <tr>
+                  <td>Standard</td>
+                  <td>R$220</td>
+                </tr>
+                <tr>
+                  <td>Elite</td>
+                  <td>R$450</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Essence of Excelence by Estée Lauder</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira os preços de mercado dos produtos</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Aroma</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Pine Forest</td>
+                  <td>R$180</td>
+                </tr>
+                <tr>
+                  <td>Daisy Prairie</td>
+                  <td>R$250</td>
+                </tr>
+                <tr>
+                  <td>Lavender Mountain</td>
+                  <td>R$390</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-cadastro">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Assine por R$ 250 mensais e ganhe sua PortyBox em casa a cada 30
+              dias!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form novalidate id="form2">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="mb-0 mt-0" id="form-field">
+                  <label for="nome" class="form-label"><b>Nome</b></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    name="nome"
+                    required
+                  />
+                  <!-- <div class="valid-feedback">Válido.</div> -->
+                  <div class="invalid-feedback">Por favor digite seu nome.</div>
+                </div>
+                <div class="mb-0 mt-0" id="form-field">
+                  <label for="email" class="form-label"><b>Email</b></label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="usuario@provedor.com"
+                    name="email"
+                    required
+                  />
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <div class="invalid-feedback">
+                    Por favor digite um email para contato.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-0 mt-0">
+                <label for="endereco" class="form-label"><b>Endereço</b></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="endereco"
+                  placeholder="Rua A, número 1"
+                  name="endereco"
+                  required
+                />
+                <!-- <div class="valid-feedback">Valid.</div> -->
+                <div class="invalid-feedback">
+                  Por favor digite um endereço.
+                </div>
+              </div>
+              <div class="d-flex flex-row justify-content-between">
+                <div class="mb-0 mt-0" id="form-field-lg">
+                  <label for="complemento" class="form-label"
+                    ><b>Complemento</b></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="complemento"
+                    placeholder="Apartamento 201"
+                    name="complemento"
+                  />
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <!-- <div class="invalid-feedback">
+                    Por favor digite um endereço.
+                  </div> -->
+                </div>
+                <div class="mb-0 mt-0" id="form-field-sm">
+                  <label for="cep" class="form-label"><b>CEP</b></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cep"
+                    placeholder="01101-001"
+                    name="cep"
+                    required
+                  />
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <div class="invalid-feedback">Por favor digite um CEP.</div>
+                </div>
+              </div>
+              <div class="d-flex flex-row justify-content-between">
+                <div class="mb-0 mt-0" id="form-field-md">
+                  <label for="cidade" class="form-label"><b>Cidade</b></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cidade"
+                    placeholder="São Paulo"
+                    name="cidade"
+                    required
+                  />
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <div class="invalid-feedback">
+                    Por favor digite uma cidade.
+                  </div>
+                </div>
+                <div
+                  id="form-field-md"
+                  class="d-flex flex-column justify-content-around h-100 mt-0 mb-0"
+                >
+                  <label for="estado" class="form-label"><b>Estado</b></label>
+                  <select
+                    required
+                    class="form-select"
+                    id="estado"
+                    name="estado"
+                  >
+                    <option selected value="">Selecione um Estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <div class="invalid-feedback">
+                    Por favor escolha um Estado.
+                  </div>
+                </div>
+              </div>
+              <div class="form-check p-0 mb-3">
+                <input type="checkbox" name="promocionais" id="promocionais" />
+                <label
+                  for="promocionais"
+                  class="form-check-label col-form-label-sm"
+                  >Aceito receber o portfólio da próxima PortyBox via email
+                  mensalmente</label
+                >
+              </div>
+              <input
+                type="submit"
+                class="btn btn-outline-secondary"
+                id="button0"
+                target="_blank"
+                onClick="location.href='./pages/404.html'"
+                value="Ir para pagamento"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
