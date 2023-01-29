@@ -16,7 +16,6 @@
       href="./libs/bootstrap/css/bootstrap.min.css"
     />
     <link rel="stylesheet" type="text/css" href="./css/custom.css" />
-    <script src="./libs/jquery/jquery-3.6.3.min.js"></script>
     <title>PortyBox</title>
   </head>
   <body>
@@ -72,7 +71,7 @@
     <section id="sobre">
       <div class="container-fluid">
         <div
-          class="d-flex flex-row flex-wrap flex-md-nowrap justify-content-center"
+          class="d-flex flex-row flex-wrap flex-md-nowrap justify-content-center gap-lg-5"
         >
           <div class="col-lg-5 col-sm-10 col-md-6">
             <h1>Uma caixa exótica com muita sofisticação</h1>
@@ -107,11 +106,11 @@
 
     <section id="produtos">
       <div class="container-fluid">
-        <div
-          class="d-flex flex-column flex-wrap flex-md-nowrap justify-content-center"
-        >
-          <div class="col-lg-5 col-sm-9 col-md-6 pb-5">
-            <h3>Veja alguns dos produtos que esperam você em uma PortyBox</h3>
+        <div class="d-flex flex-column flex-wrap justify-content-center">
+          <div class="col-lg-9 col-md-9 pb-5">
+            <h3 class="text text-center text-lg-start">
+              Veja alguns dos produtos que esperam você em uma PortyBox
+            </h3>
           </div>
           <div class="container justify-content-center">
             <div class="d-flex text-center justify-content-center">
@@ -306,7 +305,7 @@
             </p>
           </div>
           <div class="col-lg-4 col-sm-10 col-md-6">
-            <form action="" id="form1">
+            <form action="#" novalidate id="form1">
               <div class="mb-3 mt-3">
                 <label for="nome" class="form-label">Nome</label>
                 <input
@@ -350,15 +349,20 @@
                   Por favor preencha a mensagem.
                 </div>
               </div>
-              <button
+              <input
                 type="submit"
-                onclick="checkBeforeSubmit('#form1');"
+                class="btn btn-outline-secondary"
+                id="button0"
+                value="Ir para pagamento"
+              />
+              <!-- <button
+                type="submit"
                 class="btn btn-outline-secondary"
                 id="button1"
                 target="_blank"
               >
                 <div class="d-flex flex-md-row">Enviar</div>
-              </button>
+              </button> -->
             </form>
           </div>
         </div>
@@ -594,7 +598,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">
+            <h5 class="modal-title text-center">
               Assine por R$ 250 mensais e ganhe sua PortyBox em casa a cada 30
               dias!
             </h5>
@@ -605,8 +609,10 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form novalidate id="form2">
-              <div class="d-flex flex-row justify-content-between">
+            <form action="#" novalidate id="form2">
+              <div
+                class="d-flex flex-column flex-lg-row justify-content-between"
+              >
                 <div class="mb-0 mt-0" id="form-field">
                   <label for="nome" class="form-label"><b>Nome</b></label>
                   <input
@@ -651,7 +657,9 @@
                   Por favor digite um endereço.
                 </div>
               </div>
-              <div class="d-flex flex-row justify-content-between">
+              <div
+                class="d-flex flex-column flex-lg-row justify-content-between"
+              >
                 <div class="mb-0 mt-0" id="form-field-lg">
                   <label for="complemento" class="form-label"
                     ><b>Complemento</b></label
@@ -682,7 +690,9 @@
                   <div class="invalid-feedback">Por favor digite um CEP.</div>
                 </div>
               </div>
-              <div class="d-flex flex-row justify-content-between">
+              <div
+                class="d-flex flex-column flex-lg-row justify-content-between"
+              >
                 <div class="mb-0 mt-0" id="form-field-md">
                   <label for="cidade" class="form-label"><b>Cidade</b></label>
                   <input
@@ -744,29 +754,34 @@
                   </div>
                 </div>
               </div>
-              <div class="form-check p-0 mb-3">
+              <div
+                class="form-check d-flex flex-row justify-content-center justify-content-lg-start justify-content-xl-start justify-content-xxl-start gap-2 w-100 p-0 m-0 pt-3"
+              >
                 <input type="checkbox" name="promocionais" id="promocionais" />
                 <label
                   for="promocionais"
-                  class="form-check-label col-form-label-sm"
+                  class="form-check-label col-form-label-sm w-75"
                   >Aceito receber o portfólio da próxima PortyBox via email
                   mensalmente</label
                 >
               </div>
-              <input
-                type="submit"
-                class="btn btn-outline-secondary"
-                id="button0"
-                target="_blank"
-                onClick="location.href='./pages/404.html'"
-                value="Ir para pagamento"
-              />
+              <div
+                class="d-flex flex-row justify-content-center justify-content-lg-start justify-content-xl-start justify-content-xxl-start pt-4"
+              >
+                <input
+                  type="submit"
+                  class="btn btn-outline-secondary"
+                  id="button0"
+                  value="Ir para pagamento"
+                />
+              </div>
             </form>
           </div>
         </div>
       </div>
     </div>
 
+    <script src="./libs/jquery/jquery-3.6.3.min.js"></script>
     <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>

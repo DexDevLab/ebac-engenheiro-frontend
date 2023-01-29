@@ -30,6 +30,71 @@ nav .navbar-nav li a:hover {
   padding-top: 160px;
 }
 
+#modulo-content {
+  width: 50%;
+  height: 400px;
+}
+
+#modulo-img-marketing {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  background-image: url("../images/marketing-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-clip: padding-box;
+  width: 40%;
+  height: 320px;
+}
+
+#modulo-img-javascript {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  background-image: url("../images/javascript.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-clip: padding-box;
+  width: 40%;
+  height: 320px;
+}
+
+#modulo-img-html {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  background-image: url("../images/html.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-clip: padding-box;
+  width: 40%;
+  height: 320px;
+}
+
+#modulo-img-bootstrap {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  background-image: url("../images/bootstrap.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-clip: padding-box;
+  width: 40%;
+  height: 320px;
+}
+
+#modulo-img-jquery {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+  background-image: url("../images/jquery.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-clip: padding-box;
+  width: 40%;
+  height: 320px;
+}
+
 #section-sobre-title,
 #section-sobre-subtitle,
 #section-sobre-description {

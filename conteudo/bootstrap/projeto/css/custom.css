@@ -39,9 +39,15 @@ nav .navbar-nav li a:hover {
 }
 
 .navbar-brand {
+  width: auto;
   font-size: 20px;
   font-weight: bold;
   margin-right: 0;
+}
+
+.navbar-brand img {
+  padding-bottom: 1px;
+  margin-right: 7px;
 }
 
 #img-main {
