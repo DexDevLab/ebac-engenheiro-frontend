@@ -1,15 +1,59 @@
-function checkBeforeSubmit() {
-  const elements = document.querySelectorAll("input");
-  for (let obj of elements) {
-    if (obj.value == "") {
-      document.querySelector("#form1").classList.add("was-validated");
-    }
-  }
+jQuery(async function ($) {
+  const moduleBanners = await import("../components/banners.js");
+  const banners = moduleBanners.banners();
 
-  const elements2 = document.querySelectorAll("textarea");
-  for (let obj of elements2) {
-    if (obj.value == "") {
-      document.querySelector("#form1").classList.add("was-validated");
-    }
-  }
-}
+  banners.forEach((item, idx) => {
+    let componentButtons = ``;
+
+    item.bannerButtons.forEach((item2) => {
+      componentButtons =
+        componentButtons +
+        `
+    <a type="button" class="btn btn-outline-secondary" id="button1"
+    href=${item2.buttonUrl}
+    target="_blank"
+    ${item2.download}
+  >
+  ${item2.buttonName}
+  </a>`;
+    });
+
+    let component = `<div
+    class="d-flex mb-5 flex-lg-row flex-column flex-md-column flex-sm-column"
+    id="modulo-container"
+  >
+    <span
+      class="shadow-lg p-3 w-100 bg-body-secondary rounded"
+    >
+      <div
+        class="d-flex flex-column-reverse h-100 flex-lg-row flex-md-column-reverse flex-sm-column-reverse justify-content-between"
+        id="modulo-parent"
+      >
+        <div
+          class="d-flex flex-column justify-content-around align-items-center gap-5"
+          id="modulo-content"
+        >
+          <div id="modulo-content-title-frame" class="d-flex flex-column justify-content-between align-content-center">
+            <h2>${item.bannerTitle}</h2>
+            <h5>
+             ${item.bannerDesc}
+            </h5>
+          </div>
+          <div class="d-flex h-100 w-100">
+          <div
+            class="d-flex flex-row mx-auto flex-wrap justify-content-around justify-content-md-center gap-3"
+            id="modulo-buttons-${idx}"
+          >
+          ${componentButtons}
+          </div>
+          </div>
+        </div>
+        <div id="modulo-img-div">
+        <img src='${item.bannerImg}' ></img>
+        </div>
+      </div>
+    </span>
+  </div>`;
+    $("#section-modulo-container").append(component);
+  });
+});
