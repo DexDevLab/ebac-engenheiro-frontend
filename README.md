@@ -5,19 +5,27 @@
 
 <div align="center">
 
-<a href="https://www.w3.org/Style/CSS/Overview.en.html"><img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=plastic&logo=css3&logoColor=white" height="20" alt="CSS3"></a> <a href="https://html.com"><img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white" height="20" alt="HTML5"> <a href="https://sass-lang.com"><img src="https://img.shields.io/badge/SASS-hotpink.svg?style=plastic&logo=SASS&logoColor=white" height="20" alt="SASS"></a> <a href="https://www.javascript.com"><img src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E" height="20" alt="JavaScript"></a>
+<a href="https://www.w3.org/Style/CSS/Overview.en.html"><img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=plastic&logo=css3&logoColor=white" height="20" alt="CSS3"></a>
+<a href="https://html.com"><img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white" height="20" alt="HTML5">
+<a href="https://sass-lang.com"><img src="https://img.shields.io/badge/SASS-hotpink.svg?style=plastic&logo=SASS&logoColor=white" height="20" alt="SASS"></a>
+<a href="https://www.javascript.com"><img src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E" height="20" alt="JavaScript"></a>
 
-<a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node.js-6DA55F?style=plastic&logo=node.js&logoColor=white" height="20" alt="NodeJS"></a> <a href="https://getbootstrap.com"><img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?style=plastic&logo=bootstrap&logoColor=white" height="20" alt="Bootstrap"></a> <a href="https://jquery.com"><img src="https://img.shields.io/badge/JQuery-%230769AD.svg?style=plastic&logo=jquery&logoColor=white" height="20" alt="jQuery"></a>
+<a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node.js-6DA55F?style=plastic&logo=node.js&logoColor=white" height="20" alt="NodeJS"></a>
+<a href="https://getbootstrap.com"><img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?style=plastic&logo=bootstrap&logoColor=white" height="20" alt="Bootstrap"></a>
+<a href="https://jquery.com"><img src="https://img.shields.io/badge/JQuery-%230769AD.svg?style=plastic&logo=jquery&logoColor=white" height="20" alt="jQuery"></a>
 
 <!-- <a href=""><img src="https://snyk.io/test/github/dexdevlab/ebac-engenheiro-frontend/badge.svg?style=plastic" height="20" alt="Snyk"></a>  -->
 
-<a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="CodeSize"></a> <a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="RepoSize"></a>
+<a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="CodeSize"></a>
+<a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="RepoSize"></a>
 
 <!-- <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/graphs/contributors"><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Contributors"></a> -->
 <!--
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a>  -->
 
-<a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="LastCommit"></a> <a href=""><img src="https://img.shields.io/badge/version-1.1.0-005bff?style=plastic" height="20" alt="Version"></a> <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="20" alt="License"></a>
+<a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="LastCommit"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.1.1-005bff?style=plastic" height="20" alt="Version"></a>
+<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="20" alt="License"></a>
 
 || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
 
@@ -45,6 +53,11 @@
 ## Notas de versão
 
 </a>
+
+### v1.1.1-230214
+
+- Ajuste em links quebrados na Navbar
+- Ajuste nas imagens que não carregavam nos banners de seção
 
 ### v1.1.0-230131
 

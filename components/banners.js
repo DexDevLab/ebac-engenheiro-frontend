@@ -1,6 +1,7 @@
 export const banners = () => {
   return [
     {
+      id: "modulo-html",
       bannerTitle: "HTML e CSS2",
       bannerDesc:
         "Estruturação HTML, utilização de Elementos e composição DOM, CSS e estilização",
@@ -48,9 +49,10 @@ export const banners = () => {
           download: "",
         },
       ],
-      bannerImg: "../images/html.jpeg",
+      bannerImg: "./images/html.jpeg",
     },
     {
+      id: "modulo-marketing",
       bannerTitle: "Inbound Marketing",
       bannerDesc:
         "Domínio de conceitos e técnicas para boa utilidade de páginas web e aplicações web em geral, agregando valor ao produto ou serviço",
@@ -71,9 +73,10 @@ export const banners = () => {
           download: "",
         },
       ],
-      bannerImg: "../images/marketing-image.jpg",
+      bannerImg: "./images/marketing-image.jpg",
     },
     {
+      id: "modulo-javascript",
       bannerTitle: "JavaScript",
       bannerDesc: "97,8% dos sites no mundo usam",
       bannerButtons: [
@@ -98,9 +101,10 @@ export const banners = () => {
           download: "",
         },
       ],
-      bannerImg: "../images/javascript.jpg",
+      bannerImg: "./images/javascript.jpg",
     },
     {
+      id: "modulo-bootstrap",
       bannerTitle: "Bootstrap",
       bannerDesc:
         "Framework de Design de Interface Web mais utilizado no mundo",
@@ -116,9 +120,10 @@ export const banners = () => {
           download: "",
         },
       ],
-      bannerImg: "../images/bootstrap.png",
+      bannerImg: "./images/bootstrap.png",
     },
     {
+      id: "modulo-jquery",
       bannerTitle: "JQuery",
       bannerDesc: "Biblioteca que dá inteligência ao HTML e ao CSS",
       bannerButtons: [
@@ -133,7 +138,7 @@ export const banners = () => {
           download: "",
         },
       ],
-      bannerImg: "../images/jquery.jpg",
+      bannerImg: "./images/jquery.jpg",
     },
   ];
 };

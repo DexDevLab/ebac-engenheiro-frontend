@@ -18,8 +18,10 @@ jQuery(async function ($) {
   </a>`;
     });
 
-    let component = `<div
-    class="d-flex mb-5 flex-lg-row flex-column flex-md-column flex-sm-column"
+    let component = `
+    <div class="modulo-wrapper" id=${item.id}>
+    <div
+    class="d-flex flex-lg-row flex-column flex-md-column flex-sm-column"
     id="modulo-container"
   >
     <span
@@ -53,6 +55,7 @@ jQuery(async function ($) {
         </div>
       </div>
     </span>
+  </div>
   </div>`;
     $("#section-modulo-container").append(component);
   });

@@ -10,10 +10,10 @@ header {
   box-shadow: 0px 10px 10px #999;
 }
 
-section {
+/* section {
   padding-top: 3%;
   padding-bottom: 3%;
-}
+} */
 
 nav .navbar-nav li a {
   font-weight: bold;
@@ -26,10 +26,17 @@ nav .navbar-nav li a:hover {
 }
 
 /* #section-modulo {
-}
+}/*/
 
-#section-modulo-container {
-} */
+/* #section-modulo-container {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}  */
+
+.modulo-wrapper {
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
 
 #modulo-container {
   min-height: 450px;
@@ -39,6 +46,7 @@ nav .navbar-nav li a:hover {
 
 #section-sobre {
   padding-top: 160px;
+  padding-bottom: 50px;
 }
 
 #modulo-content {
