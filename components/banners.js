@@ -140,5 +140,19 @@ export const banners = () => {
       ],
       bannerImg: "./images/jquery.jpg",
     },
+    {
+      id: "modulo-gulp",
+      bannerTitle: "Gulp",
+      bannerDesc:
+        "Ferramenta para buildar, minificar e otimizar páginas web e seus recursos",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 20: Exercício",
+          buttonUrl: "./conteudo/gulp/index.html",
+          download: "",
+        },
+      ],
+      bannerImg: "./images/gulp.png",
+    },
   ];
 };

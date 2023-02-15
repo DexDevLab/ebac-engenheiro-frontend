@@ -1,0 +1,25 @@
+{
+  "name": "gulp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "gulp": "gulp styles && gulp scripts && gulp images",
+    "minify": "gulp minify"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0",
+    "bootstrap": "^5.2.3",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-image": "6.2.1",
+    "gulp-rename": "^2.0.0",
+    "jquery": "^3.6.3",
+    "jquery-mask-plugin": "^1.14.16",
+    "jquery-ui": "^1.13.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}

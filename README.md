@@ -13,6 +13,7 @@
 <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node.js-6DA55F?style=plastic&logo=node.js&logoColor=white" height="20" alt="NodeJS"></a>
 <a href="https://getbootstrap.com"><img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?style=plastic&logo=bootstrap&logoColor=white" height="20" alt="Bootstrap"></a>
 <a href="https://jquery.com"><img src="https://img.shields.io/badge/JQuery-%230769AD.svg?style=plastic&logo=jquery&logoColor=white" height="20" alt="jQuery"></a>
+<a href="https://gulpjs.com"><img src="https://img.shields.io/badge/Gulp-%23CF4647.svg?style=plastic&logo=gulp&logoColor=white" height="20" alt="Gulp"></a>
 
 <!-- <a href=""><img src="https://snyk.io/test/github/dexdevlab/ebac-engenheiro-frontend/badge.svg?style=plastic" height="20" alt="Snyk"></a>  -->
 
@@ -24,7 +25,7 @@
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a>  -->
 
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="LastCommit"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.1.1-005bff?style=plastic" height="20" alt="Version"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.2.0-005bff?style=plastic" height="20" alt="Version"></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="20" alt="License"></a>
 
 || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -32,7 +33,7 @@
 || [Contato](#section-contato) || [Licença](#section-licenca) || [Portal de Exercícios](https://dexdevlab.github.io/ebac-engenheiro-frontend) ||
 
 </div>
-
+s
 <hr>
 
 <a name="section-stack">
@@ -53,6 +54,10 @@
 ## Notas de versão
 
 </a>
+
+### v1.2.0-230215
+
+- Conteúdo do exercício do Módulo 20
 
 ### v1.1.1-230214
 
