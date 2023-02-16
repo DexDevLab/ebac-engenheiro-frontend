@@ -151,6 +151,11 @@ export const banners = () => {
           buttonUrl: "./conteudo/gulp/index.html",
           download: "",
         },
+         {
+          buttonName: "Módulo 21: Exercício",
+          buttonUrl: "./conteudo/gulp2/dist/index.html",
+          download: "",
+        },
       ],
       bannerImg: "./images/gulp.png",
     },

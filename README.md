@@ -9,6 +9,7 @@
 <a href="https://html.com"><img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white" height="20" alt="HTML5">
 <a href="https://sass-lang.com"><img src="https://img.shields.io/badge/SASS-hotpink.svg?style=plastic&logo=SASS&logoColor=white" height="20" alt="SASS"></a>
 <a href="https://www.javascript.com"><img src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E" height="20" alt="JavaScript"></a>
+<a href="https://babeljs.io"><img src="https://img.shields.io/badge/Babel-F9DC3e?style=plastic&logo=babel&logoColor=black" height="20" alt="Babel"></a>
 
 <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node.js-6DA55F?style=plastic&logo=node.js&logoColor=white" height="20" alt="NodeJS"></a>
 <a href="https://getbootstrap.com"><img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?style=plastic&logo=bootstrap&logoColor=white" height="20" alt="Bootstrap"></a>
@@ -25,7 +26,7 @@
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a>  -->
 
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="LastCommit"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.2.0-005bff?style=plastic" height="20" alt="Version"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.3.0-005bff?style=plastic" height="20" alt="Version"></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="20" alt="License"></a>
 
 || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -33,7 +34,7 @@
 || [Contato](#section-contato) || [Licença](#section-licenca) || [Portal de Exercícios](https://dexdevlab.github.io/ebac-engenheiro-frontend) ||
 
 </div>
-s
+
 <hr>
 
 <a name="section-stack">
@@ -54,6 +55,10 @@ s
 ## Notas de versão
 
 </a>
+
+### v1.3.0-230216
+
+- Conteúdo do exercício do Módulo 21
 
 ### v1.2.0-230215
 
