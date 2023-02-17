@@ -158,6 +158,10 @@ nav .navbar-nav li a:hover {
 }
 
 @media (min-width: 459px) {
+  #button1 {
+    width: 80%;
+  }
+
   .navbar-brand {
     position: fixed;
     right: 0;
@@ -200,6 +204,10 @@ nav .navbar-nav li a:hover {
 }
 
 @media (min-width: 768px) {
+  #button1 {
+    width: 40%;
+  }
+
   .navbar-brand {
     position: unset;
   }

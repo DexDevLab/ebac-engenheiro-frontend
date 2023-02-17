@@ -2,7 +2,7 @@ export const banners = () => {
   return [
     {
       id: "modulo-html",
-      bannerTitle: "HTML e CSS2",
+      bannerTitle: "HTML e CSS",
       bannerDesc:
         "Estruturação HTML, utilização de Elementos e composição DOM, CSS e estilização",
       bannerButtons: [
@@ -151,13 +151,26 @@ export const banners = () => {
           buttonUrl: "./conteudo/gulp/index.html",
           download: "",
         },
-         {
+        {
           buttonName: "Módulo 21: Exercício",
           buttonUrl: "./conteudo/gulp2/dist/index.html",
           download: "",
         },
       ],
       bannerImg: "./images/gulp.png",
+    },
+    {
+      id: "modulo-sass",
+      bannerTitle: "SASS",
+      bannerDesc: "O mais maduro, estável e poderoso processador CSS do mundo",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 22: Exercício",
+          buttonUrl: "./conteudo/sass/index.html",
+          download: "",
+        },
+      ],
+      bannerImg: "./images/sass.png",
     },
   ];
 };

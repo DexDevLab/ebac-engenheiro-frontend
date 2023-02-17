@@ -15,7 +15,7 @@ const { reload } = require("browser-sync");
 function taskCSS(cb) {
   gulp
     .src([
-      "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+      "./node_modules/bootstrap/dist/css/bootstrap.css",
       "./node_modules/@fortawesome/fontawesome-free/css/all.css",
       "./node_modules/jquery-ui/dist/themes/base/jquery-ui.min.css",
       "./vendor/owl/css/owl.css",
@@ -37,7 +37,7 @@ function taskJS(cb) {
       "./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js",
       "./node_modules/@fortawesome/fontawesome-free/js/all.js",
       "./node_modules/jquery-ui/dist/jquery-ui.min.js",
-      "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "./node_modules/bootstrap/dist/js/bootstrap.js",
       "./vendor/owl/js/owl.js",
       "./src/js/**/*.js",
     ])

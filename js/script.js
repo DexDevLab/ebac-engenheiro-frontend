@@ -18,7 +18,13 @@ jQuery(async function ($) {
   </a>`;
     });
 
-    let component = `
+    let componentNavbar = `
+    <li class="nav-item">
+    <a class="nav-link" href=#${item.id}>${item.bannerTitle}</a>
+    </li>
+    `;
+
+    let componentModulos = `
     <div class="modulo-wrapper" id=${item.id}>
     <div
     class="d-flex flex-lg-row flex-column flex-md-column flex-sm-column"
@@ -57,6 +63,7 @@ jQuery(async function ($) {
     </span>
   </div>
   </div>`;
-    $("#section-modulo-container").append(component);
+    $("#section-modulo-container").append(componentModulos);
+    $("#navbar-content").append(componentNavbar);
   });
 });
