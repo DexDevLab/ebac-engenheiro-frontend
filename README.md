@@ -26,7 +26,7 @@
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a>  -->
 
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="LastCommit"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.4.0-005bff?style=plastic" height="20" alt="Version"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.4.1-005bff?style=plastic" height="20" alt="Version"></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="20" alt="License"></a>
 
 || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -55,6 +55,10 @@
 ## Notas de versão
 
 </a>
+
+### v1.4.1-230227
+
+- Início da elaboração do exercício do Módulo 23
 
 ### v1.4.0-230217
 

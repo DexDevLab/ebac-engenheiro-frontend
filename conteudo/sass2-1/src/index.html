@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./vendor/owl/css/owl.css" />
+    <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <!-- <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css" /> -->
+    <link rel="stylesheet" href="./css/libs.min.css" />
+    <script src="./js/libs.min.js"></script>
+    <title>Breshop Boutique</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navbar navbar-expand-lg static-top">
+        <div
+          class="d-flex flex-row flex-lg-column justify-content-around justify-content-lg-center w-100 align-content-around text-center align-content-lg-center text-lg-center"
+        >
+          <a class="navbar-brand" href="#"
+            ><img id="img-brand" src="./images/header-logo4.png" alt=""
+          /></a>
+          <button
+            id="navbar-collapse-button"
+            class="navbar-toggler my-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#featured">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/404.html">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-contato"
+                  href="#"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="caption">
+                <h2>Peças únicas e conjuntos especiais</h2>
+                <div class="line-dec"></div>
+                <p>Roupas para todos os gostos e estilos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="featured" class="featured-items">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <div class="line-dec"></div>
+                <h1>Destaques</h1>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="owl-carousel owl-theme" id="carousel-contents"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subscribe-form">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <div class="line-dec"></div>
+                <h1>Receba novidades</h1>
+              </div>
+            </div>
+            <div class="col-md-8 offset-md-2">
+              <div class="main-content">
+                <p>
+                  Insira seus dados abaixo para receber informações atualizadas
+                  de nossos produtos
+                </p>
+                <div class="container">
+                  <form action="#" novalidate id="subscribe">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <fieldset>
+                          <input
+                            name="email"
+                            type="text"
+                            class="form-control"
+                            id="email2"
+                            value=""
+                            placeholder="email@provedor.com"
+                            required
+                          />
+                        </fieldset>
+                      </div>
+                      <div class="col-md-5">
+                        <input
+                          type="button"
+                          class="btn btn-outline-secondary"
+                          id="button1"
+                          value="Enviar"
+                        />
+                        <!-- <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Inscreva-se
+                        </button>
+                      </fieldset> -->
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="logo">
+                <img src="./images/header-logo1.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="#featured">Produtos</a></li>
+                  <li><a href="./pages/404.html">Sobre Nós</a></li>
+                  <li><a href="./pages/404.html">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="social-icons">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com" target="_blank"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.twitter.com" target="_blank"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com" target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <!-- <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-text">
+                <p>Breshop Boutique &copy; Todos os direitos reservados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modal-stock">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Estoque</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h5>
+                <b
+                  >Infelizmente estamos sem estoque deste produto. Por
+                  gentileza, nos visite nos próximos dias.</b
+                >
+              </h5>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-formsent">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-formsent-title"></h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h5>
+                <b id="modal-formsent-message"></b>
+              </h5>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modal-contato">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center">
+                Deseja entrar em contato conosco? Envie-nos uma mensagem!
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body pt-0">
+              <form action="#" novalidate id="form1">
+                <div
+                  class="d-flex flex-column flex-lg-row justify-content-between"
+                >
+                  <div class="mb-0 mt-0" id="form-field">
+                    <label for="nome" class="form-label"><b>Nome</b></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nome"
+                      placeholder="Digite seu nome"
+                      name="nome"
+                      required
+                    />
+                    <!-- <div class="valid-feedback">Válido.</div> -->
+                    <div class="invalid-feedback">
+                      Por favor digite seu nome.
+                    </div>
+                  </div>
+                  <div class="mb-0 mt-0" id="form-field">
+                    <label for="email" class="form-label"><b>Email</b></label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="usuario@provedor.com"
+                      name="email"
+                      required
+                    />
+                    <!-- <div class="valid-feedback">Valid.</div> -->
+                    <div class="invalid-feedback">
+                      Por favor digite um email válido para contato.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-column flex-lg-row justify-content-between"
+                >
+                  <div class="mb-0 mt-0" id="form-field">
+                    <label for="nome" class="form-label"><b>Endereço</b></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="endereco"
+                      placeholder="Rua A, número 120"
+                      name="endereco"
+                      required
+                    />
+                    <!-- <div class="valid-feedback">Válido.</div> -->
+                    <div class="invalid-feedback">
+                      Por favor digite um endereço válido.
+                    </div>
+                  </div>
+                  <div class="mb-0 mt-0" id="form-field">
+                    <label for="email" class="form-label"
+                      ><b>Complemento</b></label
+                    >
+                    <input
+                      type="complemento"
+                      class="form-control"
+                      id="complemento"
+                      placeholder="Apartamento 201"
+                      name="complemento"
+                    />
+                    <!-- <div class="valid-feedback">Valid.</div> -->
+                    <!-- <div class="invalid-feedback">
+                    Por favor digite um email para contato.
+                  </div> -->
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-column flex-lg-row justify-content-between"
+                >
+                  <div class="mb-0 mt-0" id="form-field">
+                    <label for="nome" class="form-label"><b>CEP</b></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cep"
+                      placeholder="10.010-001"
+                      name="cep"
+                      required
+                    />
+                    <!-- <div class="valid-feedback">Válido.</div> -->
+                    <div class="invalid-feedback">
+                      Por favor digite um CEP válido.
+                    </div>
+                  </div>
+                  <div class="mb-0 mt-0" id="form-field">
+                    <label for="estado" class="form-label"><b>Estado</b></label>
+                    <select
+                      required
+                      class="form-select"
+                      id="estado"
+                      name="estado"
+                    >
+                      <option selected value="">Selecione um Estado</option>
+                      <option value="AC">Acre</option>
+                      <option value="AL">Alagoas</option>
+                      <option value="AP">Amapá</option>
+                      <option value="AM">Amazonas</option>
+                      <option value="BA">Bahia</option>
+                      <option value="CE">Ceará</option>
+                      <option value="DF">Distrito Federal</option>
+                      <option value="ES">Espírito Santo</option>
+                      <option value="GO">Goiás</option>
+                      <option value="MA">Maranhão</option>
+                      <option value="MT">Mato Grosso</option>
+                      <option value="MS">Mato Grosso do Sul</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="PA">Pará</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="PR">Paraná</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PI">Piauí</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="RR">Roraima</option>
+                      <option value="SC">Santa Catarina</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="SE">Sergipe</option>
+                      <option value="TO">Tocantins</option>
+                    </select>
+                    <!-- <div class="valid-feedback">Valid.</div> -->
+                    <div class="invalid-feedback">
+                      Por favor escolha um Estado.
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-0 mt-0">
+                  <label for="mensagem" class="form-label"
+                    ><b>Mensagem</b></label
+                  >
+                  <textarea
+                    name="mensagem"
+                    class="form-control"
+                    id="mensagem"
+                    rows="5"
+                    placeholder="Mensagem..."
+                    required
+                  ></textarea>
+                  <!-- <div class="valid-feedback">Valid.</div> -->
+                  <div class="invalid-feedback">
+                    Por favor preencha a mensagem.
+                  </div>
+                </div>
+                <div
+                  class="form-check d-flex flex-row justify-content-center justify-content-lg-start justify-content-xl-start justify-content-xxl-start gap-2 w-100 p-0 m-0 pt-3"
+                >
+                  <input
+                    type="checkbox"
+                    name="promocionais"
+                    id="promocionais"
+                  />
+                  <label
+                    for="promocionais"
+                    class="form-check-label col-form-label-sm w-75"
+                    >Aceito receber email dos novos produtos do site</label
+                  >
+                </div>
+                <div
+                  class="d-flex flex-row justify-content-center justify-content-lg-start justify-content-xl-start justify-content-xxl-start pt-4"
+                >
+                  <input
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    id="button0"
+                    value="Enviar"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <script src="./vendor/jquery/jquery-3.6.3.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./vendor/owl/js/owl.js"></script>
+    <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
+    <script src="./vendor/jquery-ui/jquery-ui.min.js"></script> -->
+      <!-- <script src="./js/custom.js"></script> -->
+    </div>
+  </body>
+</html>

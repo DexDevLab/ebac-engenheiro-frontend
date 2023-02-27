@@ -2,7 +2,31 @@ jQuery(async function ($) {
   const moduleBanners = await import("../components/banners.js");
   const banners = moduleBanners.banners();
 
+  function mmc(number) {
+    if (number % 2 != 0) {
+      if (number % 3 != 0) {
+        if (number % 4 != 0) {
+          if (number % 5 != 0) {
+            return 1;
+          } else {
+            return 5;
+          }
+        } else {
+          return 4;
+        }
+      } else {
+        return 3;
+      }
+    } else {
+      return 2;
+    }
+  }
+
   banners.forEach((item, idx) => {
+    const bannerButtonsLength = item.bannerButtons.length;
+    const gridColumns = mmc(bannerButtonsLength);
+    const gridWidth = gridColumns > 3 ? "100%" : gridColumns * 25 + "%";
+
     let componentButtons = ``;
 
     item.bannerButtons.forEach((item2) => {
@@ -31,7 +55,7 @@ jQuery(async function ($) {
     id="modulo-container"
   >
     <span
-      class="shadow-lg p-3 w-100 bg-body-secondary rounded"
+      class="shadow-lg p-4 w-100 bg-body-secondary rounded"
     >
       <div
         class="d-flex flex-column-reverse h-100 flex-lg-row flex-md-column-reverse flex-sm-column-reverse justify-content-between"
@@ -47,10 +71,9 @@ jQuery(async function ($) {
              ${item.bannerDesc}
             </h5>
           </div>
-          <div class="d-flex h-100 w-100">
+          <div class="d-flex h-100 w-100 justify-content-center align-content-center">
           <div
-            class="d-flex flex-row mx-auto flex-wrap justify-content-around justify-content-md-center gap-3"
-            id="modulo-buttons-${idx}"
+            class="grid-buttons" style="grid-template-columns: repeat(${gridColumns}, 1fr); width: ${gridWidth};"
           >
           ${componentButtons}
           </div>

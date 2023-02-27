@@ -1,0 +1,12 @@
+#button0:hover {
+    background-color: $color1;
+    color:  $color3;
+    transition: 0.6s;
+  }
+  
+  #button0 {
+    background-color:  $color3;
+    text-decoration: none;
+    color: $color2;
+    font-weight: bold;
+  }
