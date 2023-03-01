@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <title>Curso Front-end - Formulários</title>
     <meta charset="UTF-8" />
@@ -48,130 +48,129 @@
       <div id="page-content">
         <div id="page-box">
           <h1>Contato</h1>
-        <div id="form-container">
-           <form method="post" id="formContato">
-            <p>Preencha os campos abaixo</p>
-            <div id="form-container-main">
-              <div id="form-block1">
-                <div id="form-container-section-nome">
-                  <div id="form-container-label">
-                    <label for="nome">Nome</label>
+          <div id="form-container">
+            <form method="post" id="formContato">
+              <p>Preencha os campos abaixo</p>
+              <div id="form-container-main">
+                <div id="form-block1">
+                  <div id="form-container-section-nome">
+                    <div id="form-container-label">
+                      <label for="nome">Nome</label>
+                    </div>
+                    <input
+                      type="text"
+                      name="nome"
+                      id="nome"
+                      placeholder="João da Silva"
+                    />
                   </div>
-                  <input
-                    type="text"
-                    name="nome"
-                    id="nome"
-                    placeholder="João da Silva"
-                  />
+                  <div id="form-container-section-email">
+                    <div id="form-container-label">
+                      <label for="email">E-mail</label>
+                    </div>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="usuario@email.com"
+                    />
+                  </div>
+                  <div id="form-container-section-msg">
+                    <div id="form-container-label">
+                      <label for="mensagem">Mensagem</label>
+                    </div>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                  </div>
                 </div>
-                <div id="form-container-section-email">
-                  <div id="form-container-label">
-                    <label for="email">E-mail</label>
+                <div id="form-block2">
+                  <div id="form-container-section-question-language">
+                    <div id="form-container-label-language">
+                      <label>Qual linguagem você prefere?</label>
+                    </div>
+                    <div id="form-container-section-question-language-options">
+                      <div id="form-container-radio-label">
+                        <input
+                          id="radio-html"
+                          type="radio"
+                          name="linguagens-radio"
+                          value="html"
+                        />
+                        <label for="radio-html"> HTML</label>
+                      </div>
+                      <div id="form-container-radio-label">
+                        <input
+                          id="radio-css"
+                          type="radio"
+                          name="linguagens-radio"
+                          value="CSS"
+                        />
+                        <label for="radio-css"> CSS</label>
+                      </div>
+                      <div id="form-container-radio-label">
+                        <input
+                          id="radio-js"
+                          type="radio"
+                          name="linguagens-radio"
+                          value="Javascript"
+                        />
+                        <label for="radio-js"> Javascript</label>
+                      </div>
+                    </div>
                   </div>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="usuario@email.com"
-                  />
-                </div>
-                <div id="form-container-section-msg">
-                  <div id="form-container-label">
-                    <label for="mensagem">Mensagem</label>
+                  <div id="form-container-section-question-language">
+                    <div id="form-container-label-language">
+                      <label>Quais linguagens você sabe?</label>
+                    </div>
+                    <div id="form-container-section-question-language-options">
+                      <div id="form-container-check-label">
+                        <input
+                          id="check-html"
+                          type="checkbox"
+                          name="linguagens-check"
+                          value="html"
+                        />
+                        <label for="check-html"> HTML</label>
+                      </div>
+                      <div id="form-container-check-label">
+                        <input
+                          id="check-css"
+                          type="checkbox"
+                          name="linguagens-check"
+                          value="CSS"
+                        />
+                        <label for="check-css"> CSS</label>
+                      </div>
+                      <div id="form-container-check-label">
+                        <input
+                          id="check-js"
+                          type="checkbox"
+                          name="linguagens-check"
+                          value="Javascript"
+                        />
+                        <label for="check-js"> Javascript</label>
+                      </div>
+                    </div>
                   </div>
-                  <textarea name="mensagem" id="mensagem"></textarea>
+                  <div id="form-container-section-question-color">
+                    <div id="form-container-label">
+                      <label>Qual a sua cor preferida?</label>
+                    </div>
+                    <div id="form-container-section-question-color-options">
+                      <select name="color" id="color" form="formContato">
+                        <option value="Azul">Azul</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Vermelho" selected>Vermelho</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div id="form-block2">
-                <div id="form-container-section-question-language">
-                  <div id="form-container-label-language">
-                    <label>Qual linguagem você prefere?</label>
-                  </div>
-                  <div id="form-container-section-question-language-options">
-                    <div id="form-container-radio-label">
-                      <input
-                        id="radio-html"
-                        type="radio"
-                        name="linguagens-radio"
-                        value="html"
-                      />
-                      <label for="radio-html"> HTML</label>
-                    </div>
-                    <div id="form-container-radio-label">
-                      <input
-                        id="radio-css"
-                        type="radio"
-                        name="linguagens-radio"
-                        value="CSS"
-                      />
-                      <label for="radio-css"> CSS</label>
-                    </div>
-                    <div id="form-container-radio-label">
-                      <input
-                        id="radio-js"
-                        type="radio"
-                        name="linguagens-radio"
-                        value="Javascript"
-                      />
-                      <label for="radio-js"> Javascript</label>
-                    </div>
-                  </div>
-                </div>
-                <div id="form-container-section-question-language">
-                  <div id="form-container-label-language">
-                    <label>Quais linguagens você sabe?</label>
-                  </div>
-                  <div id="form-container-section-question-language-options">
-                    <div id="form-container-check-label">
-                      <input
-                        id="check-html"
-                        type="checkbox"
-                        name="linguagens-check"
-                        value="html"
-                      />
-                      <label for="check-html"> HTML</label>
-                    </div>
-                    <div id="form-container-check-label">
-                      <input
-                        id="check-css"
-                        type="checkbox"
-                        name="linguagens-check"
-                        value="CSS"
-                      />
-                      <label for="check-css"> CSS</label>
-                    </div>
-                    <div id="form-container-check-label">
-                      <input
-                        id="check-js"
-                        type="checkbox"
-                        name="linguagens-check"
-                        value="Javascript"
-                      />
-                      <label for="check-js"> Javascript</label>
-                    </div>
-                  </div>
-                </div>
-                <div id="form-container-section-question-color">
-                  <div id="form-container-label">
-                    <label>Qual a sua cor preferida?</label>
-                  </div>
-                  <div id="form-container-section-question-color-options">
-                    <select name="color" id="color" form="formContato">
-                      <option value="Azul">Azul</option>
-                      <option value="Verde">Verde</option>
-                      <option value="Vermelho" selected>Vermelho</option>
-                    </select>
-                  </div>
-                </div>
+              <div id="form-container-button">
+                <input type="submit" />
               </div>
-            </div>
-            <div id="form-container-button">
-              <input type="submit" />
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-        </div>
-        
       </div>
     </section>
     <div id="footer">

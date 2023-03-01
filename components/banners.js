@@ -170,8 +170,13 @@ export const banners = () => {
           download: "",
         },
         {
-          buttonName: "Módulo 23: Exercício",
+          buttonName: "Módulo 23: Exercício (Parte 1)",
           buttonUrl: "./conteudo/sass2-1/dist/index.html",
+          download: "",
+        },
+        {
+          buttonName: "Módulo 23: Exercício (Parte 2)",
+          buttonUrl: "./conteudo/sass2-2/dist/index.html",
           download: "",
         },
       ],
