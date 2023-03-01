@@ -1,13 +1,28 @@
 .copyright-text {
-    text-transform: uppercase;
-  }
+  text-transform: uppercase;
+}
 
 #img-brand {
-    width: 500px;
-    height: 180px;
-    padding-left: 50px;
+  width: 500px;
+  height: 180px;
+  padding-left: 50px;
+  @media (max-width: 991.11px) {
+    padding-top: 15px;
+    width: 400px;
+    height: 150px;
   }
-  
-  #product-badge {
-    margin-left: 10px;
+  @media (max-width: 767px) {
+    width: 250px;
+    height: 100px;
   }
+}
+
+#product-badge {
+  margin-left: 10px;
+  @media (max-width: 991.11px) {
+    margin-left: 0px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 0px;
+  }
+}

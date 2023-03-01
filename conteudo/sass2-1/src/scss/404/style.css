@@ -1,12 +1,15 @@
-/* @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,500");
-
+@font-face {
+  font-family: "Roboto Mono";
+  font-display: swap;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap") format("woff2");
+}
 html,
 body {
   width: 100%;
   height: 100%;
-} */
+}
 
-/* .main-body {
+.main-body {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/257418/andy-holmes-698828-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,41 +21,40 @@ body {
   min-width: 100%;
   font-family: "Roboto Mono", monospace;
   color: rgba(255, 255, 255, 0.87);
-} */
+}
 
-/* .mx-auto {
+.mx-auto {
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
-/* .container-div,
-.container-div > .row,
-.container-div > .row > div {
+.container-div .row {
   height: 100%;
-} */
+}
+.container-div .row div {
+  height: 100%;
+}
 
-/* .number {
+.number {
   font-size: 4rem;
   font-weight: 500;
-} */
-
-/* .number + .text {
+}
+.number + .text {
   margin: 0 0 1rem;
-} */
-
-/* .text {
+}
+.number .text {
   font-weight: 300;
   text-align: center;
-} */
+}
 
-/* #countUp {
+#countUp {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-} */
+}
 
-/* #link-back {
+#link-back {
   margin-top: 20px;
-} */
+}/*# sourceMappingURL=style.css.map */

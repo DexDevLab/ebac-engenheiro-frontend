@@ -1,15 +1,15 @@
-body{
-    font-family: $font-main;
-    transition: all 0.5s;
-
-    p {
-        margin-bottom: 0px;
-        font-size: $font-size-sm;
-        color: $color4;
-        line-height: 24px;
-      }
-      
-      a {
-        text-decoration: none !important;
-      }
+body {
+  overflow-x: hidden;
+  font-family: $font-main;
+  transition: all 0.5s;
+  margin: 0 !important;
+  p {
+    margin-bottom: 0px;
+    font-size: $font-size-sm;
+    color: $color4;
+    line-height: 24px;
+  }
+  a {
+    text-decoration: none !important;
+  }
 }

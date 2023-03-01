@@ -1,0 +1,54 @@
+@import "vars";
+@import "reset";
+
+.main-body {
+  background-image: $bg-image1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+  min-height: $size1;
+  min-width: $size1;
+  font-family: $font-main;
+  color: $color1;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-div {
+  .row {
+    height: $size1;
+    div {
+      height: $size1;
+    }
+  }
+}
+
+.number {
+  font-size: $font-size1;
+  font-weight: $font-weight2;
+  + .text {
+    margin: 0 0 1rem;
+  }
+  .text {
+    font-weight: $font-weight1;
+    text-align: center;
+  }
+}
+
+#countUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: $size1;
+}
+
+#link-back {
+  margin-top: 20px;
+}

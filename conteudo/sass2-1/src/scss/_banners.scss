@@ -1,31 +1,33 @@
-
-/* Banner Style */
 .banner {
-    margin-top: 50px;
-    background-image: url(../images/banner-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 150px 0px;
-    background-position: center center;
-  }
-  .banner .caption {
-    background-color: rgba(250, 250, 250, 0.9);
+  margin-top: 20px;
+  background-image: $backgroundImage1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0px;
+  background-position: center center;
+  .caption {
+    background-color: $color8;
     padding: 30px;
     max-width: 450px;
+    h2 {
+      margin-top: 0px;
+      margin-bottom: 15px;
+      font-size: $font-size-xl;
+      font-weight: $font-weight4;
+      color: $color6;
+    }
+    .line-dec {
+      width: 30px;
+      height: 5px;
+      background-color: $color5;
+    }
+    p {
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
   }
-  .banner .caption h2 {
+  @media (max-width: 991.11px) {
+    border-top: none;
     margin-top: 0px;
-    margin-bottom: 15px;
-    font-size: 24px;
-    font-weight: 700;
-    color: #1e1e1e;
   }
-  .banner .caption .line-dec {
-    width: 30px;
-    height: 5px;
-    background-color: #3a8bcd;
-  }
-  .banner .caption p {
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
+}

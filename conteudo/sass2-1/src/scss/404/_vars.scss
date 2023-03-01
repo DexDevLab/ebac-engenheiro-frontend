@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Roboto Mono";
+  font-display: swap;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap")
+    format("woff2");
+}
+
+$size1: 100%;
+$font-main: "Roboto Mono", monospace;
+$font-size1: 4rem;
+$font-weight1: 300;
+$font-weight2: 500;
+$bg-image1: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/257418/andy-holmes-698828-unsplash.jpg);
+$color1: rgba(255, 255, 255, 0.87);

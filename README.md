@@ -26,7 +26,7 @@
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a>  -->
 
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="LastCommit"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.4.1-005bff?style=plastic" height="20" alt="Version"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.5.0-005bff?style=plastic" height="20" alt="Version"></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="20" alt="License"></a>
 
 || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -45,8 +45,9 @@
 
 - **Linguagem Principal:** [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - **Linguagem de Marcação:** [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- **Linguagem de Estilização:** [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- **Linguagem de Estilização:** [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS), [SASS](https://sass-lang.com)
 - **Framework de Design:** [Bootstrap](https://getbootstrap.com)
+- **Bibliotecas de Compilação:** [Gulp](https://gulpjs.com), [Babel](https://babeljs.io)
 
 <hr>
 
@@ -55,6 +56,11 @@
 ## Notas de versão
 
 </a>
+
+### v1.5.0-230301
+
+- Conteúdo do exercício do Módulo 23
+- Ajuste na animação do erro da página de erro (404.html) em todos os locais em que ela é utilizada
 
 ### v1.4.1-230227
 

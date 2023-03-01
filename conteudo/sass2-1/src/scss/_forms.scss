@@ -1,94 +1,112 @@
-.form-label {
-    margin-top: 10px;
+@mixin formFieldResponsiveWidth {
+  @media (max-width: 991.11px) {
+    width: $width1;
   }
-  
-  #form-field {
-    width: 45%;
+  @media (max-width: 767px) {
+    width: $width1;
   }
-  
-  #form-field-sm {
-    width: 18%;
-  }
-  
-  #form-field-md {
-    width: 35%;
-  }
-  
-  #form-field-lg {
-    width: 75%;
-  }
+}
 
-  .section-heading {
-    margin-top: 80px;
-    margin-bottom: 40px;
-  }
-  .section-heading .line-dec {
+.form-label {
+  margin-top: 10px;
+}
+
+#form-field {
+  @include formFieldResponsiveWidth;
+  width: 45%;
+}
+
+#form-field-sm {
+  @include formFieldResponsiveWidth;
+  width: 18%;
+}
+
+#form-field-md {
+  @include formFieldResponsiveWidth;
+  width: 35%;
+}
+
+#form-field-lg {
+  @include formFieldResponsiveWidth;
+  width: 75%;
+}
+
+.section-heading {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  .line-dec {
     width: 30px;
     height: 5px;
-    background-color: #3a8bcd;
+    background-color: $color5;
   }
-  .section-heading h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1e1e1e;
+  h1 {
+    font-size: $font-size-lg;
+    font-weight: $font-weight4;
+    color: $color6;
     margin-top: 15px;
   }
+}
 
-  .subscribe-form {
-    background-color: #3a8bcd;
-    padding: 80px 0px;
-    text-align: center;
-  }
-  .subscribe-form .section-heading {
+.subscribe-form {
+  background-color: $color5;
+  padding: 80px 0px;
+  text-align: center;
+  .section-heading {
     margin-top: 0px;
+    h1 {
+      color: $color3;
+    }
+    .line-dec {
+      background-color: $color3;
+      margin: 0 auto;
+    }
   }
-  .subscribe-form .section-heading h1 {
-    color: #fff;
+  .main-content {
+    p {
+      font-size: $font-size-md;
+      color: $color3;
+      margin-bottom: 30px;
+    }
+    form {
+      color: $color3;
+      display: inline;
+      input {
+        display: inline;
+        width: $width1;
+        height: 46px;
+        border: 1px solid $color3;
+        background-color: transparent;
+        padding-left: 15px;
+        color: $color3;
+        outline: none;
+        .button {
+          @media (max-width: 767px) {
+            margin-top: 20px;
+          }
+        }
+      }
+      button {
+        width: $width1;
+        height: 45px;
+        cursor: pointer;
+        background-color: $color3;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        display: inline-block;
+        color: $color5;
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+        font-weight: $font-weight1;
+        letter-spacing: 0.4px;
+        text-decoration: none;
+        transition: all 0.5s;
+        box-shadow: none;
+        border: none;
+      }
+      button:focus {
+        color: $color5 !important;
+      }
+    }
   }
-  .subscribe-form .section-heading .line-dec {
-    background-color: #fff;
-    margin: 0 auto;
-  }
-  .subscribe-form .main-content p {
-    font-size: 17px;
-    color: #fff;
-    margin-bottom: 30px;
-  }
-  .subscribe-form .main-content form {
-    color: #fff;
-    display: inline;
-  }
-  .subscribe-form .main-content form input {
-    display: inline;
-  }
-  .subscribe-form .main-content form input {
-    width: 100%;
-    height: 46px;
-    border: 1px solid #fff;
-    background-color: transparent;
-    padding-left: 15px;
-    color: #fff;
-    outline: none;
-  }
-  .subscribe-form .main-content form button:focus {
-    color: #fff !important;
-  }
-  .subscribe-form .main-content form button {
-    width: 100%;
-    height: 45px;
-    cursor: pointer;
-    background-color: #fff;
-    outline: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    display: inline-block;
-    color: #3a8bcd;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 0.4px;
-    text-decoration: none;
-    transition: all 0.5s;
-    box-shadow: none;
-    border: none;
-  }
+}

@@ -19,7 +19,7 @@ var formatThousandsNoRounding = function (n, dp) {
 
 var hasRun = false;
 
-$("#countUp").on("mouseenter", function () {
+$(document).ready(function () {
   if (hasRun == false) {
     $(".number").each(function () {
       var $this = $(this),

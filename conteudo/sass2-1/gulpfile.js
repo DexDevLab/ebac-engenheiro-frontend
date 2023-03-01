@@ -12,19 +12,42 @@ const gulpBabel = require("gulp-babel");
 const browser = require("browser-sync");
 const { reload } = require("browser-sync");
 
-function taskCSS(cb) {
+function taskLibsCSS(cb) {
   gulp
     .src([
       "./node_modules/bootstrap/dist/css/bootstrap.css",
       "./node_modules/@fortawesome/fontawesome-free/css/all.css",
       "./node_modules/jquery-ui/dist/themes/base/jquery-ui.min.css",
       "./vendor/owl/css/owl.css",
-      "./src/css/**/*.css",
     ])
     .pipe(gulpStripCSS())
     .pipe(gulpConcat("libs.css"))
     .pipe(gulpCSSmin())
     .pipe(gulpRename({ suffix: ".min" }))
+    .pipe(gulp.dest("./dist/css"));
+
+  return cb();
+}
+
+function taskCSS(cb) {
+  gulp
+    .src(["./src/scss/style.css"])
+    .pipe(gulpStripCSS())
+    .pipe(gulpConcat("libs.css"))
+    .pipe(gulpCSSmin())
+    .pipe(gulpRename({ suffix: ".default.min" }))
+    .pipe(gulp.dest("./dist/css"));
+
+  return cb();
+}
+
+function taskCSS2(cb) {
+  gulp
+    .src(["./src/scss/404/style.css"])
+    .pipe(gulpStripCSS())
+    .pipe(gulpConcat("libs.css"))
+    .pipe(gulpCSSmin())
+    .pipe(gulpRename({ suffix: ".404.min" }))
     .pipe(gulp.dest("./dist/css"));
 
   return cb();
@@ -51,7 +74,9 @@ function taskJS(cb) {
 }
 
 function taskBabel(cb) {
-  return Promise.resolve(gulp.src("./dist/js/*.js").pipe(gulpBabel()).pipe(gulp.dest("./dist/js")));
+  return Promise.resolve(
+    gulp.src("./dist/js/*.js").pipe(gulpBabel()).pipe(gulp.dest("./dist/js"))
+  );
 }
 
 function taskImgs(cb) {
@@ -89,16 +114,26 @@ gulp.task("serve", function () {
       baseDir: "./dist",
     },
   });
-  gulp.watch("./src/**").on('change', gulpProcess);
-  gulp.watch("./dist/**").on('change', reload);
+  gulp.watch("./src/**").on("change", gulpProcess);
+  gulp.watch("./dist/**").on("change", reload);
 });
 
-const gulpProcess = series(taskCSS, taskHTML, taskImgs, taskJS, taskBabel);
+const gulpProcess = series(
+  taskLibsCSS,
+  taskCSS,
+  taskCSS2,
+  taskHTML,
+  taskImgs,
+  taskJS,
+  taskBabel
+);
 
+exports.styles = taskLibsCSS;
 exports.styles = taskCSS;
+exports.styles = taskCSS2;
 exports.scripts = taskJS;
 exports.images = taskImgs;
 exports.html = taskHTML;
-exports.babel =  taskBabel;
+exports.babel = taskBabel;
 
 exports.default = gulpProcess;
