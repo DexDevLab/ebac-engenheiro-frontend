@@ -26,7 +26,7 @@
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a>  -->
 
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="LastCommit"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.6.0-005bff?style=plastic" height="20" alt="Version"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.7.0-005bff?style=plastic" height="20" alt="Version"></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="20" alt="License"></a>
 
 || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -56,6 +56,11 @@
 ## Notas de versão
 
 </a>
+
+### v1.7.0-230302
+
+- Ajustes de layout da disposição de botões e tamanho de banner para alguns viewports
+- Conteúdo do exercício do Módulo 24
 
 ### v1.6.0-230301
 

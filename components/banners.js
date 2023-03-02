@@ -182,5 +182,18 @@ export const banners = () => {
       ],
       bannerImg: "./images/sass.png",
     },
+    {
+      id: "modulo-webpack",
+      bannerTitle: "Webpack",
+      bannerDesc: "Criação inteligente e automatizada de assets e componentes Web",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 24: Exercício",
+          buttonUrl: "./conteudo/webpack/dist/index.html",
+          download: "",
+        },
+      ],
+      bannerImg: "./images/webpack2.png",
+    },
   ];
 };
