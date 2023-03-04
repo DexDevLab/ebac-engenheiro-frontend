@@ -43,7 +43,7 @@ module.exports ={
                         name: '[name].[ext]'
                     }
                 }
-            }
+            },
         ]
     },
     plugins: [

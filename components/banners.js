@@ -185,7 +185,8 @@ export const banners = () => {
     {
       id: "modulo-webpack",
       bannerTitle: "Webpack",
-      bannerDesc: "Criação inteligente e automatizada de assets e componentes Web",
+      bannerDesc:
+        "Criação inteligente e automatizada de assets e componentes Web",
       bannerButtons: [
         {
           buttonName: "Módulo 24: Exercício",
@@ -193,7 +194,20 @@ export const banners = () => {
           download: "",
         },
       ],
-      bannerImg: "./images/webpack2.png",
+      bannerImg: "./images/webpack3.jpg",
+    },
+    {
+      id: "modulo-advcss",
+      bannerTitle: "Advanced CSS",
+      bannerDesc: "Estudo e aplicação de conceitos avançados de CSS",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 25: Exercício",
+          buttonUrl: "./conteudo/css-adv/dist/index.html",
+          download: "",
+        },
+      ],
+      bannerImg: "./images/css.jpg",
     },
   ];
 };
