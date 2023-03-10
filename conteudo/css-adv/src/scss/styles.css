@@ -31,6 +31,10 @@ html body #root {
     height: 200vh;
   }
 }
+html body #root #divider {
+  height: 1000px;
+  width: 1000px;
+}
 html body #root .container__nav {
   z-index: 1000;
   width: 100%;

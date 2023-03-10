@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "freshman";
+  src: url("../assets/fonts/freshman-webfont.woff2") format("woff2"),
+    url("../assets/fonts/freshman-webfont.woff") format("woff"),
+    url("../assets/fonts/Freshman.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lastica";
+  src: url("../assets/fonts/Lastica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+$font-family1: "Lastica";
+$font-family2: "Quicksand", sans-serif;

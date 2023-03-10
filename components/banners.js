@@ -203,7 +203,12 @@ export const banners = () => {
       bannerButtons: [
         {
           buttonName: "Módulo 25: Exercício",
-          buttonUrl: "./conteudo/css-adv/dist/index.html",
+          buttonUrl: "./conteudo/css-adv/dist/pages/index.html",
+          download: "",
+        },
+        {
+          buttonName: "Módulo 26: Exercício",
+          buttonUrl: "./conteudo/css-adv2/dist/pages/index.html",
           download: "",
         },
       ],

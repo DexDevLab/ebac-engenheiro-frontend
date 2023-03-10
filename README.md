@@ -1,5 +1,5 @@
 <h1 align="center">ebac-engenheiro-frontend</h1>
-<p align=center><i align="center">Repositório contendo o conteúdo relevante das aulas do curso "Profissão: Engenheiro Front-End" da Instituição EBAC - Escola Britânica de Artes Criativas e Tecnologia.</i></p>
+<p align=center><i align="center">Repositório contendo o conteúdo relevante das aulas do curso "Profissão: Engenheiro Front-End" da Instituição EBAC - Escola Britânica de Artes Criativas e Tecnologia</i></p>
 
 <br>
 
@@ -16,24 +16,35 @@
 <a href="https://jquery.com"><img src="https://img.shields.io/badge/JQuery-%230769AD.svg?style=plastic&logo=jquery&logoColor=white" height="20" alt="jQuery"></a>
 <a href="https://gulpjs.com"><img src="https://img.shields.io/badge/Gulp-%23CF4647.svg?style=plastic&logo=gulp&logoColor=white" height="20" alt="Gulp"></a>
 
-<!-- <a href=""><img src="https://snyk.io/test/github/dexdevlab/ebac-engenheiro-frontend/badge.svg?style=plastic" height="20" alt="Snyk"></a>  -->
+<a href=""><img src="https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg?style=plastic" height="22" alt="Maintenance-actively-developed"/></a>
+<a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="LastCommit"/></a>
+<a href=""><img src="https://snyk.io/test/github/dexdevlab/ebac-engenheiro-frontend/badge.svg?style=plastic" height="22" alt="Snyk"/></a>
 
-<a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="CodeSize"></a>
-<a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="RepoSize"></a>
+<a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="CodeSize"/></a>
+<a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="RepoSize"/></a>
+<a href=""><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="Contributors"></a>
 
-<!-- <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/graphs/contributors"><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Contributors"></a> -->
-<!--
-<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/fork"><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="Fork"></a>  -->
+<a href=""><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="Fork"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.9.0-140126?style=plastic" height="22" alt="Version"/></a>
+<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="22" alt="License"/></a>
 
-<a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="20" alt="LastCommit"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.8.0-005bff?style=plastic" height="20" alt="Version"></a>
-<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="20" alt="License"></a>
-
-|| [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
+|| [Conteúdo](#section-conteudo) || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
 
 || [Contato](#section-contato) || [Licença](#section-licenca) || [Portal de Exercícios](https://dexdevlab.github.io/ebac-engenheiro-frontend) ||
 
 </div>
+
+<hr>
+
+<a name="section-conteudo">
+
+## Conteúdo
+
+</a>
+
+<br>
+
+Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenheiro Frontend', e contém uma página inicial para acesso fácil aos diversos conteúdos dos exercícios dos módulos do curso.
 
 <hr>
 
@@ -56,6 +67,12 @@
 ## Notas de versão
 
 </a>
+
+### v1.9.0-230310
+
+- Atualização da documentação
+- Criação de workflow para geração automática de tag e release
+- Conteúdo do exercício do Módulo 26
 
 ### v1.8.0-230304
 

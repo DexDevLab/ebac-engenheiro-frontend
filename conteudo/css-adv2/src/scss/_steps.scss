@@ -1,0 +1,32 @@
+#feats {
+  background: $font-color-primary;
+}
+
+.steps {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__item {
+    margin: 1rem;
+    width: calc(80% / 5 - 1rem);
+    text-align: center;
+    @media (max-width: 800px) {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    img {
+      width: 100px;
+    }
+    span {
+      color: $color-secondary;
+    }
+  }
+}

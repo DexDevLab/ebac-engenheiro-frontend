@@ -1,0 +1,47 @@
+# AUTO TAG BASED ON PUSH TO A BRANCH. AUTO RELEASE BASED ON A NON-BETA/TEST TAG.
+# REQUIRES PACKAGE.JSON WITH "version" PROPERTY UNDER SEMANTIC VERSIONING. ADDING
+# "-beta" SUFFIX IN THE VERSION IN "version" PROPERTY DEFINES A BETA/TEST TAG.
+# FOR ALTERNATIVES TO THIS IMPLEMENTATION, CHECK 'create_tag_and_release' FOLDER.
+
+name: Generating Tag and Release
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  SUFFIX: -beta
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "✅ Checkout code"
+        uses: actions/checkout@master
+
+      - name: "📦 Extracting version from package.json"
+        id: get-package-version
+        uses: jaywcjlove/github-action-package@main
+
+      - name: "📜 Printing package version"
+        run: echo ${{ steps.get-package-version.outputs.version }}
+
+      - name: "🏷️ Gathering tag name removing timestamp"
+        if: "!contains(steps.get-package-version.outputs.version, env.SUFFIX)"
+        id: get-ver
+        run: |
+          ver=$(echo ${{ steps.get-package-version.outputs.version }} | cut -d- -f1)
+          echo "::set-output name=ver::$ver"
+
+      - name: "📜 Printing tag and release version"
+        if: "!contains(steps.get-package-version.outputs.version, env.SUFFIX)"
+        run: echo "${{ steps.get-ver.outputs.ver }}"
+
+      - name: "⚙️ Generating Tag and Release"
+        if: "!contains(steps.get-package-version.outputs.version, env.SUFFIX)"
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          automatic_release_tag: "${{ steps.get-ver.outputs.ver }}"
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false

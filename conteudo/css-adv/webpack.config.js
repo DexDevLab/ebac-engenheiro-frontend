@@ -2,14 +2,19 @@ const path = require("path");
 const HtmlWebpack = require("html-webpack-plugin");
 const MiniCssExtract = require("mini-css-extract-plugin");
 const HtmlWebpackLiveReload = require("html-webpack-live-reload-plugin");
+
+const mode = process.env.NODE_ENV || "development";
+const target = process.env.NODE_ENV === "production" ? "browserslist" : "web";
 // const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 // const CompressionPlugin = require("compression-webpack-plugin");
 // const zopfli = require("@gfx/zopfli");
 
 module.exports = {
-  entry: "./src/js/index.js",
+  mode: mode,
+  // entry: ["./src/js/index.js", "./src/js/index2.js"],
+  entry: ["./src/js/index.js"],
   output: {
-    filename: "bundle.js",
+    filename: "js/bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
@@ -17,6 +22,9 @@ module.exports = {
       {
         test: /\.(sa|c|sc)ss$/i,
         use: [MiniCssExtract.loader, "css-loader", "sass-loader"],
+        generator: {
+          filename: "css/[name][ext]",
+        },
       },
       //   {
       //     test: /\.css$/i,
@@ -35,7 +43,7 @@ module.exports = {
         test: /\.(jpeg|jpg|png|svg|gif)$/i,
         type: "asset/resource",
         generator: {
-          filename: "./assets/[name].[ext]",
+          filename: "./assets/[name][ext]",
         },
       },
       // {
@@ -63,12 +71,16 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpack({
-      filename: "index.html",
-      template: "./src/index.html",
+      filename: "pages/index.html",
+      template: "./src/pages/index.html",
     }),
-    new HtmlWebpackLiveReload(),
+    // new HtmlWebpack({
+    //   filename: "index2.html",
+    //   template: "./src/pages/index2.html",
+    // }),
+    new HtmlWebpackLiveReload({ template: "src/pages/index.html" }),
     new MiniCssExtract({
-      filename: "styles.css",
+      filename: "css/main.css",
     }),
     // new CompressionPlugin({
     //   compressionOptions: {
@@ -79,4 +91,10 @@ module.exports = {
     //   },
     // }),
   ],
+  target: target,
+  devtool: "source-map",
+  devServer: {
+    liveReload: true,
+    watchFiles: ["src/**"],
+  },
 };

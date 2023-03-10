@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+
 $color1: #058fb2;
 $color2: #f9ae33;
 $color3: #47c7eb;
@@ -11,6 +15,8 @@ $font-md: 15px;
 $font-lg: 22px;
 $font-xl: 40px;
 $font-default: Arial, Helvetica, sans-serif;
+$font-logo: 'Josefin Sans', sans-serif;
+$font1: 'Golos Text', sans-serif;
 
 html {
   overflow-x: hidden;
@@ -21,26 +27,33 @@ html {
 
   body {
     background: linear-gradient(180deg, $color4 10%, $color5 100%);
+    margin: 0;
+    padding: 0;
+    display: unset;
+    font-family: $font1;
     img {
       width: 140px;
       height: 140px;
       object-fit: contain;
     }
-    margin: 0;
-    padding: 0;
-    display: unset;
-    font-family: $font-default;
 
     #root {
-      height: 150vh;
+      min-height: 150vh;
       margin: 0;
       padding: 0;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       @media (max-width: 1020px) {
-        height: 200vh;
+        min-height: 200vh;
       }
+      @media (max-height: 480px) {
+        min-height: 220vh;
+      }
+      @media (min-height: 1000px) {
+        min-height: 100vh;
+      }
+
       .container {
         &__nav {
           z-index: 1000;
@@ -63,6 +76,8 @@ html {
             h2 {
               padding: 0 10px;
               margin: auto;
+              font-family: $font-logo;
+              text-transform: uppercase;
             }
             nav {
               margin: auto;
@@ -82,6 +97,7 @@ html {
         text-align: center;
         margin-top: 4rem;
         font-size: $font-xl;
+        text-shadow: 5px 3px 2px #000000;
       }
 
       h2 {
@@ -89,20 +105,32 @@ html {
       }
 
       #sobre {
-        article {
-          margin: 25px auto;
-          width: 50%;
+        .container {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 10px;
+          width: 40%;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          @media (min-height: 800px) and (max-width: 768px) {
-            margin: 35px auto;
+          text-align: justify;
+          @media (max-width: 768px) {
+            width: 80%;
+            margin: 40px auto;
+          }
+          @media (min-width: 1020px) {
+            width: 70%;
+            margin: 50px auto;
           }
           @media (min-height: 800px) and (min-width: 1200px) {
-            margin: 20px auto;
+            margin: 30px auto;
           }
           @media (min-height: 900px) and (min-width: 1550px) {
+            width: 50%;
             margin: -20px auto;
+          }
+          @media (min-height: 1000px) {
+            margin: 40px auto;
           }
         }
       }
@@ -145,6 +173,7 @@ html {
             &__item:hover {
               background-color: $color5;
               transition: 0.6s;
+              box-shadow: rgb(0, 0, 0) 4px 10px 30px 00px;
             }
 
             &__produto {
@@ -155,6 +184,7 @@ html {
               justify-content: center;
               align-items: center;
               flex-direction: row;
+              text-shadow: 5px 3px 2px #000000;
             }
 
             &__image {
@@ -210,8 +240,9 @@ html {
           }
         }
       }
+
       #contato {
-        padding: 50px 0;
+        padding: 30px 0;
         .container {
           margin: 0 auto;
           width: 80%;
@@ -237,6 +268,7 @@ html {
               border-radius: 4px;
               border-color: $color1;
               margin: 0px 10px;
+              box-shadow: rgb(0, 0, 0) 4px 10px 30px 00px;
               @media (max-width: 768px) {
                 margin: 10px 10px;
               }
@@ -248,6 +280,7 @@ html {
               color: $color1;
               border-color: $color1;
               font-weight: bold;
+              box-shadow: rgb(0, 0, 0) 4px 10px 30px 00px;
               @media (max-width: 768px) {
                 margin: 10px auto;
                 width: 80px;
