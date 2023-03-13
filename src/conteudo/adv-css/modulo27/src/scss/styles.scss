@@ -1,0 +1,106 @@
+@import "fonts";
+@import "vars";
+@import "animations";
+@import "card";
+@import "header";
+@import "sobre";
+@import "comofunciona";
+@import "features";
+@import "footer";
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
+@import "nav";
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+b {
+  color: $color-secondary;
+  text-shadow: 1px 2px 8px $color-secondary;
+}
+
+body {
+  background-color: $color-primary;
+  font-family: $font-family2;
+  margin: 0;
+}
+
+h1 {
+  color: $font-color-primary;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+article {
+  width: 100%;
+  // @media (max-width: 1600px) {
+  //   width: 100%;
+  // }
+  h1 {
+    color: $color-secondary;
+    font-size: 3rem;
+    text-align: left;
+    text-shadow: 1px 2px 12px #ffffff;
+  }
+  p {
+    line-height: 25px;
+  }
+}
+
+.catalog {
+  width: 100%;
+  // h1 {
+  //   // @media (max-width: 1600px) {
+  //   //   width: fit-content;
+  //   //   margin: 40px auto;
+  //   //   text-align: center;
+  //   // }
+  //   // @media (max-width: 800px) {
+  //   //   width: fit-content;
+  //   //   margin: 40px auto;
+  //   //   text-align: center;
+  //   // }
+  // }
+}
+
+h2 {
+  color: $font-color-primary;
+  font-family: "freshman", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 4rem;
+  text-shadow: 1px 2px 8px #ffffff;
+}
+
+#root,
+header,
+section,
+footer {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+section {
+  padding: 4rem 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  max-width: 90vw;
+  // @media (max-width: 600px){
+  //   margin: 0;
+  //   width: 100%;
+  //   max-width: 100vw;
+  // }
+}
+
+@import "responsive";

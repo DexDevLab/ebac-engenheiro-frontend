@@ -1,0 +1,30 @@
+
+#sobre {
+    background-color: none;
+    .container {
+        background-color: rgba(0, 0, 0, .1);
+        border-radius: .5rem;
+        margin: 2rem auto;
+        padding: 0 2rem 2rem;
+        @media (max-width: 600px){
+            width: 80%;
+          }
+    }
+
+    article {
+
+        h1{
+            @media (max-width: 600px){
+                text-align:center;
+               }
+        }
+        
+        p {
+            font-size: $font-size-default;
+            color: $font-color-primary;
+            @media (max-width: 600px){
+               text-align: justify;
+              }
+        }
+    }
+}

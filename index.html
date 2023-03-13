@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="shortcut icon"
+      href="./src/assets/images/brand.svg"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
       type="text/css"
-      href="./libs/bootstrap/css/bootstrap.min.css"
+      href="./src/libs/bootstrap/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="./css/custom.css" />
-    <script src="./libs/jquery/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="./src/libs/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/custom.css" />
+    <script src="./src/libs/jquery/jquery-3.6.3.min.js"></script>
+    <script src="./src/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./src/libs/particles.js/particles.js"></script>
     <title>EBAC - Profissão: Engenheiro Frontend</title>
   </head>
   <body>
+    <div id="particles-js"></div>
     <header>
       <div class="container" id="header-container">
         <div class="row" id="header-container">
@@ -29,12 +38,27 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- <a class="navbar-brand" href="index.html">Logo</a> -->
-            <div class="navbar-collapse collapse" id="navbar">
-              <ul class="nav navbar-nav mx-auto" id="navbar-content">
-                <li class="nav-item">
-                  <a class="nav-link" href="#section-sobre">Home</a>
-                </li>
+            <a class="navbar-brand" href="#section-sobre"
+              ><img
+                class="img-fluid"
+                src="./src/assets/images/brand.svg"
+                id="img-brandicon"
+                alt="Brand"
+            /></a>
+            <div
+              class="navbar-collapse collapse justify-content-around"
+              id="navbar"
+            >
+              <ul class="nav navbar-nav" id="navbar-content">
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#section-sobre"
+                    ><img
+                      class="img-fluid"
+                      src="./images/brand.svg"
+                      id="img-brandicon"
+                      alt="Brand"
+                  /></a>
+                </li> -->
                 <!--
                 <li class="nav-item">
                   <a class="nav-link" href="#modulo-html">HTML+CSS</a>
@@ -71,6 +95,25 @@
                 </ul>
               </li> -->
               </ul>
+              <form class="d-flex" id="form-container" role="search">
+                <div id="searchBar-container">
+                  <input
+                    id="form-search"
+                    class="form-control me-2 border-0 shadow-none"
+                    type="search"
+                    placeholder="Tente 'Bootstrap' ou 'SASS'"
+                    aria-label="Search"
+                  />
+                  <div id="searchIcon">
+                    <img
+                      class="img-fluid"
+                      src="./src/assets/images/search1.svg"
+                      id="img-searchicon"
+                      alt="SearchIcon"
+                    />
+                  </div>
+                </div>
+              </form>
             </div>
           </nav>
         </div>
@@ -98,7 +141,7 @@
                   <div class="d-flex flex-md-row" id="button-img-container">
                     <img
                       class="img-fluid"
-                      src="./images/github2.svg"
+                      src="./src/assets/images/github2.svg"
                       id="img-githubicon"
                       alt="GithubLogo"
                     />
@@ -112,7 +155,7 @@
             <img
               class="img-fluid"
               id="img-main"
-              src="./images/code.jpeg"
+              src="./src/assets/images/code.jpeg"
               alt="ITCoding"
             />
           </div>
@@ -125,8 +168,7 @@
         <div class="col" id="section-modulo-container"></div>
       </div>
     </section>
-
-    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./src/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/js/script.js"></script>
   </body>
 </html>

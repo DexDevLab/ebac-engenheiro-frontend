@@ -25,7 +25,7 @@
 <a href=""><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="Contributors"></a>
 
 <a href=""><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.9.1-140126?style=plastic" height="22" alt="Version"/></a>
+<a href=""><img src="https://img.shields.io/badge/version-2.0.0-140126?style=plastic" height="22" alt="Version"/></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="22" alt="License"/></a>
 
 || [Conteúdo](#section-conteudo) || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -67,6 +67,15 @@ Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenhe
 ## Notas de versão
 
 </a>
+
+### v2.0.0-230312
+
+- Ajuste de responsividade no conteúdo do Módulo 26
+- Atualização do JQueryUI para melhoria de segurança
+- Conteúdo do exercício do Módulo 27
+- Alteração da estrutura de pastas e disposição dos módulos
+- Alteração do layout do Portal de Exercícios
+- Correção de CSS e disposição de layout de exercícios de módulos anteriores
 
 ### v1.9.1-230310
 

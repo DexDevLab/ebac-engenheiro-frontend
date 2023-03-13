@@ -1,0 +1,35 @@
+
+header .container {
+
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .logo {
+        margin: 0;
+        @media (max-width: 668px) {
+          margin: 0 auto;
+        }
+        img {
+          max-width: 220px;
+        }
+      }
+
+    .hero {
+        align-items: flex-end;
+        background-image: url('../assets/images/cloud3.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 55rem;
+        display: flex;
+        padding-bottom: 2rem;
+        width: 100%;
+
+        h1 {
+            padding: 0.5rem 0 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+}
