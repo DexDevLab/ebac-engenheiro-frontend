@@ -233,5 +233,24 @@ export const banners = () => {
       ],
       bannerImg: "./src/assets/images/css.jpg",
     },
+    {
+      menu: "JavaScript",
+      id: "modulo-advjs",
+      bannerTitle: "Advanced JavaScript",
+      bannerDesc: "Estudo e aplicação de conceitos avançados de JavaScript",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 28 - Exercício Classes",
+          buttonUrl: "./src/conteudo/adv-js/modulo28/classes.html",
+          download: "",
+        },
+        {
+          buttonName: "Módulo 28 - Exercício Funções",
+          buttonUrl: "./src/conteudo/adv-js/modulo28/funcoes.html",
+          download: "",
+        },
+      ],
+      bannerImg: "./src/assets/images/javascript.png",
+    },
   ];
 };
