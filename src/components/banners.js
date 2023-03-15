@@ -249,6 +249,11 @@ export const banners = () => {
           buttonUrl: "./src/conteudo/adv-js/modulo28/funcoes.html",
           download: "",
         },
+        {
+          buttonName: "Módulo 29",
+          buttonUrl: "./src/conteudo/adv-js/modulo29/dist/index.html",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/javascript.png",
     },

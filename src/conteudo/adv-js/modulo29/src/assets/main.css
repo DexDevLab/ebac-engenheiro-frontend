@@ -1,0 +1,65 @@
+@import './base.css';
+
+body {
+  display: flex;
+  place-items: center;
+  color: white;
+  background-size: 500% 500%;
+  background-image: linear-gradient(
+    145deg,
+    rgba(153, 153, 153, 1) 0%,
+    rgba(5, 170, 74, 1) 25%,
+    rgba(1, 109, 28, 1) 50%,
+    rgba(2, 49, 20, 1) 85%
+  );
+  animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  justify-content: center;
+  align-items: center;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: #00bd7e;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* body {
+    display: flex;
+    place-items: center;
+  } */
+
+  /* #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  } */
+}
