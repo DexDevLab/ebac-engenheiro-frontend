@@ -230,6 +230,11 @@ export const banners = () => {
           buttonUrl: "./src/conteudo/adv-css/modulo27/dist/pages/index.html",
           download: "",
         },
+        {
+          buttonName: "Módulo 30 - CSS Media Management",
+          buttonUrl: "./src/conteudo/adv-css/modulo30/dist/pages/index.html",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/css.jpg",
     },
