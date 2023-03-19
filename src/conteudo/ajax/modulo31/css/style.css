@@ -1,0 +1,139 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 75%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: darkblue;
+  width: fit-content;
+}
+
+h2 {
+  font-size: 20px;
+  width: fit-content;
+}
+
+h3 {
+  font-size: 15px;
+  width: fit-content;
+}
+
+p {
+  font-size: 1.6rem;
+  display: block;
+}
+
+#error {
+  color: red;
+}
+
+header {
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.container {
+  /* max-width: 1100px;
+      margin: 0 auto;
+      display: block; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+section {
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 30px auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+section:hover {
+  opacity: 0.9;
+  transition: 0.8s;
+}
+
+#section-github {
+  gap: 20px;
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+#username {
+  width: 34%;
+  font-size: 12px;
+  font-style: italic;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+#section-cats {
+  gap: 20px;
+  background-color: rgba(0, 87, 128, 0.5);
+}
+
+#btn-cat {
+  width: 70px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.container-children {
+  width: 100%;
+}
+
+#catdesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#catdesc img {
+  border-radius: 10px;
+  width: 300px;
+  align-self: center;
+}
+
+#cat-label {
+  padding-top: 10px;
+  font-weight: bold;
+  width: fit-content;
+  align-self: center;
+}
+
+.container-label {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-items: center;
+  width: 37%;
+  justify-content: space-between;
+}
+
+.container-label h3 {
+  margin: auto 0;
+}

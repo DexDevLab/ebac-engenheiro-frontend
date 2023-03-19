@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulário</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+<div class="container">
+    <form action="" id="form">
+        <div class="input-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="not-null" placeholder="Nome" id="nome" name="nome">
+        </div>
+        <div class="input-group">
+            <label for="email">E-mail</label>
+            <input type="text"  class="not-null" placeholder="E-mail" id="email" name="email">
+        </div>
+        <div class="input-group">
+            <label for="CPF">CPF</label>
+            <input type="text"  class="not-null" placeholder="CPF" id="cpf" name="cpf">
+        </div>
+        <div class="input-group">
+            <label for="CEP">CEP</label>
+            <input type="text"  class="not-null" placeholder="CEP" id="cep" name="cep">
+        </div>
+
+         <div class="address">
+            <div class="input-group">
+                <label for="rua">Rua</label>
+                <input type="text" id="rua" size="50">
+            </div>
+            <div class="input-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" size="30">
+            </div>
+            <div class="input-group">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" size="30">
+            </div>
+            <div class="input-group">
+                <label for="uf">UF</label>
+                <input type="text" id="uf" size="2">
+            </div>
+        </div>
+        <div class="input-group">
+            <button>Cadastrar</button>
+        </div>
+    </form>
+    <div id="mensagem"> </div>
+</div>
+<script src="./js/form.js"></script>
+</body>
+</html>
