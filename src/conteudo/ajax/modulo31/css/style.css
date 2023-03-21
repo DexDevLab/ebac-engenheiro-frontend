@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -78,7 +78,7 @@ section:hover {
 
 #section-github {
   gap: 20px;
-  background-color: rgba(0, 128, 0, 0.5);
+  background-color: rgba(128, 0, 0, 0.5);
 }
 
 #username {
@@ -92,7 +92,7 @@ section:hover {
 
 #section-cats {
   gap: 20px;
-  background-color: rgba(0, 87, 128, 0.5);
+  background-color: rgba(11, 128, 0, 0.5);
 }
 
 #btn-cat {
@@ -136,4 +136,57 @@ section:hover {
 
 .container-label h3 {
   margin: auto 0;
+}
+
+#section-form {
+  height: 100%;
+  gap: 20px;
+  background-color: rgba(0, 87, 128, 0.5);
+}
+
+#form {
+  padding-top: 20px;
+  height: 280px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 100%;
+}
+
+#form input {
+  font-size: 12px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+#form label {
+  font-size: 12px;
+  padding: 1rem;
+  align-self: center;
+  width: 70px;
+}
+
+#form button {
+  font-size: 12px;
+  padding: 1rem;
+  align-self: center;
+  width: 80px;
+  border-radius: 10px;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  width: 100%;
+  height: 30px;
+}
+
+#cep {
+  width: 80px;
 }
