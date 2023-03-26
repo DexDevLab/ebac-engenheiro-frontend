@@ -262,5 +262,20 @@ export const banners = () => {
       ],
       bannerImg: "./src/assets/images/javascript.png",
     },
+    {
+      menu: "Arquitetura",
+      id: "modulo-ajax",
+      bannerTitle: "Ajax",
+      bannerDesc:
+        "Asynchronous JavaScript and XML",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 31",
+          buttonUrl: "./src/conteudo/ajax/modulo31/index.html",
+          download: "",
+        },
+      ],
+      bannerImg: "./src/assets/images/ajax.png",
+    },
   ];
 };

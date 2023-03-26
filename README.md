@@ -26,7 +26,7 @@
 <a href=""><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="Contributors"></a>
 
 <a href=""><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-2.3.2-140126?style=plastic" height="22" alt="Version"/></a>
+<a href=""><img src="https://img.shields.io/badge/version-2.4.0-140126?style=plastic" height="22" alt="Version"/></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="22" alt="License"/></a>
 
 || [Conteúdo](#section-conteudo) || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -70,9 +70,9 @@ Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenhe
 
 </a>
 
-### v2.3.2-230321
+### v2.4.0-230325
 
-- Elaboração parcial do exercício do Módulo 31
+- Conteúdo do exercício do Módulo 31
 
 ### v2.3.1-230319
 

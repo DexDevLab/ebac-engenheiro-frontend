@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,14 +9,10 @@
   </head>
   <header>
     <h1>Módulo 31 - AJAX</h1>
+    <h2>Asynchronous JavaScript and XML</h2>
   </header>
   <body>
     <div class="container">
-      <!-- <section>
-            <h1>Posts</h1>
-            <div id="posts"></div>
-            <a class="button" id="loadPost">Carregar mais posts</a>
-        </section> -->
       <section id="section-github">
         <h1 id="header-name">Olá!</h1>
         <h2 id="header-bio"></h2>
@@ -29,27 +25,35 @@
         <div id="api-github-get"></div>
       </section>
       <section id="section-cats">
-        <h1>Get a cat</h1>
+        <h1>HTTP Cat</h1>
         <div class="container-label">
-          <h3>Clique no botão e receba seu gato</h3>
-          <button id="btn-cat">Get a cat</button>
+          <h3>Digite um código HTTP:</h3>
+          <input
+            type="text"
+            placeholder="100"
+            id="input-cat"
+            autocomplete="off"
+          />
         </div>
         <div class="container-children">
           <div id="catdesc">
-            <p id="cat-label"></p>
+            <!-- <p id="cat-label"></p> -->
           </div>
         </div>
       </section>
       <section id="section-form">
         <h1>Teste Método Post</h1>
-        <h3>Envia o formulário para HTTPBIN.ORG</h3>
+        <h3>
+          Envia o formulário para
+          <a href="https://httpbin.org" target="_blank">HTTPBIN.ORG</a>
+        </h3>
         <form action="" id="form">
           <div class="input-group">
             <label for="nome">Nome</label>
             <input
               type="text"
               class="not-null"
-              placeholder="Nome"
+              placeholder="João da Silva"
               id="nome"
               name="nome"
             />
@@ -58,7 +62,7 @@
             <label for="email">E-mail</label>
             <input
               type="text"
-              placeholder="E-mail"
+              placeholder="email@provedor.com"
               id="email"
               name="email"
             />
@@ -68,22 +72,15 @@
             <input
               type="text"
               class="not-null"
-              placeholder="CPF"
+              placeholder="012.345.678-90"
               id="cpf"
               name="cpf"
             />
           </div>
           <div class="input-group">
             <label for="CEP">CEP</label>
-            <input
-              type="text"
-              placeholder="CEP"
-              id="cep"
-              name="cep"
-            />
+            <input type="text" placeholder="00000-000" id="cep" name="cep" />
           </div>
-
-          <!-- <div class="address"> -->
           <div class="input-group">
             <label for="rua">Rua</label>
             <input type="text" id="rua" size="50" />
@@ -98,17 +95,13 @@
           </div>
           <div class="input-group">
             <label for="uf">UF</label>
-            <input type="text" id="uf" size="2" />
-          </div>
-          <div class="input-group">
-            <button>Cadastrar</button>
+            <input type="text" id="uf" size="1" />
           </div>
         </form>
+        <button id="form-button">Cadastrar</button>
         <div id="mensagem"></div>
       </section>
     </div>
     <script src="./js/script.js"></script>
-    <script src="./js/form.js"></script>
-    <!-- <script src="./js/posts.js"></script> -->
   </body>
 </html>
