@@ -1,4 +1,5 @@
-const apiCors = "https://dex-nextjs-proxy-cors.vercel.app/api?url=";
+const apiCors = "https://dex-nextjs-proxy-cors.vercel.app/api/cors?url=";
+// const apiCors = "http://localhost:3000/api/cors?url=";
 const apiGithub = "https://api.github.com/users";
 const apiCat = "https://http.cat";
 const apiDocs = "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status";
@@ -85,21 +86,11 @@ function getGithub(user) {
 function getCat(httpCode) {
   fetch(`${apiCors}${apiCat}/${httpCode}`, {
     method: "GET",
-    headers: {
-      "Content-Type": "image/jpeg",
-    },
   })
     .then((response) => {
       if (response.status === 200) {
-        if (/\d/.test(Number(httpCode))) {
-          changeValue(catDesc, `<p id="cat-label">Carregando seu gato...</p>`);
-          return response.blob();
-        } else {
-          const err = new Error();
-          err.status = 999;
-          err.message = response.message;
-          throw err;
-        }
+        changeValue(catDesc, `<p id="cat-label">Carregando seu gato...</p>`);
+        return response.blob();
       } else {
         const err = new Error();
         err.status = response.status;
@@ -109,22 +100,36 @@ function getCat(httpCode) {
     })
     .then((blob) => {
       const imageObjectURL = URL.createObjectURL(blob);
-      lastCat = httpCode;
-      changeValue(
-        catDesc,
-        `<a href='${apiDocs}/${
-          httpCode > 0 ? httpCode : ""
-        }' target="_blank"><img src='${imageObjectURL}'></img></a>`
+      // lastCat = httpCode;
+      changeValue(catDesc, ``);
+      setTimeout(
+        changeValue(
+          catDesc,
+          `<a href='${apiDocs}/${
+            httpCode > 0 ? httpCode : ""
+          }' target="_blank"><img src='${imageObjectURL}'></img></a>`
+        ),
+        500
       );
     })
     .catch((error) => {
-      console.log(error);
+      // console.log(error);
       switch (error.status) {
         case 404: {
-          lastCat = httpCode;
+          console.log(error.status);
+          // lastCat = httpCode;
           changeValue(
             catDesc,
             `<p id="error-2">Nenhum gato encontrado! Tente novamente...</p>`
+          );
+          break;
+        }
+        case 429: {
+          console.log(error.status);
+          // lastCat = httpCode;
+          changeValue(
+            catDesc,
+            `<p id="error-2">Você excedeu o limite de requisições. Por favor aguarde uns instantes e tente novamente.</p>`
           );
           break;
         }
@@ -225,8 +230,13 @@ function submitForm(formData) {
       }
     })
     .then((data) => {
-      const rawData = JSON.parse(JSON.stringify(data, null, 2).replaceAll('\\"', "'"));
-      const output = JSON.stringify({...rawData}, null, 2).replaceAll('\\"', "'");
+      const rawData = JSON.parse(
+        JSON.stringify(data, null, 2).replaceAll('\\"', "'")
+      );
+      const output = JSON.stringify({ ...rawData }, null, 2).replaceAll(
+        '\\"',
+        "'"
+      );
       changeValue(
         mensagem,
         `<p id='cep-label'>O Método POST funcionou perfeitamente! Seguem os dados da resposta HTTP:<pre><i>output.json<br></i>${output}</pre></p>`
@@ -242,7 +252,7 @@ function submitForm(formData) {
           );
           break;
         }
-        case 403: {
+        case 429: {
           changeValue(
             mensagem,
             `<p id='error-2'>Você excedeu o limite de requisições. Por favor aguarde uns instantes e tente novamente.</p>`
@@ -296,7 +306,6 @@ function resetGitHubInfo(textFieldContent) {
   changeValue(textField, textFieldContent);
 }
 
-
 userInput.addEventListener("mouseenter", function (event) {
   document.getElementById("username").focus();
 });
@@ -310,13 +319,18 @@ catInput.addEventListener("mouseenter", function (event) {
 });
 
 catInput.addEventListener("input", function (event) {
-  if (event.target.value.toString().length > 0) {
-    if (event.target.value != lastCat) {
-      changeValue(catDesc, `<p id="cat-label">Aguarde...</p>`);
-      getCat(event.target.value);
-    }
+  if (/[0-9]{3}/.test(event.target.value)) {
+    changeValue(catDesc, `<p id="cat-label">Carregando seu gato...</p>`);
+    getCat(event.target.value);
   } else {
-    changeValue(catDesc, ``);
+    if (event.target.value.toString().length === 0) {
+      changeValue(catDesc, ``);
+    } else {
+      changeValue(
+        catDesc,
+        `<p id="cat-label">Apenas números de 3 dígitos são aceitos.</p>`
+      );
+    }
   }
 });
 
