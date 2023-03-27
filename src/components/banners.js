@@ -265,13 +265,17 @@ export const banners = () => {
     {
       menu: "Arquitetura",
       id: "modulo-ajax",
-      bannerTitle: "Ajax",
-      bannerDesc:
-        "Asynchronous JavaScript and XML",
+      bannerTitle: "AJAX",
+      bannerDesc: "Asynchronous JavaScript and XML",
       bannerButtons: [
         {
           buttonName: "Módulo 31",
           buttonUrl: "./src/conteudo/ajax/modulo31/index.html",
+          download: "",
+        },
+        {
+          buttonName: "Módulo 32",
+          buttonUrl: "./src/conteudo/ajax/modulo32/index.html",
           download: "",
         },
       ],

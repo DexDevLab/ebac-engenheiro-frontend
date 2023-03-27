@@ -1,6 +1,4 @@
-particlesJS.load("particles-js", "src/assets/particles.json", function () {
-  console.log("callback - particles.js config loaded");
-});
+particlesJS.load("particles-js", "src/assets/particles.json", function () {});
 
 jQuery(async function ($) {
   const moduleBanners = await import("../../components/banners.js");
@@ -123,7 +121,7 @@ jQuery(async function ($) {
       source: availableTags,
       position: {
         my: "left+0 top+9",
-        mx: "left+0, right-10"
+        mx: "left+0, right-10",
       },
       focus: function (event, ui) {
         $("#form-search").val(ui.item?.label);
