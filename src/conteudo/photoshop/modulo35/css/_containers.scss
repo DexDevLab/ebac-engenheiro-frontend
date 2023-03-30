@@ -1,0 +1,39 @@
+.main {
+  width: $width-full;
+  background: $background-color-01;
+  background: $color-gradient-01;
+}
+
+.secondary {
+  width: $width-full;
+  background: $background-color-02;
+  background: $color-gradient-02;
+}
+
+.container {
+  background-color: $color-03;
+  width: $width-default;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin: 25px auto; */
+  padding: $padding-01;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color-08;
+  width: $width-default-02;
+  height: $height-default;
+}
+
+.content-img__3 {
+  padding-top: 6px;
+  height: auto;
+  width: $width-image-02;
+  background-repeat: no-repeat;
+  background-size: auto;
+  content: $img-url-02;
+}

@@ -1,3 +1,5 @@
+<img src="./src/assets/images/print.jpg" alt="Print">
+
 <h1 align="center">EBAC - Profissão: Engenheiro Frontend</h1>
 <p align=center><i align="center">Repositório contendo o conteúdo relevante das aulas do curso "Profissão: Engenheiro Front-End" da Instituição EBAC - Escola Britânica de Artes Criativas e Tecnologia</i></p>
 
@@ -26,7 +28,7 @@
 <a href=""><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="Contributors"></a>
 
 <a href=""><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend?style=plastic" height="22" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-2.5.0-140126?style=plastic" height="22" alt="Version"/></a>
+<a href=""><img src="https://img.shields.io/badge/version-2.6.0-140126?style=plastic" height="22" alt="Version"/></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend?&style=plastic" height="22" alt="License"/></a>
 
 || [Conteúdo](#section-conteudo) || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -71,6 +73,11 @@ Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenhe
 </a>
 
 <br>
+
+### v2.6.0-230329
+
+- Atualização da Documentação
+- Conteúdo do exercício do Módulo 35
 
 ### v2.5.0-230327
 

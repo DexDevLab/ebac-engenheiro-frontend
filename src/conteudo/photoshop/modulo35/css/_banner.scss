@@ -1,0 +1,49 @@
+.banner-img {
+  height: auto;
+  width: $width-image-01;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: $img-url-01;
+}
+
+.banner {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: $size-full;
+}
+
+.banner-container {
+  padding: $padding-01;
+  background-color: $color-04;
+  width: $size-full;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.banner-container-context {
+  height: $size-full;
+  width: $size-full;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-container-context h2,
+h4 {
+  color: $color-05;
+}
+
+.banner-container-context h2 {
+  padding-bottom: 5px;
+}
+
+.banner-container-carousel-arrow-right-sm {
+  border-radius: 2px;
+  padding: 4px 0px;
+  height: 10px;
+  width: 26px;
+  background-color: $color-10;
+}

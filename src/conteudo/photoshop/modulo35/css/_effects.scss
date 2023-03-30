@@ -1,0 +1,15 @@
+$color-gradient-01: linear-gradient(
+  0deg,
+  rgba(57, 57, 57, 1) 0%,
+  rgba(94, 94, 94, 1) 42%,
+  rgba(92, 92, 92, 1) 58%
+);
+
+$color-gradient-02: linear-gradient(
+  180deg,
+  rgb(187, 187, 187) 0%,
+  rgba(185, 185, 185, 1) 6%,
+  rgba(255, 255, 255, 1) 58%
+);
+
+$box-shadow-01: 10px 0px 5px -10px rgba(0, 0, 0, 0.75);

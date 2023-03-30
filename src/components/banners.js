@@ -281,5 +281,20 @@ export const banners = () => {
       ],
       bannerImg: "./src/assets/images/ajax.png",
     },
+    {
+      menu: "Marketing e Design",
+      id: "modulo-psd",
+      bannerTitle: "Adobe Photoshop for Frontend Development",
+      bannerDesc:
+        "Técnicas para manipular, criar, adaptar e aplicar mídias para sites e aplicações web",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 35",
+          buttonUrl: "./src/conteudo/photoshop/modulo35/index.html",
+          download: "",
+        },
+      ],
+      bannerImg: "./src/assets/images/photoshop.jpg",
+    },
   ];
 };

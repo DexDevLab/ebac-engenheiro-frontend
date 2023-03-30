@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: $color-01;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+header {
+  padding: 22px 28px 32px;
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  overflow: hidden;
+}
+
+footer {
+    width: $width-full;
+    background-color: $color-02;
+    position: fixed;
+    bottom: 0;
+  }

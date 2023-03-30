@@ -1,0 +1,56 @@
+.banner-container-carousel {
+    height: $size-full;
+    width: $size-full;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .banner-container-carousel-arrows {
+    height: fit-content;
+    width: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .banner-container-carousel-arrow-left {
+    border-radius: 2px;
+    padding: 4px 0px;
+    height: 20px;
+    width: 32px;
+    background-color: $color-06;
+  }
+  
+  .banner-container-carousel-arrow-right {
+    border-radius: 2px;
+    padding: 4px 0px;
+    height: 20px;
+    width: 32px;
+    background-color: $color-07;
+  }
+  
+  .banner-container-carousel-dots {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+  }
+  
+  .banner-container-carousel-dot {
+    height: 32px;
+    width: 18px;
+    fill: $color-06;
+    stroke: $color-06;
+  }
+  
+  .banner-container-carousel-dot__active {
+    height: 32px;
+    width: 18px;
+    fill: $color-07;
+    stroke: $color-07;
+  }

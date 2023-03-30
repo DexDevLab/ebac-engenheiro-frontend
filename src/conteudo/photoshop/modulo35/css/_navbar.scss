@@ -1,0 +1,49 @@
+.menu {
+  margin: auto 0;
+  margin-left: auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-item,
+.menu-item__active {
+  margin: auto calc(34px / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-item a,
+.menu-item__active a {
+  padding: 5px;
+  font-size: $font-size-01;
+  font-family: $font-family-01;
+  color: $color-04;
+  text-decoration: none;
+}
+
+.menu-item:hover a {
+  background-color: $color-04;
+  color: $color-03;
+}
+
+.menu-item__active a {
+  color: $color-01;
+}
+
+.menu-item__active .effect-underline__active {
+  background-color: $color-01;
+}
+
+.effect-underline,
+.effect-underline__active {
+  height: 3px;
+  margin: 0 auto;
+  width: $size-full;
+  background-color: transparent;
+}

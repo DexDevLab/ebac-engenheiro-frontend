@@ -1,0 +1,28 @@
+
+.btn-saiba-mais {
+    padding-left: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $color-06;
+    width: fit-content;
+    border: 1px $color-10 solid;
+  }
+  
+  .btn-saiba-mais:hover h6 {
+    color: $color-09;
+  }
+  
+  .btn-saiba-mais:hover .banner-container-carousel-arrow-right-sm {
+    background-color: $color-04;
+  }
+  
+  .btn-saiba-mais h6 {
+    text-align: center;
+    font-weight: bold;
+    line-height: $font-size-01;
+    font-size: $font-size-01;
+    padding-top: 3px;
+    padding-right: 10px;
+    color: $color-04;
+  }
