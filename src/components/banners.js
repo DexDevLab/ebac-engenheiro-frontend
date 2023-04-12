@@ -296,5 +296,34 @@ export const banners = () => {
       ],
       bannerImg: "./src/assets/images/photoshop.jpg",
     },
+    {
+      menu: "Marketing e Design",
+      id: "modulo-mui",
+      bannerTitle: "Style Guide",
+      bannerDesc:
+        "Padrões e especificações de estilo de design definidos por frameworks",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 37 - Material UI",
+          buttonUrl: "https://github.com/DexDevLab/ebac-engenheiro-frontend",
+          download: "",
+        },
+      ],
+      bannerImg: "./src/assets/images/mui.jpg",
+    },
+    {
+      menu: "Project Management",
+      id: "modulo-build",
+      bannerTitle: "Build and Delivery",
+      bannerDesc: "Conceitos de implementação de aplicações em ambientes reais",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 38 - Rotina de Dev e testes",
+          buttonUrl: "https://github.com/DexDevLab/ebac-mui-template",
+          download: "",
+        },
+      ],
+      bannerImg: "./src/assets/images/become-mobile-app-developer.jpg",
+    },
   ];
 };

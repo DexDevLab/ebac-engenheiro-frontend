@@ -11,7 +11,7 @@
     "jquery": "^3.6.3",
     "jquery-mask-plugin": "^1.14.16",
     "jquery-ui": "^1.13.2",
-    "sass": "^1.58.3"
+    "sass": "^1.59.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

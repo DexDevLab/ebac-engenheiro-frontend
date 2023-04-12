@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "css-loader": "^6.7.3",
-    "sass": "^1.58.3"
+    "sass": "^1.59.2"
   }
 }
