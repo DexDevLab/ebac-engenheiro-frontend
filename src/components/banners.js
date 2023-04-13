@@ -322,6 +322,11 @@ export const banners = () => {
           buttonUrl: "https://github.com/DexDevLab/ebac-mui-template",
           download: "",
         },
+        {
+          buttonName: "Módulo 39 - React + Github Pages",
+          buttonUrl: "https://github.com/DexDevLab/ebac-mui-template",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/become-mobile-app-developer.jpg",
     },
