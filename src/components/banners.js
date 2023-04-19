@@ -334,8 +334,7 @@ export const banners = () => {
       menu: "Bibliotecas e Frameworks",
       id: "modulo-webapi",
       bannerTitle: "Web API",
-      bannerDesc:
-        "Recursos de API avançados do HTML 5 e suas integrações",
+      bannerDesc: "Recursos de API avançados do HTML 5 e suas integrações",
       bannerButtons: [
         {
           buttonName: "Módulo 40",
@@ -344,6 +343,22 @@ export const banners = () => {
         },
       ],
       bannerImg: "./src/assets/images/api.jpg",
+    },
+    {
+      menu: "Project Management",
+      id: "modulo-engineering",
+      bannerTitle: "Software Engineering",
+      bannerDesc:
+        "Boas práticas para o gerencimento, implantação, manutenção e execução de projetos de sistemas, do planejamento a entrega",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 41 - UML e Requisitos",
+          buttonUrl:
+            "./src/conteudo/engineering/modulo41/modulo41 - Daniel Augusto Almeida.zip",
+          download: "download='modulo41 - Daniel Augusto Almeida.zip'",
+        },
+      ],
+      bannerImg: "./src/assets/images/uml.png",
     },
   ];
 };
