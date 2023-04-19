@@ -330,5 +330,20 @@ export const banners = () => {
       ],
       bannerImg: "./src/assets/images/become-mobile-app-developer.jpg",
     },
+    {
+      menu: "Bibliotecas e Frameworks",
+      id: "modulo-webapi",
+      bannerTitle: "Web API",
+      bannerDesc:
+        "Recursos de API avançados do HTML 5 e suas integrações",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 40",
+          buttonUrl: "./src/conteudo/browser-api/modulo40/index.html",
+          download: "",
+        },
+      ],
+      bannerImg: "./src/assets/images/api.jpg",
+    },
   ];
 };

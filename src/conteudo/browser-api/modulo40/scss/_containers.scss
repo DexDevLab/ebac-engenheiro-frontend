@@ -1,0 +1,266 @@
+#container1 {
+  width: 80%;
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    width: 40%;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+  }
+}
+
+#section-localizacao {
+  height: 1000px;
+  svg {
+    position: absolute;
+    z-index: -1;
+  }
+
+  #container2 {
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+
+    #localization-frame {
+      background: #e2e0e0;
+      box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.2);
+      width: 80%;
+      height: 30vh;
+
+      // Small devices (landscape phones, 576px and up)
+      @media (min-width: 576px) {
+        width: 60%;
+        height: 35vh;
+      }
+
+      // Medium devices (tablets, 768px and up)
+      @media (min-width: 768px) {
+        height: 40vh;
+      }
+
+      // Large devices (desktops, 992px and up)
+      @media (min-width: 992px) {
+        width: 100%;
+        height: 50vh;
+      }
+
+      // X-Large devices (large desktops, 1200px and up)
+      @media (min-width: 1200px) {
+      }
+
+      // XX-Large devices (larger desktops, 1400px and up)
+      @media (min-width: 1400px) {
+      }
+
+      iframe {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    #divider {
+      margin-top: 60px;
+      margin: 60px auto;
+      width: 25%;
+      height: 1px;
+      background-color: $color4;
+      border: 1px solid $color4;
+    }
+  }
+}
+
+#section-servicos {
+  //height: 1000px;
+
+  #servicos-circle {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+  }
+
+  #container2 {
+    margin-top: 100px;
+
+    #internal-text {
+      position: relative;
+      z-index: 0;
+      background-color: transparent;
+
+      @media (min-width: 768px) {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+
+    #services {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+
+      #service {
+        width: 350px;
+        margin: 8px;
+        height: 460px;
+        background: $color6;
+
+        #service-title {
+          width: 100%;
+          svg {
+            margin-top: 30px;
+            padding-left: 10px;
+            position: absolute;
+            z-index: 0;
+          }
+
+          h5 {
+            padding-top: 100px;
+            padding-left: 45px;
+            font-size: $font-size5;
+            color: $color5;
+            font-weight: bold;
+            position: absolute;
+            z-index: 1;
+          }
+        }
+
+        #service-text {
+          padding-left: 20px;
+          padding-right: 20px;
+
+          h5 {
+            color: $color5;
+            font-size: 1.1rem;
+          }
+
+          &__primary {
+            @extend #service-text;
+            padding-top: 70%;
+          }
+
+          &__secondary {
+            @extend #service-text;
+            padding-top: 10px;
+          }
+        }
+
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) {
+          //width: 60%;
+          //height: 35vh;
+        }
+
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) {
+          //height: 40vh;
+        }
+
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {
+          //width: 100%;
+          //height: 50vh;
+        }
+
+        // X-Large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {
+        }
+
+        // XX-Large devices (larger desktops, 1400px and up)
+        @media (min-width: 1400px) {
+        }
+      }
+    }
+  }
+}
+
+#section-segmentos {
+  margin-bottom: 60px;
+
+  #container2 {
+    margin-top: 100px;
+
+    #internal-text {
+      //position: relative;
+      //z-index: 0;
+      background-color: transparent;
+
+      @media (min-width: 768px) {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+
+    #segmentos {
+      //position: relative;
+      //z-index: 2;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 30px;
+
+      // X-Large devices (large desktops, 1200px and up)
+      @media (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      #segmento {
+        width: 80%;
+        margin: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        // X-Large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) {
+          margin: 8px;
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+
+#section-footer {
+  background: $color1;
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    h2 {
+      color: $color5;
+      @media (min-width: 576px) {
+        padding-left: 10vw;
+      }
+    }
+
+    h6 {
+      color: $color5;
+      font-size: $font-size1;
+      @media (min-width: 576px) {
+        padding-right: 10vw;
+      }
+    }
+  }
+}

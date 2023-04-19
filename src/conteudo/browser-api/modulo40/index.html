@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <script src="./assets/js/script.js"></script>
+    <title>LOGO</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg p-lg-5">
+      <div class="container-fluid mx-lg-5">
+        <div
+          class="d-flex align-content-center justify-content-center h-auto ms-lg-5"
+        >
+          <a class="navbar-brand m-0" href="#"><h2 class="m-0">-LOGO-</h2></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 align-content-end justify-content-end gap-3"
+          >
+            <li class="nav-item mx-lg-5">
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item mx-lg-5">
+              <a
+                class="nav-link"
+                aria-current="localizacao"
+                href="#section-localizacao"
+                >Localização</a
+              >
+            </li>
+            <li class="nav-item mx-lg-5">
+              <a
+                class="nav-link"
+                aria-current="servicos"
+                href="#section-servicos"
+                >Serviços</a
+              >
+            </li>
+            <li class="nav-item mx-lg-4">
+              <a
+                class="nav-link"
+                aria-current="segmentos"
+                href="#section-segmentos"
+                >Segmentos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="section-inicio">
+      <div
+        class="d-flex justify-content-center justify-content-lg-start flex-column flex-lg-row w-100"
+      >
+        <img
+          src="./assets/images/target2.png"
+          class="img-fluid"
+          id="img-target"
+          alt="..."
+        />
+        <div
+          class="d-flex justify-content-start align-content-start align-self-center flex-column mb-5 col-lg-4"
+          id="container1"
+        >
+          <div class="d-flex mb-5">
+            <h1 class="m-0 text-lg-start text-sm-center">
+              Transformação Digital
+            </h1>
+          </div>
+          <div class="d-flex mb-5">
+            <h3 class="m-0 text-lg-start text-sm-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab
+              optio illum repellendus vitae est distinctio veritatis.
+              Necessitatibus quod sunt quae enim magnam placeat error eligendi
+              quis, ad distinctio iste!
+            </h3>
+          </div>
+          <div class="d-flex">
+            <button
+              type="button"
+              id="btn-notif"
+              class="btn btn-outline-secondary p-3"
+              onclick="getNotifications()"
+            >
+              Ativar Notificações
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-localizacao">
+      <div
+        class="d-flex justify-content-center justify-content-lg-start flex-column w-100"
+      >
+        <svg
+          width="460"
+          height="673"
+          viewBox="0 0 471 673"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="170" cy="380" r="290" fill="#0074FF" fill-opacity="0.2" />
+        </svg>
+        <div
+          class="d-flex justify-content-start align-content-start align-self-center flex-column mb-5 col-lg-6"
+          id="container2"
+        >
+          <div class="d-flex mb-5">
+            <h2 class="m-0 text-center w-100">Localização</h2>
+          </div>
+          <div class="d-flex mb-5">
+            <h4 class="m-0 text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab
+              optio illum repellendus
+            </h4>
+          </div>
+          <div class="d-flex mx-auto" id="localization-frame">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  id="gmap_canvas"
+                  src=""
+                  name="map"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="#"></a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 100%;
+                    width: 100%;
+                  }
+                </style>
+                <a href="https://www.embedgooglemap.net"></a>
+                <style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 100%;
+                    width: 100%;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+          <div id="divider"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-servicos">
+      <div
+        class="d-flex justify-content-center justify-content-lg-start flex-column w-100"
+      >
+        <svg
+          id="servicos-circle"
+          width="800"
+          height="673"
+          viewBox="0 0 471 673"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="600"
+            cy="300"
+            r="290"
+            fill="none"
+            stroke="#0074FF33"
+            stroke-width="5"
+          />
+        </svg>
+        <div
+          class="d-flex justify-content-start align-content-start align-self-center flex-column mb-5 col-lg-11"
+          id="container2"
+        >
+          <div class="d-flex mb-5" id="internal-text">
+            <h2 class="m-0 text-center w-100">Serviços</h2>
+          </div>
+          <div class="d-flex mb-5" id="internal-text">
+            <h4 class="m-0 text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab
+              optio illum repellendus
+            </h4>
+          </div>
+          <div
+            class="d-flex mx-auto justify-content-between align-items-center flex-column flex-xl-row"
+            id="services"
+          >
+            <div class="d-flex flex-column" id="service">
+              <div id="service-title">
+                <svg
+                  width="150"
+                  height="150"
+                  preserveAspectRatio="none"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.1754 104.728C35.8234 104.728 28.3834 102.664 21.8554 98.536C15.3274 94.408 10.1914 88.456 6.44738 80.68C2.79938 72.808 0.975375 63.448 0.975375 52.6C0.975375 41.752 2.79938 32.44 6.44738 24.664C10.1914 16.792 15.3274 10.792 21.8554 6.664C28.3834 2.536 35.8234 0.471998 44.1754 0.471998C52.5274 0.471998 59.9674 2.536 66.4954 6.664C73.0234 10.792 78.1114 16.792 81.7594 24.664C85.5034 32.44 87.3754 41.752 87.3754 52.6C87.3754 63.448 85.5034 72.808 81.7594 80.68C78.1114 88.456 73.0234 94.408 66.4954 98.536C59.9674 102.664 52.5274 104.728 44.1754 104.728ZM44.1754 85C50.3194 85 55.1194 82.36 58.5754 77.08C62.1274 71.8 63.9034 63.64 63.9034 52.6C63.9034 41.56 62.1274 33.4 58.5754 28.12C55.1194 22.84 50.3194 20.2 44.1754 20.2C38.1274 20.2 33.3274 22.84 29.7754 28.12C26.3194 33.4 24.5914 41.56 24.5914 52.6C24.5914 63.64 26.3194 71.8 29.7754 77.08C33.3274 82.36 38.1274 85 44.1754 85ZM136.746 2.19999V103H113.418V20.92H93.258V2.19999H136.746Z"
+                    fill="#1A1A1A"
+                    fill-opacity="0.1"
+                  />
+                </svg>
+                <h5 class="m-0 text-center">UX Design</h5>
+              </div>
+              <div id="service-text__primary">
+                <h5>o Web Development</h5>
+                <h5>o SaaS Platform Development</h5>
+                <h5>o Full Stack Development</h5>
+              </div>
+              <div id="service-text__secondary">
+                <h5>
+                  We create innovative solutions to solve customer problems and
+                  giving you more control over product.
+                </h5>
+              </div>
+            </div>
+            <div class="d-flex flex-column" id="service">
+              <div id="service-title">
+                <svg
+                  width="180"
+                  height="150"
+                  preserveAspectRatio="none"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M43.9019 104.728C35.5499 104.728 28.1099 102.664 21.5819 98.536C15.0539 94.408 9.91794 88.456 6.17394 80.68C2.52594 72.808 0.701938 63.448 0.701938 52.6C0.701938 41.752 2.52594 32.44 6.17394 24.664C9.91794 16.792 15.0539 10.792 21.5819 6.664C28.1099 2.536 35.5499 0.471998 43.9019 0.471998C52.2539 0.471998 59.6939 2.536 66.2219 6.664C72.7499 10.792 77.8379 16.792 81.4859 24.664C85.2299 32.44 87.1019 41.752 87.1019 52.6C87.1019 63.448 85.2299 72.808 81.4859 80.68C77.8379 88.456 72.7499 94.408 66.2219 98.536C59.6939 102.664 52.2539 104.728 43.9019 104.728ZM43.9019 85C50.0459 85 54.8459 82.36 58.3019 77.08C61.8539 71.8 63.6299 63.64 63.6299 52.6C63.6299 41.56 61.8539 33.4 58.3019 28.12C54.8459 22.84 50.0459 20.2 43.9019 20.2C37.8539 20.2 33.0539 22.84 29.5019 28.12C26.0459 33.4 24.3179 41.56 24.3179 52.6C24.3179 63.64 26.0459 71.8 29.5019 77.08C33.0539 82.36 37.8539 85 43.9019 85ZM172.905 83.992V103H96.7286V87.88L135.609 51.16C139.737 47.224 142.521 43.864 143.961 41.08C145.401 38.2 146.121 35.368 146.121 32.584C146.121 28.552 144.729 25.48 141.945 23.368C139.257 21.16 135.273 20.056 129.993 20.056C125.577 20.056 121.593 20.92 118.041 22.648C114.489 24.28 111.513 26.776 109.113 30.136L92.1206 19.192C96.0566 13.336 101.481 8.776 108.393 5.51199C115.305 2.152 123.225 0.471998 132.153 0.471998C139.641 0.471998 146.169 1.72 151.737 4.21599C157.401 6.616 161.769 10.072 164.841 14.584C168.009 19 169.593 24.232 169.593 30.28C169.593 35.752 168.441 40.888 166.137 45.688C163.833 50.488 159.369 55.96 152.745 62.104L129.561 83.992H172.905Z"
+                    fill="#1A1A1A"
+                    fill-opacity="0.1"
+                  />
+                </svg>
+                <h5 class="m-0 text-center">Front-end</h5>
+              </div>
+              <div id="service-text__primary">
+                <h5>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </h5>
+              </div>
+              <div id="service-text__secondary">
+                <h5>
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 1500s,
+                </h5>
+              </div>
+            </div>
+            <div class="d-flex flex-column" id="service">
+              <div id="service-title">
+                <svg
+                  width="180"
+                  height="150"
+                  preserveAspectRatio="none"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44.0426 104.728C35.6906 104.728 28.2506 102.664 21.7226 98.536C15.1946 94.408 10.0586 88.456 6.31456 80.68C2.66656 72.808 0.842563 63.448 0.842563 52.6C0.842563 41.752 2.66656 32.44 6.31456 24.664C10.0586 16.792 15.1946 10.792 21.7226 6.664C28.2506 2.536 35.6906 0.471998 44.0426 0.471998C52.3946 0.471998 59.8346 2.536 66.3626 6.664C72.8906 10.792 77.9786 16.792 81.6266 24.664C85.3706 32.44 87.2426 41.752 87.2426 52.6C87.2426 63.448 85.3706 72.808 81.6266 80.68C77.9786 88.456 72.8906 94.408 66.3626 98.536C59.8346 102.664 52.3946 104.728 44.0426 104.728ZM44.0426 85C50.1866 85 54.9866 82.36 58.4426 77.08C61.9946 71.8 63.7706 63.64 63.7706 52.6C63.7706 41.56 61.9946 33.4 58.4426 28.12C54.9866 22.84 50.1866 20.2 44.0426 20.2C37.9946 20.2 33.1946 22.84 29.6426 28.12C26.1866 33.4 24.4586 41.56 24.4586 52.6C24.4586 63.64 26.1866 71.8 29.6426 77.08C33.1946 82.36 37.9946 85 44.0426 85ZM144.259 43.24C153.091 44.68 159.859 47.992 164.563 53.176C169.267 58.264 171.619 64.6 171.619 72.184C171.619 78.04 170.083 83.464 167.011 88.456C163.939 93.352 159.235 97.288 152.899 100.264C146.659 103.24 138.979 104.728 129.859 104.728C122.755 104.728 115.747 103.816 108.835 101.992C102.019 100.072 96.2107 97.384 91.4107 93.928L100.483 76.072C104.323 78.952 108.739 81.208 113.731 82.84C118.819 84.376 124.003 85.144 129.283 85.144C135.139 85.144 139.747 84.04 143.107 81.832C146.467 79.528 148.147 76.312 148.147 72.184C148.147 63.928 141.859 59.8 129.283 59.8H118.627V44.392L139.363 20.92H96.4507V2.19999H167.011V17.32L144.259 43.24Z"
+                    fill="#1A1A1A"
+                    fill-opacity="0.1"
+                  />
+                </svg>
+                <h5 class="m-0 text-center">Test</h5>
+              </div>
+              <div id="service-text__primary">
+                <h5>
+                  Designing success through creative web design for your
+                  business to be the best.
+                </h5>
+              </div>
+              <div id="service-text__secondary">
+                <h5>
+                  Improving customer engagement with enhanced user experience.
+                </h5>
+              </div>
+            </div>
+            <div class="d-flex flex-column" id="service">
+              <div id="service-title">
+                <svg
+                  width="180"
+                  height="150"
+                  preserveAspectRatio="none"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M43.3082 104.728C34.9562 104.728 27.5162 102.664 20.9882 98.536C14.4602 94.408 9.32419 88.456 5.58019 80.68C1.93219 72.808 0.108188 63.448 0.108188 52.6C0.108188 41.752 1.93219 32.44 5.58019 24.664C9.32419 16.792 14.4602 10.792 20.9882 6.664C27.5162 2.536 34.9562 0.471998 43.3082 0.471998C51.6602 0.471998 59.1002 2.536 65.6282 6.664C72.1562 10.792 77.2442 16.792 80.8922 24.664C84.6362 32.44 86.5082 41.752 86.5082 52.6C86.5082 63.448 84.6362 72.808 80.8922 80.68C77.2442 88.456 72.1562 94.408 65.6282 98.536C59.1002 102.664 51.6602 104.728 43.3082 104.728ZM43.3082 85C49.4522 85 54.2522 82.36 57.7082 77.08C61.2602 71.8 63.0362 63.64 63.0362 52.6C63.0362 41.56 61.2602 33.4 57.7082 28.12C54.2522 22.84 49.4522 20.2 43.3082 20.2C37.2602 20.2 32.4602 22.84 28.9082 28.12C25.4522 33.4 23.7242 41.56 23.7242 52.6C23.7242 63.64 25.4522 71.8 28.9082 77.08C32.4602 82.36 37.2602 85 43.3082 85ZM190.147 81.832H173.731V103H150.979V81.832H96.6906V66.136L144.211 2.19999H168.691L124.627 62.824H151.699V43.96H173.731V62.824H190.147V81.832Z"
+                    fill="#1A1A1A"
+                    fill-opacity="0.1"
+                  />
+                </svg>
+                <h5 class="m-0 text-center">Delivery</h5>
+              </div>
+              <div id="service-text__primary">
+                <h5>
+                  Develop your MVP with our experts who help create a solution
+                  that solves customer problems.
+                </h5>
+              </div>
+              <div id="service-text__secondary">
+                <h5>We fill in the technology gaps for you.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-segmentos">
+      <div
+        class="d-flex justify-content-center justify-content-lg-start flex-column w-100"
+      >
+        <div
+          class="d-flex justify-content-start align-content-start align-self-center flex-column mb-5 col-lg-11"
+          id="container2"
+        >
+          <div class="d-flex mb-5" id="internal-text">
+            <h2 class="m-0 text-center w-100">Segmentos</h2>
+          </div>
+          <div class="d-flex mb-5" id="internal-text">
+            <h4 class="m-0 text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab
+              optio illum repellendus
+            </h4>
+          </div>
+          <div class="mx-auto" id="segmentos">
+            <div class="d-flex flex-row" id="segmento">
+              <div class="me-1" id="segmento-img">
+                <svg
+                  width="58"
+                  height="80"
+                  viewBox="0 0 59 110"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.5759 78.4821C7.02253 78.4821 5.68775 78.4821 4.2832 78.4821C4.2832 71.6966 4.2832 65.0041 4.2832 58.186C6.88301 58.0651 9.09214 57.093 10.7943 54.9397C12.4733 56.9303 14.4964 58.1116 17.0357 58.093C19.5239 58.079 21.547 57.0186 23.2074 54.9351C24.8491 56.8372 26.8257 58.0837 29.365 58.0976C31.923 58.1116 33.9694 56.9954 35.6622 54.9397C37.3458 57.0186 39.5178 58.0697 42.1966 58.1767C42.1966 64.9343 42.1966 71.6268 42.1966 78.4356C35.253 78.4356 28.3744 78.4356 21.3191 78.4356C21.3191 75.3149 21.3191 72.2593 21.3191 69.2038C21.3191 67.7992 21.361 66.39 21.3052 64.9901C21.1936 62.1485 19.3658 60.3858 16.5195 60.3161C15.5335 60.2928 14.5429 60.3021 13.5523 60.3161C10.4269 60.3579 8.59916 62.1531 8.58056 65.2692C8.5573 69.6316 8.5759 73.9987 8.5759 78.4821ZM30.6626 73.0081C31.8579 73.0081 33.0578 73.0686 34.2484 72.9942C36.3831 72.8593 37.7551 71.5338 37.8528 69.4316C37.9365 67.562 37.9458 65.6831 37.8481 63.8181C37.7412 61.7997 36.3552 60.4184 34.3228 60.344C31.8811 60.2556 29.4302 60.2416 26.9931 60.3486C24.9328 60.437 23.5934 61.9624 23.5515 64.0507C23.519 65.7156 23.5329 67.3806 23.5469 69.041C23.5701 71.5013 24.9096 72.8919 27.3838 72.9988C28.4767 73.05 29.5697 73.0081 30.6626 73.0081Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M45.4754 48.6749C30.5742 48.6749 15.9241 48.6749 1.03223 48.6749C2.06471 46.8286 3.02277 45.0706 4.02735 43.3405C5.01332 41.6429 5.68304 39.3501 7.1713 38.4618C8.60375 37.6107 10.9059 38.1967 12.8267 38.1967C21.2586 38.1874 29.6859 38.2106 38.1178 38.1734C39.1177 38.1688 39.7037 38.4199 40.206 39.3501C41.8664 42.4382 43.6523 45.4659 45.4754 48.6749Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M11.3806 78.4772C11.3806 73.8217 11.3667 69.3011 11.3899 64.7852C11.3946 63.7387 12.0038 63.1481 13.0503 63.1202C14.3478 63.083 15.6733 62.9621 16.9383 63.1806C17.529 63.283 18.4499 64.0736 18.4592 64.5712C18.5754 69.1802 18.5289 73.7938 18.5289 78.4818C16.1058 78.4772 13.8362 78.4772 11.3806 78.4772Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M12.3804 51.5679C15.5243 51.5679 18.5567 51.5679 21.6029 51.5679C21.1797 53.8003 19.5101 55.2281 17.2963 55.3118C14.8313 55.4048 13.1245 54.1398 12.3804 51.5679Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M24.8584 51.5723C28.0023 51.5723 31.03 51.5723 34.0763 51.5723C33.5043 53.9814 31.7835 55.3394 29.4115 55.3208C27.1187 55.3022 25.4351 53.9488 24.8584 51.5723Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M37.3599 51.5771C40.4108 51.5771 43.4524 51.5771 46.508 51.5771C45.9546 54.0142 44.1454 55.4001 41.6758 55.3257C39.4295 55.2606 37.6761 53.763 37.3599 51.5771Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M9.13885 51.5815C8.77144 53.7907 7.03203 55.2557 4.79034 55.3161C2.29285 55.3813 0.488335 53.986 0 51.5815C3.04628 51.5815 6.08792 51.5815 9.13885 51.5815Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M30.691 70.2733C29.705 70.2733 28.719 70.2407 27.733 70.2826C26.7703 70.3198 26.268 69.9756 26.2866 68.9525C26.3145 67.3944 26.3052 65.8364 26.2913 64.283C26.282 63.4319 26.668 63.0831 27.5284 63.0971C29.6538 63.1296 31.7839 63.125 33.9093 63.0971C34.7697 63.0878 35.1278 63.4505 35.1139 64.3063C35.086 65.8643 35.086 67.4223 35.1139 68.9757C35.1325 69.9105 34.7093 70.2965 33.8023 70.2779C32.7652 70.2547 31.7281 70.2733 30.691 70.2733Z"
+                    fill="black"
+                  />
+                  <path d="M58 0.5V109.5H1" stroke="black" />
+                </svg>
+              </div>
+              <div class="pt-3" id="segmento-text">
+                <div class="pt-5" id="segmento-title">E-commerce</div>
+                <div class="pt-2" id="segmento-desc">
+                  <h6>
+                    We assist physical and digital retailers, wholesalers, and
+                    suppliers to automate commercial operations and business
+                    workflows. With e-commerce solutions, ERPS and improvised
+                    customer services.
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row" id="segmento">
+              <div class="me-1" id="segmento-img">
+                <svg
+                  width="58"
+                  height="80"
+                  viewBox="0 0 58 110"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.2264 80.969C17.929 80.7644 13.641 80.7272 9.45057 79.6621C6.54846 78.9273 3.93005 77.6948 2.4604 74.8764C1.28374 72.6208 0.934929 70.1326 1.20003 67.6677C2.07903 59.6032 6.75775 54.357 13.934 51.0643C14.52 50.7945 14.9664 50.9108 15.5524 51.1573C19.6033 52.8641 23.589 52.892 27.4632 50.5666C27.7655 50.3852 28.2631 50.3015 28.584 50.4178C35.6021 52.9664 40.7226 57.5149 42.8202 64.8214C43.955 68.7792 43.7503 72.8068 41.0715 76.281C39.5227 78.2855 37.2345 79.0808 34.8812 79.6854C33.9185 79.9319 32.9418 80.1737 31.9605 80.2574C28.7189 80.5318 25.4726 80.7365 22.2264 80.969ZM17.3197 68.8025C16.4035 71.193 16.2454 71.0395 18.9568 71.7929C18.9894 71.8022 19.0266 71.8162 19.0592 71.8115C20.1056 71.672 20.2312 72.2766 20.18 73.1138C20.1614 73.4068 20.2637 73.8719 20.4684 73.9928C21.4218 74.5602 22.4263 73.9463 22.4403 72.8487C22.4449 72.3185 22.324 71.8209 23.1007 71.5744C24.8587 71.0163 25.9517 69.7838 26.0307 67.8909C26.1144 65.9794 25.0168 64.7702 23.3798 63.9842C22.5798 63.5982 21.752 63.268 20.9567 62.868C20.3614 62.5704 19.7754 62.1937 19.98 61.3798C20.1893 60.5426 20.8962 60.3659 21.5985 60.4357C22.6635 60.538 23.7193 60.7752 24.8773 60.9705C25.0029 60.5705 25.1052 60.0682 25.3098 59.6078C25.6122 58.9241 25.375 58.58 24.7099 58.4126C24.0216 58.2405 23.3333 58.0591 22.6077 57.8684C22.5938 57.6405 22.5426 57.4033 22.5659 57.1754C22.6635 56.3057 22.4542 55.8779 21.4218 55.8872C20.4079 55.8918 20.1614 56.2871 20.2498 57.1754C20.3009 57.687 20.3056 58.0963 19.5893 58.3288C17.9616 58.859 16.9291 60.0171 16.8268 61.789C16.7291 63.5563 17.7337 64.6679 19.2312 65.3981C20.1521 65.8492 21.1102 66.2259 22.031 66.6817C22.7147 67.0212 23.1658 67.6723 22.7938 68.3606C22.538 68.835 21.8357 69.3606 21.3427 69.3513C20.0451 69.3234 18.7475 69.0164 17.3197 68.8025Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M14.8687 38.7489C15.3199 38.7117 16.0128 38.721 16.6732 38.5768C17.5383 38.3908 18.022 37.7583 18.3847 36.949C18.6684 36.3212 19.0638 35.6375 19.6033 35.2468C20.7846 34.3957 22.3705 34.9166 22.9379 36.47C23.682 38.5257 24.2773 38.7303 26.1702 37.5164C26.226 37.4792 26.2911 37.4234 26.3516 37.4234C27.1701 37.4095 28.1887 37.0979 28.7561 37.4699C29.556 37.9955 29.1514 39.0233 28.7654 39.8139C27.6352 42.1114 26.8353 44.474 26.8446 47.0925C26.8446 47.6226 26.2865 48.3668 25.7795 48.6505C23.8076 49.7527 21.6124 50.0411 19.4079 49.7202C14.2827 48.9714 15.2873 48.9342 13.5479 45.0321C13.0177 43.8415 12.5573 42.6277 12.0131 41.4417C11.1388 39.5349 11.7992 38.5536 13.9153 38.6652C14.1572 38.6745 14.3943 38.707 14.8687 38.7489Z"
+                    fill="black"
+                  />
+                  <path d="M57 0.5V109.5H0" stroke="black" />
+                </svg>
+              </div>
+              <div class="pt-3" id="segmento-text">
+                <div class="pt-5" id="segmento-title">FinTechs</div>
+                <div class="pt-2" id="segmento-desc">
+                  <h6>
+                    We assist physical and digital retailers, wholesalers, and
+                    suppliers to automate commercial operations and business
+                    workflows. With e-commerce solutions, ERPS and improvised
+                    customer services.
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row" id="segmento">
+              <div class="me-1" id="segmento-img">
+                <svg
+                  width="59"
+                  height="80"
+                  viewBox="0 0 59 110"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M42.8205 64.0926C42.6112 60.2557 40.7928 58.1535 37.8627 58.1209C34.8583 58.0884 33.0445 60.1161 32.7375 63.967C26.3566 63.967 19.9618 63.967 13.446 63.967C13.4181 62.1393 13.1204 60.2882 11.474 59.2511C10.4881 58.6279 9.19978 58.1907 8.04638 58.1907C5.21868 58.1907 3.66996 60.2231 3.34441 63.9298C1.05155 64.5158 0.163248 63.8508 0.144645 61.5393C0.139994 61.2323 0.144645 60.9207 0.144645 60.6138C0.186502 55.6048 0.479504 55.2607 5.24194 53.8933C6.36278 53.5724 7.58595 53.2097 8.4603 52.4935C13.4227 48.4379 19.0642 48.1914 24.9846 49.3076C28.7937 50.0239 32.2213 51.5772 35.2722 53.9817C35.8024 54.4003 36.5373 54.6189 37.2116 54.7817C39.258 55.2793 41.3648 55.563 43.36 56.2002C46.0389 57.0559 47.4806 61.0137 46.1412 63.4926C45.9877 63.7763 45.5412 64.0228 45.2017 64.06C44.4483 64.1484 43.6809 64.0926 42.8205 64.0926ZM10.0788 54.3119C13.832 54.3119 17.1294 54.3119 20.6315 54.3119C20.5152 53.2422 20.4548 52.233 20.2641 51.247C20.2083 50.954 19.7618 50.5169 19.506 50.5215C16.0969 50.6331 12.9297 51.4098 10.0788 54.3119ZM32.8399 54.5445C29.7145 51.847 26.152 50.8471 22.0965 50.475C22.25 51.7028 22.2872 52.6795 22.5244 53.6096C22.6174 53.9771 23.129 54.4933 23.4592 54.5026C26.4822 54.5724 29.5099 54.5445 32.8399 54.5445Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M41.6022 63.074C41.6068 65.232 39.9651 66.897 37.8304 66.9063C35.6352 66.9202 33.8911 65.1808 33.9283 63.0135C33.9655 60.9114 35.6863 59.2417 37.8071 59.251C39.9093 59.2603 41.5975 60.9625 41.6022 63.074Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M8.35791 59.2604C10.4694 59.2325 12.1855 60.8974 12.2274 63.0136C12.2692 65.1343 10.6229 66.8598 8.50673 66.911C6.33015 66.9668 4.53029 65.232 4.53959 63.0833C4.54424 60.9905 6.24644 59.2883 8.35791 59.2604Z"
+                    fill="black"
+                  />
+                  <path d="M58 0.5V109.5H1" stroke="black" />
+                </svg>
+              </div>
+              <div class="pt-3" id="segmento-text">
+                <div class="pt-5" id="segmento-title">Mobilidade</div>
+                <div class="pt-2" id="segmento-desc">
+                  <h6>
+                    We assist physical and digital retailers, wholesalers, and
+                    suppliers to automate commercial operations and business
+                    workflows. With e-commerce solutions, ERPS and improvised
+                    customer services.
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row" id="segmento">
+              <div class="me-1" id="segmento-img">
+                <svg
+                  width="58"
+                  height="80"
+                  viewBox="0 0 58 110"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.584 51.8476C25.7977 50.9639 27.9464 51.9127 29.6067 54.4985C30.1416 55.3357 31.388 55.717 32.3089 56.303C32.4763 56.0937 32.6391 55.8845 32.8065 55.6752C31.867 54.4613 30.9276 53.2428 29.9602 51.9964C33.0902 51.0523 34.1506 51.3732 36.0342 53.6567C37.0294 54.8659 37.7922 56.5914 40.1269 55.638C39.0944 54.3916 38.1038 53.1963 36.9364 51.7871C38.2247 51.7871 39.3223 51.7871 40.6989 51.7871C40.6989 53.7869 40.6989 55.824 40.6989 57.8611C40.6989 61.9119 40.7082 65.9628 40.6943 70.0136C40.685 73.4645 38.9456 75.3295 35.5505 75.2319C33.3925 75.1714 31.8763 75.6737 30.2439 77.3712C25.8117 81.9848 18.3704 81.4965 14.2032 76.562C13.3382 75.5388 12.5057 75.1528 11.2546 75.2551C10.3663 75.3295 9.46406 75.3388 8.58041 75.2411C6.46894 75.0086 4.70628 73.3808 4.65977 71.1345C4.5342 64.8233 4.61326 58.5075 4.62721 52.1917C4.62721 52.0243 4.82255 51.8569 4.95742 51.6383C7.51537 52.2708 7.58048 56.6007 11.3523 55.7542C10.278 54.4148 9.31523 53.2102 8.18044 51.7964C10.7802 51.4476 13.0126 51.0941 14.566 53.7265C15.3055 54.9776 16.1798 56.6053 18.389 55.6845C17.4309 54.4427 16.4914 53.2242 15.4032 51.8103C18.0913 51.3499 20.2772 51.2662 21.7934 53.8381C22.5282 55.0892 23.4491 56.4984 25.6582 55.6845C24.6397 54.4055 23.6537 53.1777 22.584 51.8476ZM30.016 69.4416C30.0486 65.2884 26.779 61.9538 22.677 61.9584C18.5983 61.9584 15.1753 65.3675 15.2032 69.3951C15.2311 73.339 18.5611 76.7108 22.5235 76.8131C26.5651 76.9201 29.9835 73.5529 30.016 69.4416Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M33.9929 34.4255C32.7836 37.6672 32.7511 41.6296 27.9375 41.3692C28.4816 36.1975 29.756 34.6627 33.9929 34.4255Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M27.2024 36.5278C26.1606 39.9834 26.0024 43.8715 21.1377 43.6901C21.6911 38.4533 22.6864 37.2115 27.2024 36.5278Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M14.1753 45.9133C15.231 42.4996 15.524 38.6859 20.2911 38.7371C19.3982 44.3506 18.5843 45.3459 14.1753 45.9133Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M7.39941 48.1595C8.64583 45.0714 8.52026 40.8624 13.678 40.9647C12.5758 44.1738 12.599 48.3037 7.39941 48.1595Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M39.0621 37.9045C37.2762 38.4951 35.9554 38.9323 34.2578 39.4951C34.8345 37.7092 35.2996 36.2581 35.9693 34.1792C37.132 35.5791 38.0017 36.6302 39.0621 37.9045Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M4.94824 49.564C3.2693 46.8851 4.06924 44.555 7.11087 43.1133C6.36209 45.341 5.69237 47.3362 4.94824 49.564Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M27.5234 69.3533C24.8492 70.9067 22.468 72.288 19.8589 73.7995C19.8589 70.7485 19.8589 68.0045 19.8589 64.9536C22.3936 66.4047 24.7841 67.7767 27.5234 69.3533Z"
+                    fill="black"
+                  />
+                  <path d="M57 0V109H0" stroke="black" />
+                </svg>
+              </div>
+              <div class="pt-3" id="segmento-text">
+                <div class="pt-5" id="segmento-title">Entretenimento</div>
+                <div class="pt-2" id="segmento-desc">
+                  <h6>
+                    We assist physical and digital retailers, wholesalers, and
+                    suppliers to automate commercial operations and business
+                    workflows. With e-commerce solutions, ERPS and improvised
+                    customer services.
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row" id="segmento">
+              <div class="me-1" id="segmento-img">
+                <svg
+                  width="59"
+                  height="80"
+                  viewBox="0 0 59 110"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M36.9323 47.3552C33.5279 45.0158 29.8491 44.3229 25.8029 44.267C25.8029 54.0524 25.8029 63.74 25.8029 73.5439C27.6446 73.8044 29.8212 73.1672 30.8723 75.4368C30.942 75.5903 31.5513 75.4973 31.9141 75.5066C35.9463 75.6507 36.03 75.6973 38.7647 79.2365C28.6817 79.2365 18.7197 79.2365 8.49255 79.2365C10.311 77.0739 11.8737 74.9485 15.0455 75.4973C16.0966 75.6786 16.6733 75.0554 17.4872 74.3997C18.4639 73.6137 20.1056 73.6509 21.6265 73.2928C21.6265 63.8144 21.6265 54.1872 21.6265 43.8996C17.5988 44.8437 13.8317 45.7274 9.79943 46.6715C11.5993 50.6154 13.1201 53.9547 14.6502 57.2893C16.185 60.6286 15.9339 62.8424 13.7294 65.2004C11.5435 67.5397 8.15769 68.2839 5.18582 67.1072C1.907 65.8096 -0.981158 61.4472 1.27449 57.5684C2.92088 54.736 3.93475 51.5316 5.10211 48.7923C3.41386 47.4575 1.88374 46.2437 0.404785 45.0763C7.64145 43.3834 14.5572 41.7603 21.6776 40.0953C21.6776 39.1605 21.6776 38.0303 21.6776 36.7095C23.0124 36.7095 24.1844 36.7095 25.5889 36.7095C25.5889 37.8629 25.5889 39.0535 25.5889 40.1092C32.6721 41.7463 39.5088 43.3322 46.9129 45.0437C45.2479 46.3274 43.6946 47.5273 41.997 48.8388C43.2109 51.4991 44.5457 54.4523 45.8991 57.3963C47.4152 60.6798 46.978 63.3633 44.5457 65.6003C42.0621 67.8792 38.388 68.3164 35.4998 66.6747C32.035 64.7074 30.9188 61.3216 32.5001 57.6939C33.9558 54.3314 35.3929 50.9503 36.9323 47.3552ZM14.2596 59.824C12.362 55.6615 10.5575 51.713 8.45535 47.104C4.70679 50.9363 4.17195 55.7174 1.78608 59.824C6.11599 59.824 10.032 59.824 14.2596 59.824ZM33.0954 59.824C37.309 59.824 41.2343 59.824 45.4572 59.824C43.7225 56.0336 42.1412 52.4199 40.3878 48.8946C40.1041 48.3272 39.0763 48.1272 38.281 47.704C36.4765 51.9176 34.8162 55.8011 33.0954 59.824Z"
+                    fill="black"
+                  />
+                  <path d="M58 0V109H1" stroke="black" />
+                </svg>
+              </div>
+              <div class="pt-3" id="segmento-text">
+                <div class="pt-5" id="segmento-title">Direito</div>
+                <div class="pt-2" id="segmento-desc">
+                  <h6>
+                    We assist physical and digital retailers, wholesalers, and
+                    suppliers to automate commercial operations and business
+                    workflows. With e-commerce solutions, ERPS and improvised
+                    customer services.
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row" id="segmento">
+              <div class="me-1" id="segmento-img">
+                <svg
+                  width="59"
+                  height="80"
+                  viewBox="0 0 59 110"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.6416 65.5737C4.95786 58.4719 7.99949 53.0258 14.0037 49.4121C15.7989 48.3331 17.9197 47.7704 19.9335 47.0914C20.5474 46.8867 20.8497 46.7611 20.8822 46.0495C20.9613 44.4636 22.2031 43.3614 23.7425 43.3846C25.2261 43.4079 26.4121 44.5008 26.4865 46.0589C26.5237 46.7797 26.812 46.9379 27.4538 47.0727C36.0299 48.8447 42.4341 56.3186 42.6574 64.7598C42.662 65.0016 42.6574 65.2388 42.6574 65.5644C30.0257 65.5737 17.4174 65.5737 4.6416 65.5737ZM19.3149 53.6304C19.3614 51.9887 18.0918 51.2352 16.8407 51.8491C14.2083 53.1421 12.1201 55.0582 10.5574 57.5371C9.98539 58.444 10.1668 59.3928 10.9528 59.9043C11.7666 60.4345 12.6689 60.2531 13.2642 59.3369C14.5525 57.351 16.2454 55.8442 18.3243 54.714C18.8033 54.4489 19.1056 53.8629 19.3149 53.6304Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M0.139767 70.3966C0.172322 69.5687 0.851341 68.913 1.67919 68.913C8.0508 68.9083 17.3199 68.913 23.6915 68.913C30.5235 68.913 37.3509 68.913 44.183 68.913C44.5969 68.913 45.0155 68.9083 45.4201 68.9641C46.1782 69.0664 46.5735 69.5641 46.6386 70.2896C46.7037 71.057 46.3875 71.6523 45.6061 71.8709C45.2155 71.9778 44.7876 71.9964 44.3783 71.9964C31.1095 72.0011 14.9433 72.0011 1.67454 71.9964C0.804833 71.9918 0.107211 71.2663 0.139767 70.3966Z"
+                    fill="black"
+                  />
+                  <path d="M58 0V109H1" stroke="black" />
+                </svg>
+              </div>
+              <div class="pt-3" id="segmento-text">
+                <div class="pt-5" id="segmento-title">Hospitalidade</div>
+                <div class="pt-2" id="segmento-desc">
+                  <h6>
+                    We assist physical and digital retailers, wholesalers, and
+                    suppliers to automate commercial operations and business
+                    workflows. With e-commerce solutions, ERPS and improvised
+                    customer services.
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-footer">
+      <div class="d-flex flex-row w-100 justify-content-between">
+        <h2 class="m-0">-LOGO-</h2>
+        <h6 class="my-auto">&copy; Copyright 2023 | All rights reserved</h6>
+      </div>
+    </section>
+
+    <!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

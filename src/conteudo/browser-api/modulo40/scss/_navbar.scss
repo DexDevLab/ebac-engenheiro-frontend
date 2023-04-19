@@ -1,0 +1,7 @@
+.nav-link{
+    font-size: $font-size1;
+    &.active{
+        color: $color1 !important;
+        font-weight: bold;
+    }
+}
