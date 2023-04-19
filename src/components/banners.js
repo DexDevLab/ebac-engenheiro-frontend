@@ -354,7 +354,7 @@ export const banners = () => {
         {
           buttonName: "Módulo 41 - UML e Requisitos",
           buttonUrl:
-            "./src/conteudo/engineering/modulo41/modulo41 - Daniel Augusto Almeida.zip",
+            "./src/conteudo/engineering/modulo41/modulo41%20-%20Daniel%20Augusto%20Almeida.zip",
           download: "download='modulo41 - Daniel Augusto Almeida.zip'",
         },
       ],
