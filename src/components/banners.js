@@ -357,6 +357,12 @@ export const banners = () => {
             "./src/conteudo/engineering/modulo41/modulo41%20-%20Daniel%20Augusto%20Almeida.zip",
           download: "download='modulo41 - Daniel Augusto Almeida.zip'",
         },
+        {
+          buttonName: "Módulo 42 - AGILE e Kanban",
+          buttonUrl:
+            "./src/conteudo/engineering/modulo42/modulo42%20-%20Daniel%20Augusto%20Almeida.zip",
+          download: "download='modulo42 - Daniel Augusto Almeida.zip'",
+        },
       ],
       bannerImg: "./src/assets/images/uml.png",
     },
