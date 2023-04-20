@@ -363,6 +363,11 @@ export const banners = () => {
             "./src/conteudo/engineering/modulo42/modulo42%20-%20Daniel%20Augusto%20Almeida.zip",
           download: "download='modulo42 - Daniel Augusto Almeida.zip'",
         },
+        {
+          buttonName: "Módulo 43",
+          buttonUrl: "./src/conteudo/engineering/modulo43/modulo43.pdf",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/uml.png",
     },
