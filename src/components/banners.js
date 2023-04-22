@@ -368,6 +368,25 @@ export const banners = () => {
           buttonUrl: "./src/conteudo/engineering/modulo43/modulo43.pdf",
           download: "",
         },
+        {
+          buttonName: "Módulo 44",
+          buttonUrl: "./src/conteudo/engineering/modulo44/modulo44.pdf",
+          download: "",
+        },
+      ],
+      bannerImg: "./src/assets/images/uml.png",
+    },
+    {
+      menu: "Bibliotecas e Frameworks",
+      id: "modulo-react-intro",
+      bannerTitle: "React - Introdução",
+      bannerDesc: "Módulos introdutórios ao estudo do React Framework",
+      bannerButtons: [
+        {
+          buttonName: "Módulo 45",
+          buttonUrl: "./src/conteudo/react-intro/modulo45/build/index.html",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/uml.png",
     },
