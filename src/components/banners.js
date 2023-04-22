@@ -388,7 +388,7 @@ export const banners = () => {
           download: "",
         },
       ],
-      bannerImg: "./src/assets/images/uml.png",
+      bannerImg: "./src/assets/images/react.jpeg",
     },
   ];
 };
