@@ -1,0 +1,86 @@
+.Login {
+  text-align: center;
+}
+
+.Login-header {
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Login-header h1,
+p {
+  margin: calc(1px + 2vmin);
+}
+
+.Login-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Login-group {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  gap: 10px;
+}
+
+.Login-group label {
+  font-size: calc(1px + 2vmin);
+}
+
+.Login-group input {
+  font-size: calc(1px + 2vmin);
+  width: calc(75px + 2vmin);
+  text-align: center;
+}
+
+.Login-group input[name="peso"] {
+  width: calc(45px + 2vmin);
+}
+
+.Login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: solid black 1px;
+  border-radius: 5px;
+  width: calc(60px + 2vmin);
+  height: calc(5px + 1vmin);
+  margin: 0;
+  padding: 10px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.Login-button:hover {
+  background-color: #61dafb;
+  color: black;
+  border: solid black 1px;
+  transition: 0.6s;
+}
+
+#Login-button-control {
+  display: none;
+}
+
+#Login-button-control:checked + label > div {
+  background-color: #61dafb;
+  color: black;
+  border: solid black 1px;
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.Login-button p {
+  text-align: center;
+  line-height: calc(2px + 2vmin);
+  margin: 0;
+  font-size: calc(2px + 2vmin);
+}

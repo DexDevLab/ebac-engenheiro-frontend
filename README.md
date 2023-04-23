@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./src/assets/images/print.jpg" height='400px' width='1024px' alt="Print">
+<img src="./src/assets/images/print2.jpg" height='400px' width='1024px' alt="Print">
 </div>
 
 <h1 align="center">EBAC - Profissão: Engenheiro Frontend</h1>
@@ -30,7 +30,7 @@
 <a href=""><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Contributors"></a>
 
 <a href=""><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-2.13.1-140126" height="22" alt="Version"/></a>
+<a href=""><img src="https://img.shields.io/badge/version-2.14.0-140126" height="22" alt="Version"/></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend" height="22" alt="License"/></a>
 
 || [Conteúdo](#section-conteudo) || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -75,6 +75,10 @@ Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenhe
 </a>
 
 <br>
+
+### v2.14.0-230423
+
+- Conteúdo do exercício do Módulo 46
 
 ### v2.13.1-230422
 
