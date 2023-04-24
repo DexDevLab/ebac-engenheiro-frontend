@@ -392,6 +392,11 @@ export const banners = () => {
           buttonUrl: "./src/conteudo/react-intro/modulo46/build/index.html",
           download: "",
         },
+        {
+          buttonName: "Módulo 47",
+          buttonUrl: "./src/conteudo/react-intro/modulo47/build/index.html",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/react.jpeg",
     },
