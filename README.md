@@ -30,7 +30,7 @@
 <a href=""><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Contributors"></a>
 
 <a href=""><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-2.15.0-140126" height="22" alt="Version"/></a>
+<a href=""><img src="https://img.shields.io/badge/version-2.16.0-140126" height="22" alt="Version"/></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend" height="22" alt="License"/></a>
 
 || [Conteúdo](#section-conteudo) || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -75,6 +75,12 @@ Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenhe
 </a>
 
 <br>
+
+### v2.16.0-230425
+
+- Conteúdo do exercício do Módulo 48
+- Ajuste no algoritmo de busca
+- Leve alteração nos estilos e labels da barra de busca
 
 ### v2.15.0-230424
 

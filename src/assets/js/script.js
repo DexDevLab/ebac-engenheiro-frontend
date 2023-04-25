@@ -13,7 +13,7 @@ jQuery(async function ($) {
 
     availableTags.push({
       id: item.id,
-      parent: item.bannerTitle,
+      parent: "",
       label: item.bannerTitle,
     });
 
@@ -138,8 +138,27 @@ jQuery(async function ($) {
       },
     })
     .autocomplete("instance")._renderItem = function (ul, item) {
-    return $("<li>")
-      .append("<div>" + item?.label + "</div>")
-      .appendTo(ul);
+    if (item?.parent.length > 0) {
+      return $("<li>")
+        .append(
+          "<div class='container-search'>" +
+            "<div>" +
+            item?.label +
+            "</div>" +
+            "<div class='container-search-subtitle'> em <b>" +
+            item?.parent +
+            "</b></div></div>"
+        )
+        .appendTo(ul);
+    } else {
+      return $("<li>")
+        .append(
+          "<div class='container-search'>" +
+            "<div> Seção <b>" +
+            item?.label +
+            "</b></div></div>"
+        )
+        .appendTo(ul);
+    }
   };
 });

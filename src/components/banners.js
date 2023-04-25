@@ -397,8 +397,27 @@ export const banners = () => {
           buttonUrl: "./src/conteudo/react-intro/modulo47/build/index.html",
           download: "",
         },
+        {
+          buttonName: "Módulo 48",
+          buttonUrl: "./src/conteudo/react-intro/modulo48/modulo48.pdf",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/react.jpeg",
+    },
+    {
+      menu: "Bibliotecas e Frameworks",
+      id: "modulo-react-adv",
+      bannerTitle: "React - Avançado",
+      bannerDesc: "Módulos especializados em React Framework",
+      bannerButtons: [
+        // {
+        //   buttonName: "React - Avançado",
+        //   buttonUrl: "./src/pages/react-adv.html",
+        //   download: "",
+        // },
+      ],
+      bannerImg: "./src/assets/images/react-adv.png",
     },
   ];
 };

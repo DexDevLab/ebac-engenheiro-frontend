@@ -40,6 +40,11 @@ body {
   color: #810ca8;
 }
 
+.ui-menu-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .ui-menu-item:active,
 .ui-menu-item:hover,
 .ui-menu-item div:active,
@@ -47,15 +52,17 @@ body {
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
   max-width: 1100px;
+  background-color: #810ca8 !important;
+  border-color: #810ca8;
 }
 
 a.ui-button:active,
 .ui-button:active,
 .ui-state-active.ui-button:hover {
   color: #ffffff;
-  border-color: #2d033b;
-  background-color: #2d033b !important ;
-  font-weight: bold;
+  /* border-color: #2d033b; */
+  /* background-color: #2d033b !important ; */
+  /* font-weight: bold; */
 }
 
 .ui-autocomplete {
@@ -93,9 +100,15 @@ a.ui-button:active,
 }
 
 #form-search {
+  color: #2d033b;
   margin-right: 0 !important;
   background: rgba(255, 255, 255, 0.1);
   font-size: 13px;
+}
+
+#form-search::selection {
+  color: white;
+  background-color: #810ca8;
 }
 
 #img-searchicon {
@@ -290,6 +303,10 @@ nav .navbar-nav li a:hover {
   margin-right: 20px;
 }
 
+#modulo-react-adv {
+  height: fit-content;
+}
+
 .nav-item.dropdown .dropdown-item:active {
   background-color: #810ca8 !important;
 }
@@ -306,6 +323,16 @@ nav .navbar-nav li a:hover {
 .dropdown-item > .nav-link:active,
 .dropdown-item > .nav-link:hover {
   color: white !important;
+}
+
+.container-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-search-subtitle {
+  font-size: 10px;
 }
 
 @media (min-width: 300px) {
