@@ -30,8 +30,8 @@
 <a href=""><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Contributors"></a>
 
 <a href=""><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-2.16.0-140126" height="22" alt="Version"/></a>
-<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend" height="22" alt="License"/></a>
+<a href=""><img src="https://img.shields.io/badge/version-3.0.0-140126" height="22" alt="Version"/></a>
+<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend" height="22" alt="License"/></a>
 
 || [Conteúdo](#section-conteudo) || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
 
@@ -75,6 +75,10 @@ Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenhe
 </a>
 
 <br>
+
+### v3.0.0-230427
+
+- Alteração do termo "master" para "main" nas terminologias em todo o projeto
 
 ### v2.16.0-230425
 
@@ -316,7 +320,7 @@ branches poderá se refeita em caso de necessidade
 ### v0.0.9-220830
 
 - Remoção do CHANGELOG do branch docs e exclusão do mesmo
-- Atualização do CHANGELOG no branch master
+- Atualização do CHANGELOG no branch main
 - Atualização do README
 
 ### v0.0.8-220830
@@ -387,4 +391,4 @@ Para contato, envie um email a: <a href="mailto:dex.houshi@hotmail.com">dex.hous
 
 </a>
 
-Licenciado sob a [MIT License](https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/master/LICENSE).
+Licenciado sob a [MIT License](https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/main/LICENSE).
