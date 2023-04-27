@@ -407,15 +407,15 @@ export const banners = () => {
     },
     {
       menu: "Bibliotecas e Frameworks",
-      id: "modulo-react-adv",
-      bannerTitle: "React - Avançado",
+      id: "modulo-adv-react",
+      bannerTitle: "React do Zero ao Pro",
       bannerDesc: "Módulos especializados em React Framework",
       bannerButtons: [
-        // {
-        //   buttonName: "React - Avançado",
-        //   buttonUrl: "./src/pages/react-adv.html",
-        //   download: "",
-        // },
+        {
+          buttonName: "Módulo 01",
+          buttonUrl: "./src/conteudo/adv-react/modulo01/index.html",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/react-adv.png",
     },

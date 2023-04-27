@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+header,
+footer {
+  background-color: #677cf5;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+#message2 {
+  font-weight: bold;
+  color: white;
+}
+
+#message3 {
+  font-weight: normal;
+  color: red;
+}
+
+#message4 {
+  font-style: italic;
+}
+
+#message5 {
+  font-weight: normal;
+  color: blue;
+}
+
+#message6 {
+  font-weight: bold;
+  color: blueviolet;
+}
+
+#message7 {
+  font-weight: bold;
+  color: brown;
+  font-size: 35px;
+}
+
+#message8 {
+  text-decoration: underline;
+  color: chocolate;
+}
+
+#message9 {
+  text-decoration: line-through;
+  font-weight: bold;
+  color: crimson;
+  font-size: 35px;
+}
+
+#message10 {
+  text-decoration: overline;
+  font-weight: bold;
+  color: indigo;
+  font-size: 35px;
+}
