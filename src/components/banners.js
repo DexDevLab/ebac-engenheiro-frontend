@@ -8,46 +8,46 @@ export const banners = () => {
         "Estruturação HTML, utilização de Elementos e composição DOM, CSS e estilização",
       bannerButtons: [
         {
-          buttonName: "Módulo 3",
+          buttonName: "Módulo 03",
           buttonUrl:
             "./src/conteudo/html+css/modulo03/exercicio/exercicio.html",
           download: "",
         },
         {
-          buttonName: "Módulo 4",
+          buttonName: "Módulo 04",
           buttonUrl: "./src/conteudo/html+css/modulo04/exercicio/homepage.html",
           download: "",
         },
         {
-          buttonName: "Módulo 4 - Home Page",
+          buttonName: "Módulo 04 - Home Page",
           buttonUrl: "./src/conteudo/html+css/homepage.html",
           download: "",
         },
         {
-          buttonName: "Módulo 5",
+          buttonName: "Módulo 05",
           buttonUrl:
             "'./src/conteudo/html+css/modulo05/exercicio/Módulo 5 - Exercício - Daniel Augusto Almeida.pdf'",
           download: "",
         },
         {
-          buttonName: "Módulo 6",
+          buttonName: "Módulo 06",
           buttonUrl:
             "./src/conteudo/html+css/modulo06/exercicio/exercicio.html",
           download: "",
         },
         {
-          buttonName: "Módulo 7",
+          buttonName: "Módulo 07",
           buttonUrl:
             "./src/conteudo/html+css/modulo07/exercicio/modulo-07-exercicio.html",
           download: "",
         },
         {
-          buttonName: "Módulo 8",
+          buttonName: "Módulo 08",
           buttonUrl: "./src/conteudo/html+css/modulo08/exercicio/homepage.html",
           download: "",
         },
         {
-          buttonName: "Módulo 9",
+          buttonName: "Módulo 09",
           buttonUrl: "./src/conteudo/html+css/modulo09/exercício/homepage.html",
           download: "",
         },
@@ -414,6 +414,11 @@ export const banners = () => {
         {
           buttonName: "Módulo 01",
           buttonUrl: "./src/conteudo/adv-react/modulo01/index.html",
+          download: "",
+        },
+        {
+          buttonName: "Módulo 02",
+          buttonUrl: "./src/conteudo/adv-react/modulo02/index.html",
           download: "",
         },
       ],

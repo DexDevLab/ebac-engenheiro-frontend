@@ -110,7 +110,7 @@ console.log("Expressions: " + JSON.stringify(expressions));
 // ATRIBUINDO O VALOR AOS ELEMENTOS
 
 // MENSAGEM 1
-//const message1 = window.alert(expressions[0]);
+const message1 = window.alert(expressions[0]);
 // MENSAGEM 2
 const message2 = (document.getElementById("message2").innerHTML = expression1);
 // MENSAGEM 3
