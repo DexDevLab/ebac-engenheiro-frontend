@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>EBAC - Profissão: Engenheiro Frontend - React do Zero ao Pro</title>
+  </head>
+  <body>
+    <h1>EBAC - Profissão: Engenheiro Frontend - React do Zero ao Pro</h1>
+    <h2>Módulo 03 - Exercício - Formulário</h2>
+
+    <section>
+      <div class="container">
+        <h3>Entrada dos dados</h3>
+        <form action="#" id="form">
+          <div class="form-container">
+            <label for="nome" class="form-label">Nome</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nome"
+              placeholder="Digite seu nome"
+              name="nome"
+              required
+            />
+          </div>
+
+          <div class="form-container-radio">
+            <div>
+              <label for="" class="form-label">Gênero</label>
+            </div>
+            <div>
+              <input
+                required
+                id="genero"
+                type="radio"
+                name="genero"
+                value="masc"
+              />
+              <label for="genero" class="form-label-md">Masculino</label>
+
+              <input
+                required
+                id="genero"
+                type="radio"
+                name="genero"
+                value="fem"
+              />
+              <label for="genero" class="form-label-md">Feminino</label>
+            </div>
+            <div>
+              <input
+                required
+                id="genero"
+                type="radio"
+                name="genero"
+                value="nonb"
+              />
+              <label for="genero" class="form-label-md">Não-Binário</label>
+
+              <input
+                required
+                id="genero"
+                type="radio"
+                name="genero"
+                value="nondec"
+              />
+              <label for="genero" class="form-label-md"
+                >Prefiro não declarar</label
+              >
+            </div>
+          </div>
+
+          <div class="form-container">
+            <label for="endereco" class="form-label">Endereço</label>
+            <input
+              type="text"
+              class="form-control"
+              id="endereco"
+              placeholder="Rua A, número 1"
+              name="endereco"
+              required
+            />
+          </div>
+
+          <div class="form-container">
+            <label for="cidade" class="form-label">Cidade</label>
+            <input
+              type="text"
+              class="form-control-md"
+              id="cidade"
+              placeholder="São Paulo"
+              name="cidade"
+              required
+            />
+
+            <label for="estado" class="form-label">Estado</label>
+            <select required class="form-control-sm" id="estado" name="estado">
+              <option selected value="">Selecione</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+
+            <label for="cep" class="form-label-sm">CEP</label>
+            <input
+              type="text"
+              class="form-control-xs"
+              id="cep"
+              placeholder="01101-001"
+              name="cep"
+              required
+            />
+          </div>
+
+          <div class="form-container">
+            <input type="checkbox" name="notif" id="notif" />
+            <label for="notif" class="form-label-lg"
+              >Aceito receber comunicados por email</label
+            >
+          </div>
+
+          <div class="form-container">
+            <input type="submit" class="pressed" value="Enviar" />
+            <div class="loader">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="container2">
+        <h3>Saída dos dados</h3>
+        <div class="container-box">
+          <div class="form-container">
+            <label for="" class="form-label">Nome</label>
+            <label for="" class="form-label-lg" id="answer-nome"></label>
+          </div>
+
+          <div class="form-container">
+            <label for="" class="form-label">Gênero</label>
+            <label for="" class="form-label-lg" id="answer-genero"></label>
+          </div>
+
+          <div class="form-container">
+            <label for="" class="form-label">Endereço</label>
+            <label for="" class="form-label-lg" id="answer-endereco"></label>
+          </div>
+
+          <div class="form-container">
+            <label for="cidade" class="form-label">Cidade</label>
+            <label for="" class="form-label-md" id="answer-cidade"></label>
+            <label for="estado" class="form-label">Estado</label>
+            <label for="" class="form-label-sm" id="answer-estado"></label>
+            <label for="cep" class="form-label">CEP</label>
+            <label for="" class="form-label-md" id="answer-cep"></label>
+          </div>
+
+          <div class="form-container">
+            <label for="" class="form-label-lg"
+              >Aceito receber comunicados por email?</label
+            >
+            <label for="" class="form-label" id="answer-notif"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
