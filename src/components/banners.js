@@ -426,6 +426,11 @@ export const banners = () => {
           buttonUrl: "./src/conteudo/adv-react/modulo03/index.html",
           download: "",
         },
+        {
+          buttonName: "Módulo 04",
+          buttonUrl: "./src/conteudo/adv-react/modulo04/build/index.html",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/react-adv.png",
     },
