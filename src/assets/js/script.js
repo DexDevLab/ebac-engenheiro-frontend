@@ -46,6 +46,12 @@ jQuery(async function ($) {
         label: item2.buttonName,
       });
 
+      availableTags.push({
+        id: item.id,
+        parent: item2.buttonName,
+        label: item2.keywords,
+      });
+
       componentButtons =
         componentButtons +
         `
@@ -117,14 +123,20 @@ jQuery(async function ($) {
 
   $("#form-search")
     .autocomplete({
-      minLength: 0,
+      minLength: 1,
       source: availableTags,
       position: {
         my: "left+0 top+9",
         mx: "left+0, right-10",
       },
       focus: function (event, ui) {
-        $("#form-search").val(ui.item?.label);
+        let val = "";
+        if (ui.item?.parent.length === 0) {
+          val = ui.item?.label;
+        } else if (!ui.item?.label.includes("Módulo")) {
+          val = ui.item?.parent;
+        }
+        $("#form-search").val(val);
         return false;
       },
       select: function (event, ui) {
@@ -136,29 +148,61 @@ jQuery(async function ($) {
         );
         return false;
       },
+      response: function (event, ui) {
+        if (ui.content.length === 0) {
+          ui.content.push({
+            id: "",
+            parent: "",
+            value: "",
+            label: "Nenhum resultado.",
+          });
+        }
+      },
     })
     .autocomplete("instance")._renderItem = function (ul, item) {
     if (item?.parent.length > 0) {
-      return $("<li>")
-        .append(
-          "<div class='container-search'>" +
-            "<div>" +
-            item?.label +
-            "</div>" +
-            "<div class='container-search-subtitle'> em <b>" +
-            item?.parent +
-            "</b></div></div>"
-        )
-        .appendTo(ul);
+      if (item?.label.includes("Módulo")) {
+        return $("<li>")
+          .append(
+            "<div class='container-search'>" +
+              "<div> " +
+              item?.label +
+              " </div>" +
+              "<div class='container-search-subtitle'> em <b> " +
+              item?.parent +
+              " </b></div></div>"
+          )
+          .appendTo(ul);
+      } else {
+        return $("<li>")
+          .append(
+            "<div class='container-search'>" +
+              "<div> conteúdo de <b>" +
+              item?.parent +
+              "</b></div></div>"
+          )
+          .appendTo(ul);
+      }
     } else {
-      return $("<li>")
-        .append(
-          "<div class='container-search'>" +
-            "<div> Seção <b>" +
-            item?.label +
-            "</b></div></div>"
-        )
-        .appendTo(ul);
+      if (item.id.length === 0) {
+        return $("<li>")
+          .append(
+            "<div class='container-search'>" +
+              "<div><b>" +
+              " Nenhum resultado encontrado." +
+              "</b></div></div>"
+          )
+          .appendTo(ul);
+      } else {
+        return $("<li>")
+          .append(
+            "<div class='container-search'>" +
+              "<div> seção <b>" +
+              item?.label +
+              "</b></div></div>"
+          )
+          .appendTo(ul);
+      }
     }
   };
 });
