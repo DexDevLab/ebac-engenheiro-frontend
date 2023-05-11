@@ -512,6 +512,14 @@ export const banners = () => {
           buttonUrl: "./src/conteudo/adv-react/modulo05/build/index.html",
           download: "",
         },
+        {
+          keywords:
+            "react test hello world jest event handler handling state useState useEffect calculadora teclado keyboard",
+          buttonName: "Módulo 06",
+          buttonUrl:
+            "https://github.com/DexDevLab/ebac-engenheiro-frontend/tree/main/src/conteudo/adv-react/modulo06",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/react-adv.png",
     },
