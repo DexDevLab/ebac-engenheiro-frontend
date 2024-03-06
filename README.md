@@ -23,14 +23,11 @@
 
 <a href=""><img src="https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg" height="22" alt="Maintenance-actively-developed"/></a>
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend" height="22" alt="LastCommit"/></a>
-<a href=""><img src="https://snyk.io/test/github/dexdevlab/ebac-engenheiro-frontend/badge.svg" height="22" alt="Snyk"/></a>
 
 <a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-engenheiro-frontend" height="22" alt="CodeSize"/></a>
 <a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-engenheiro-frontend" height="22" alt="RepoSize"/></a>
-<a href=""><img src="https://img.shields.io/github/contributors/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Contributors"></a>
 
-<a href=""><img src="https://img.shields.io/github/forks/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-3.6.0-140126" height="22" alt="Version"/></a>
+<a href=""><img src="https://img.shields.io/github/v/release/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Version"/></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend" height="22" alt="License"/></a>
 
 || [Conteúdo](#section-conteudo) || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
@@ -75,6 +72,16 @@ Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenhe
 </a>
 
 <br>
+
+### v3.7.0-240305
+
+- Adicionado script de limpeza do Yarn para o repositório
+- Adicionado script de limpeza do cache do git
+- Atualização do gitignore
+- Corrigida referência do link para a atividade do exercício do Módulo 06 (React do Zero ao Pro)
+- Conteúdo do exercício do Módulo 07 (React do Zero ao Pro)
+- Removida integração com o Snyk para o repositório
+- Ajuste de sintaxe e linting do workflow do Github Actions
 
 ### v3.6.0-230511
 

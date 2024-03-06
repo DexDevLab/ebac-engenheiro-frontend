@@ -28,18 +28,18 @@ jobs:
         run: echo ${{ steps.get-package-version.outputs.version }}
 
       - name: "🏷️ Gathering tag name removing timestamp"
-        if: "!contains(steps.get-package-version.outputs.version, env.SUFFIX)"
+        if: ${{ !contains(steps.get-package-version.outputs.version, env.SUFFIX) }}
         id: get-ver
         run: |
           ver=$(echo ${{ steps.get-package-version.outputs.version }} | cut -d- -f1)
           echo "::set-output name=ver::$ver"
 
       - name: "📜 Printing tag and release version"
-        if: "!contains(steps.get-package-version.outputs.version, env.SUFFIX)"
+        if: ${{ !contains(steps.get-package-version.outputs.version, env.SUFFIX) }}
         run: echo "${{ steps.get-ver.outputs.ver }}"
 
       - name: "⚙️ Generating Tag and Release"
-        if: "!contains(steps.get-package-version.outputs.version, env.SUFFIX)"
+        if: ${{ !contains(steps.get-package-version.outputs.version, env.SUFFIX) }}
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           automatic_release_tag: "${{ steps.get-ver.outputs.ver }}"

@@ -1,10 +1,12 @@
 {
   "name": "ebac-engenheiro-frontend",
-  "version": "v3.6.0-230511",
+  "version": "v3.7.0-240305",
   "license": "MIT",
   "description": "Repositório contendo o conteúdo relevante das aulas do curso 'Profissão: Engenheiro Front-End' da Instituição EBAC - Escola Britânica de Artes Criativas e Tecnologia",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "yarn autoclean --force",
+    "git:clear": "bash cleargitcache.sh"
   }
 }
