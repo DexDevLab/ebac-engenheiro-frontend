@@ -27,8 +27,6 @@ import { SH2 } from "../Styled/Style";
 function FormComponent({ ...props }) {
   const theme = useTheme();
   const greaterThanMid = useMediaQuery(theme.breakpoints.up("md"));
-  // const smallToMid = useMediaQuery(theme.breakpoints.between("sm", "md"));
-  // const lessThanSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const [disabled, setDisabled] = useState(true);
   const [formError, setFormError] = useState({
     nome: false,
@@ -40,26 +38,57 @@ function FormComponent({ ...props }) {
   });
   const [errorColor, setErrorColor] = useState("");
   const [formData, setFormData] = useState({
-    nome: "",
-    idade: "",
-    genero: "",
-    estadoCivil: "",
-    docTipo: "",
-    doc: "",
+    nome: {
+      label: "",
+      value: "",
+    },
+    idade: {
+      label: "",
+      value: "",
+    },
+    genero: {
+      label: "",
+      value: "",
+    },
+    estadoCivil: {
+      label: "",
+      value: "",
+    },
+    docTipo: {
+      label: "",
+      value: "",
+    },
+    doc: {
+      label: "",
+      value: "",
+    },
   });
   const [submitData, setSubmitData] = useState("");
   const [formStatus, setFormStatus] = useState("");
 
-  const onChange = (label, value) => {
-    validate(label, value);
+  const submitDataComponent = (key, label, value) => {
+    return (
+      <Grid key={`${key}-${label}`} item xs={6}>
+        <Typography variant="h6">
+          {label}: {value}
+        </Typography>
+      </Grid>
+    );
+  };
+
+  const onChange = (label, target) => {
+    validate(label, target.value);
     if (label.toString().includes("docTipo")) {
       setFormData({
         ...formData,
-        docTipo: value,
-        doc: "",
+        docTipo: { label: target.id, value: target.value },
+        doc: { label: "", value: "" },
       });
     } else {
-      setFormData({ ...formData, [label]: value });
+      setFormData({
+        ...formData,
+        [label]: { label: target.id, value: target.value },
+      });
     }
     setFormStatus("");
     setSubmitData("");
@@ -67,16 +96,34 @@ function FormComponent({ ...props }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (formIsValid()) {
+    if (isValid()) {
       setFormStatus("success");
       setSubmitData({ ...formData });
       setFormData({
-        nome: "",
-        idade: "",
-        genero: "",
-        estadoCivil: "",
-        docTipo: "",
-        doc: "",
+        nome: {
+          label: "",
+          value: "",
+        },
+        idade: {
+          label: "",
+          value: "",
+        },
+        genero: {
+          label: "",
+          value: "",
+        },
+        estadoCivil: {
+          label: "",
+          value: "",
+        },
+        docTipo: {
+          label: "",
+          value: "",
+        },
+        doc: {
+          label: "",
+          value: "",
+        },
       });
     } else {
       setFormStatus("error");
@@ -87,7 +134,7 @@ function FormComponent({ ...props }) {
     let isValid = false;
     switch (label) {
       case "nome":
-        isValid = value.includes(" ") && value.toString().match('([A-z])\\w+');
+        isValid = value.includes(" ") && value.toString().match("([A-z])\\w+");
         break;
       case "idade":
         isValid = Number(value) > 0;
@@ -99,10 +146,10 @@ function FormComponent({ ...props }) {
         break;
       case "doc":
         isValid =
-          (formData.docTipo.includes("CNH") &&
+          (formData.docTipo.value.includes("CNH") &&
             value.toString().length === 11) ||
-          (formData.docTipo.includes("RG") && value.length === 12) ||
-          (formData.docTipo.includes("Outro") && value.length !== 0);
+          (formData.docTipo.value.includes("RG") && value.length === 12) ||
+          (formData.docTipo.value.includes("Outro") && value.length !== 0);
         break;
       default:
         break;
@@ -113,28 +160,32 @@ function FormComponent({ ...props }) {
     });
   };
 
-  const formIsValid = () => {
+  const isValid = () => {
     const isValid = {
-      nome: !formData.nome.includes(" ") || !formData.nome.toString().match('([A-z])\\w+'),
-      idade: !Number(formData.idade) > 0,
-      genero: !formData.genero.length > 0,
-      estadoCivil: !formData.estadoCivil.length > 0,
-      docTipo: !formData.docTipo.length > 0,
+      nome:
+        !formData.nome.value.includes(" ") ||
+        !formData.nome.value.toString().match("([A-z])\\w+"),
+      idade: !Number(formData.idade.value) > 0,
+      genero: !formData.genero.value.length > 0,
+      estadoCivil: !formData.estadoCivil.value.length > 0,
+      docTipo: !formData.docTipo.value.length > 0,
       doc:
-        (formData.docTipo.includes("CNH") &&
-          formData.doc.toString().length !== 11) ||
-        (formData.docTipo.includes("RG") &&
-          formData.doc.toString().length !== 12) ||
-        (formData.docTipo.includes("Outro") &&
-          formData.doc.toString().length === 0) ||
-        formData.doc.length === 0,
+        (formData.docTipo.value.includes("CNH") &&
+          formData.doc.value.toString().length !== 11) ||
+        (formData.docTipo.value.includes("RG") &&
+          formData.doc.value.toString().length !== 12) ||
+        (formData.docTipo.value.includes("Outro") &&
+          formData.doc.value.toString().length === 0) ||
+        formData.doc.value.length === 0,
     };
     setFormError({ ...isValid });
     return !(Object.values(isValid).indexOf(true) >= 0);
   };
 
   useEffect(() => {
-    formData.docTipo.length > 0 ? setDisabled(false) : setDisabled(true);
+    formData.docTipo.value.toString().length > 0
+      ? setDisabled(false)
+      : setDisabled(true);
     formError.genero ? setErrorColor("red") : setErrorColor("");
   }, [formError, formData]);
 
@@ -159,17 +210,19 @@ function FormComponent({ ...props }) {
                 variant="filled"
                 label="Nome"
                 type="text"
-                value={formData.nome}
-                onChange={(e) => onChange("nome", e.target.value)}
+                value={formData.nome.value}
+                id={"Nome"}
+                onChange={(e) => onChange("nome", e.target)}
                 error={formError.nome ? true : false}
               />
               <TextField
                 sx={{ width: "100%" }}
                 variant="filled"
                 label="Idade"
+                id={"Idade"}
                 type="number"
-                value={formData.idade}
-                onChange={(e) => onChange("idade", e.target.value)}
+                value={formData.idade.value}
+                onChange={(e) => onChange("idade", e.target)}
                 error={formError.idade ? true : false}
               />
               <FormControl sx={{ width: "100%" }}>
@@ -180,12 +233,14 @@ function FormComponent({ ...props }) {
                   Gênero
                 </FormLabel>
                 <RadioGroup
-                  onChange={(e) => onChange("genero", e.target.value)}
+                  onChange={(e) =>
+                    onChange("genero", { id: "Gênero", value: e.target.value })
+                  }
+                  value={formData.genero.value}
                   row
                   aria-labelledby="radio-buttons-group-label"
                   name="radio-buttons-group"
                   sx={{ width: "100%", justifyContent: "center" }}
-                  value={formData.genero}
                 >
                   <FormControlLabel
                     value="Feminino"
@@ -223,12 +278,17 @@ function FormComponent({ ...props }) {
                   Estado Civil
                 </InputLabel>
                 <Select
-                  value={formData.estadoCivil}
-                  onChange={(e) => onChange("estadoCivil", e.target.value)}
+                  value={formData.estadoCivil.value}
+                  onChange={(e) =>
+                    onChange("estadoCivil", {
+                      id: "Estado Civil",
+                      value: e.target.value,
+                    })
+                  }
                   error={formError.estadoCivil ? true : false}
                   labelId="select-estado-civil"
-                  id="select-estado-civil"
                   label="Estado Civil"
+                  id="estado-civil-select"
                   sx={{ width: "100%", textAlign: "left" }}
                 >
                   <MenuItem value={"Solteiro"}>Solteiro</MenuItem>
@@ -246,12 +306,18 @@ function FormComponent({ ...props }) {
                   Selecione o Documento
                 </InputLabel>
                 <Select
-                  value={formData.docTipo}
-                  onChange={(e) => onChange("docTipo", e.target.value)}
+                  value={formData.docTipo.value}
+                  onChange={(e) =>
+                    onChange("docTipo", {
+                      id: "Tipo de Documento",
+                      value: e.target.value,
+                    })
+                  }
                   error={formError.docTipo ? true : false}
                   labelId="select-doc"
-                  id="select-doc"
+                  id="doc-select"
                   label="Selecione o Documento"
+                  defaultValue={""}
                   sx={{ width: "100%", textAlign: "left" }}
                 >
                   <MenuItem value={"RG"}>RG</MenuItem>
@@ -259,12 +325,12 @@ function FormComponent({ ...props }) {
                   <MenuItem value={"Outro"}>Outro</MenuItem>
                 </Select>
               </FormControl>
-              {formData.docTipo.includes("RG") ? (
+              {formData.docTipo.value.includes("RG") ? (
                 <InputMask
                   disabled={disabled}
-                  value={formData.doc}
+                  value={formData.doc.value}
                   id={"Número do Documento"}
-                  onChange={(e) => onChange("doc", e.target.value)}
+                  onChange={(e) => onChange("doc", e.target)}
                   mask={"99.999.999-9"}
                   maskChar=""
                 >
@@ -286,9 +352,9 @@ function FormComponent({ ...props }) {
                   variant="filled"
                   label="Documento"
                   type="text"
-                  value={formData.doc}
+                  value={formData.doc.value}
                   id={"Número do Documento"}
-                  onChange={(e) => onChange("doc", e.target.value)}
+                  onChange={(e) => onChange("doc", e.target)}
                   error={formError.doc ? true : false}
                 />
               )}
@@ -303,45 +369,29 @@ function FormComponent({ ...props }) {
             <Box>
               <SH2>Dados do Formulário</SH2>
             </Box>
-            <Grid
-              mt={5}
-              mx={"auto"}
-              container
-              columnSpacing={3}
-              direction={greaterThanMid ? "row" : "column"}
-              spacing={1}
-              sx={{
-                width: "70%",
-                textAlign: "left",
-              }}
-            >
-              <Grid item xs={6}>
-                <Typography variant="h6">Nome: {submitData.nome}</Typography>
+
+            <Box width={"100%"}>
+              <Grid
+                mt={5}
+                mx={"auto"}
+                container
+                direction={greaterThanMid ? "row" : "column"}
+                spacing={1}
+                columnSpacing={3}
+                sx={{
+                  width: "70%",
+                  textAlign: "left",
+                }}
+              >
+                {Object.keys(submitData).map((key, idx) => {
+                  return submitDataComponent(
+                    idx,
+                    submitData[key].label,
+                    submitData[key].value
+                  );
+                })}
               </Grid>
-              <Grid item xs={6}>
-                <Typography variant="h6">Idade: {submitData.idade}</Typography>
-              </Grid>
-              <Grid item xs={6}>
-                <Typography variant="h6">
-                  Gênero: {submitData.genero}
-                </Typography>
-              </Grid>
-              <Grid item xs={6}>
-                <Typography variant="h6">
-                  Estado Civil: {submitData.estadoCivil}
-                </Typography>
-              </Grid>
-              <Grid item xs={6}>
-                <Typography variant="h6">
-                  Tipo de Documento: {submitData.docTipo}
-                </Typography>
-              </Grid>
-              <Grid item xs={6}>
-                <Typography variant="h6">
-                  Número do Documento: {submitData.doc}
-                </Typography>
-              </Grid>
-            </Grid>
+            </Box>
           </SVBox>
         )}
       </SContainer>
