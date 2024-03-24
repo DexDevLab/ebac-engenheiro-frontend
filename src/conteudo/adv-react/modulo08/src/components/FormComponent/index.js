@@ -134,7 +134,10 @@ function FormComponent({ ...props }) {
     let isValid = false;
     switch (label) {
       case "nome":
-        isValid = value.includes(" ") && value.toString().match("([A-z])\\w+");
+        isValid =
+          value.includes(" ") &&
+          value.toString().match("([A-z])\\D+") &&
+          !value.toString().match("([0-9])+");
         break;
       case "idade":
         isValid = Number(value) > 0;
@@ -164,7 +167,8 @@ function FormComponent({ ...props }) {
     const isValid = {
       nome:
         !formData.nome.value.includes(" ") ||
-        !formData.nome.value.toString().match("([A-z])\\w+"),
+        !formData.nome.value.toString().match("([A-z])\\D+") ||
+        formData.nome.toString().match("([0-9])+"),
       idade: !Number(formData.idade.value) > 0,
       genero: !formData.genero.value.length > 0,
       estadoCivil: !formData.estadoCivil.value.length > 0,
