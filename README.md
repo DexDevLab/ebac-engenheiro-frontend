@@ -73,6 +73,10 @@ Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenhe
 
 <br>
 
+### v3.10.0-240403
+
+- Conteúdo do exercício do Módulo 10 (React do Zero ao Pro)
+
 ### v3.9.0-240323
 
 - Alteração no componente de formulário e máscara do exercício do Módulo 07 (React do Zero ao Pro)
