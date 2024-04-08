@@ -302,6 +302,7 @@ function FipeForm({ setLocation, ...props }) {
       setFetchStatus({ status: "error", error: error.message.toString() });
       console.log(error.message);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formData, submitData]);
 
   return (

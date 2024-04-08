@@ -547,6 +547,13 @@ export const banners = () => {
           buttonUrl: "./src/conteudo/adv-react/modulo10/build/index.html",
           download: "",
         },
+        {
+          keywords:
+            "react test hello world jest event handler handling state useState useEffect form send material-ui mui materialui materialUi hoc HOC High Order Component router",
+          buttonName: "Módulo 11",
+          buttonUrl: "",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/react-adv.png",
     },
