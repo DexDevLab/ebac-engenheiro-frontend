@@ -551,7 +551,7 @@ export const banners = () => {
           keywords:
             "react test hello world jest event handler handling state useState useEffect form send material-ui mui materialui materialUi hoc HOC High Order Component router",
           buttonName: "Módulo 11",
-          buttonUrl: "",
+          buttonUrl: "https://ebac-engenheiro-frontend-adv-react11.netlify.app",
           download: "",
         },
       ],
