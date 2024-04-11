@@ -73,6 +73,10 @@ Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenhe
 
 <br>
 
+### v3.13.0-240411
+
+- Conteúdo do exercício do Módulo 13 (React do Zero ao Pro)
+
 ### v3.12.0-240409
 
 - Conteúdo do exercício do Módulo 12 (React do Zero ao Pro)

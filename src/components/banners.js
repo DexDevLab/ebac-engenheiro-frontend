@@ -561,6 +561,13 @@ export const banners = () => {
           buttonUrl: "https://ebac-engenheiro-frontend-adv-react12.netlify.app",
           download: "",
         },
+        {
+          keywords:
+            "react test hello world jest event handler handling state useState useEffect form send material-ui mui materialui materialUi hoc router custom hook",
+          buttonName: "Módulo 13",
+          buttonUrl: "https://ebac-engenheiro-frontend-adv-react13.netlify.app",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/react-adv.png",
     },
