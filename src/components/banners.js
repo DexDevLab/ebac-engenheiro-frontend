@@ -568,6 +568,27 @@ export const banners = () => {
           buttonUrl: "https://ebac-engenheiro-frontend-adv-react13.netlify.app",
           download: "",
         },
+        {
+          keywords:
+            "react test handler api server express backend frontend storybook framework chromatic ci cd automation component ux ui design system",
+          buttonName: "Módulo 14 - Repositório",
+          buttonUrl: "https://github.com/DexDevLab/ebac-storybook-template",
+          download: "",
+        },
+        {
+          keywords:
+            "react test handler api server express backend frontend storybook framework chromatic ci cd automation component ux ui design system",
+          buttonName: "Módulo 14 - Aplicação",
+          buttonUrl: "https://ebac-engenheiro-frontend-adv-react14.netlify.app",
+          download: "",
+        },
+        {
+          keywords:
+            "react test handler api server express backend frontend storybook framework chromatic ci cd automation component ux ui design system",
+          buttonName: "Módulo 14 - Storybook",
+          buttonUrl: "https://ebac-engenheiro-frontend-adv-r14-sb.netlify.app",
+          download: "",
+        },
       ],
       bannerImg: "./src/assets/images/react-adv.png",
     },

@@ -14,64 +14,45 @@
 <a href="https://sass-lang.com"><img src="https://img.shields.io/badge/SASS-hotpink.svg?logo=SASS&logoColor=white" height="22" alt="SASS"></a>
 <a href="https://jquery.com"><img src="https://img.shields.io/badge/JQuery-%230769AD.svg?logo=jquery&logoColor=white" height="22" alt="jQuery"></a>
 <a href="https://getbootstrap.com"><img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?logo=bootstrap&logoColor=white" height="22" alt="Bootstrap"></a>
-
+<br>
 <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white" height="22" alt="NodeJS"></a>
 <a href="https://reactjs.org"><img src="https://img.shields.io/badge/react-black?logo=react&logoColor=white" height="22" alt="React"/></a>
 <a href="https://babeljs.io"><img src="https://img.shields.io/badge/Babel-F9DC3e?logo=babel&logoColor=black" height="22" alt="Babel"></a>
 <a href="https://gulpjs.com"><img src="https://img.shields.io/badge/Gulp-%23CF4647.svg?logo=gulp&logoColor=white" height="22" alt="Gulp"></a>
 <a href="https://webpack.js.org"><img src="https://img.shields.io/badge/webpack-%238DD6F9.svg?logo=webpack&logoColor=black" height="22" alt="Webpack"/></a>
-
+<br>
+<a href="https://vuejs.org/guide/introduction.html"><img src="https://img.shields.io/badge/Vue.js-35495E?logo=vuedotjs&logoColor=4FC08D" height="22" alt="Vue"/></a>
+<a href="https://mui.com/material-ui/getting-started/"><img src="https://img.shields.io/badge/Material--UI-0081CB?logo=material-ui&logoColor=white" height="22" alt="MaterialUI"/></a>
+<a href="https://www.javascript.com"><img src="https://img.shields.io/badge/JavaScript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E" height="22" alt="JavaScript"/></a>
+<a href="https://www.netlify.com"><img src="https://img.shields.io/badge/Netlify-%23000000.svg?logo=netlify&logoColor=#00C7B7" height="22" alt="Netlify"/></a>
+<br>
+<a href="https://.chromatic.com"><img src="https://img.shields.io/badge/Chromatic-%23323330.svg?logo=chromatic" height="22" alt="SB-on-Chromatic"/></a>
+<a href="https://storybook.js.org"><img src="https://img.shields.io/badge/Storybook-%23323330.svg?logo=storybook" height="22" alt="Storybook"/></a>
+<br>
 <a href=""><img src="https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg" height="22" alt="Maintenance-actively-developed"/></a>
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend" height="22" alt="LastCommit"/></a>
-
+<a href=""><img src="https://img.shields.io/github/v/release/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Version"/></a>
+<br>
 <a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-engenheiro-frontend" height="22" alt="CodeSize"/></a>
 <a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-engenheiro-frontend" height="22" alt="RepoSize"/></a>
-
-<a href=""><img src="https://img.shields.io/github/v/release/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Version"/></a>
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend" height="22" alt="License"/></a>
-
-|| [Conteúdo](#section-conteudo) || [Stack](#section-stack) || [Notas de versão](#section-changelog) || [Autores](#section-autores) ||
-
-|| [Contato](#section-contato) || [Licença](#section-licenca) || [Portal de Exercícios](https://dexdevlab.github.io/ebac-engenheiro-frontend) ||
 
 </div>
 
-<hr>
-
-<a name="section-conteudo">
-
 ## Conteúdo
-
-</a>
 
 <br>
 
 Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenheiro Frontend', e contém uma página inicial para acesso fácil aos diversos conteúdos dos exercícios dos módulos do curso.
 
-<hr>
-
-<a name="section-stack">
-
-## Stack
-
-</a>
-
-- **Framework de Aplicação:** [Node.js](https://nodejs.org/en/)
-- **Linguagem Principal:** [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- **Linguagem de Marcação:** [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- **Linguagem de Estilização:** [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS), [SASS](https://sass-lang.com)
-- **Framework de Design:** [Bootstrap](https://getbootstrap.com)
-- **Bibliotecas de Compilação:** [Gulp](https://gulpjs.com), [Babel](https://babeljs.io), [Webpack](https://webpack.js.org)
-
-<hr>
-
-<a name="section-changelog">
-
 ## Notas de versão
 
-</a>
-
 <br>
+
+### v3.14.0-240427
+
+- Conteúdo do exercício do Módulo 14 (React do Zero ao Pro)
+- Atualização do README
 
 ### v3.13.0-240411
 
@@ -427,35 +408,23 @@ branches poderá se refeita em caso de necessidade
 - Remoção dos arquivos zipados conforme solicitado
 - Criação da documentação (README e CHANGELOG)
 
-<hr>
-
-<a name="section-autores">
-
 ## Autores
 
-</a>
+<br>
 
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=dexdevlab/ebac-engenheiro-frontend" />
+  <img alt="contrib" src="https://contrib.rocks/image?repo=dexdevlab/ebac-engenheiro-frontend" />
 </a>
-
-<hr>
-
-<a name="section-contato">
 
 ## Contato
 
-</a>
+<br>
 
 Se você gostou desse projeto, nos dê uma <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend" data-icon="octicon-star" aria-label="Star dexdevlab/ebac-engenheiro-frontend on GitHub">estrela</a>. <br>
 Para contato, envie um email a: <a href="mailto:dex.houshi@hotmail.com">dex.houshi@hotmail.com</a>
 
-<hr>
-
-<a name="section-licenca">
-
 ## Licença
 
-</a>
+<br>
 
 Licenciado sob a [MIT License](https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/main/LICENSE).
