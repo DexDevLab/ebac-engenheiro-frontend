@@ -1,3 +1,17 @@
+/**
+ * Composição do conteúdo dos banners.
+ * menu - Define o menu ao qual o conteúdo pertence
+ * id - Id do banner. Utilizado para definir o ID do componente HTML e permite populá-lo
+ * bannerTitle - Título do banner
+ * bannerDesc - Descrição do banner
+ * bannerImg - Caminho da imagem do banner
+ * bannerButtons - Array contendo os botões e suas informações
+ * keywords - Palavras-chave. Serão utilizadas para gerar resultados na barra de busca
+ * buttonName - Rótulo do botão
+ * buttonUrl - URL para onde o botão direciona após o click
+ * download - Se o botão for utiliado para fazer o download de um objeto, aqui terá o nome
+ * do arquivo e o prefixo do download no seguinte formato: "download='<nomedoarquivo>.<extensão>'"
+ */
 export const banners = () => {
   return [
     {

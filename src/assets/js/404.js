@@ -1,3 +1,4 @@
+// ANIMAÇÃO DA PÁGINA 404
 var formatThousandsNoRounding = function (n, dp) {
   var e = "",
     s = e + n,

@@ -45,9 +45,60 @@
 
 Este repositório armazena todo o conteúdo relevante estudado no curso 'Engenheiro Frontend', e contém uma página inicial para acesso fácil aos diversos conteúdos dos exercícios dos módulos do curso.
 
+## Funcionamento da Aplicação
+
+Esta aplicação é um SPA baseado em Bootstrap e JQuery, com um funcionamento extremamente simples:
+
+- A página principal é [`index.html`](https://github.com/DexDevLab/ebac-engenheiro-frontend/tree/main/index.html), localizada na raiz do repositório
+- Os exercícios e demais materiais relacionados ao curso se encontram no diretório [`src/conteudo`](https://github.com/DexDevLab/ebac-engenheiro-frontend/tree/main/src/conteudo)
+- Em [`src/components/banners.js`](https://github.com/DexDevLab/ebac-engenheiro-frontend/blob/main/src/components/banners.js) é possível adicionar, remover e modificar o conteúdo exibido nos banners da página principal
+
+Uma implementação no Github Pages pode ser testada <a href="https://dexdevlab.github.io/ebac-engenheiro-frontend/" target="_blank">`aqui`</a>.
+
+<br>
+
+## Instruções
+
+<br>
+
+### Utilizando o repositório como projeto
+
+Faça um git clone ou o download do repositório, da forma que preferir
+
+```bash
+git clone https://github.com/dexdevlab/ebac-engenheiro-frontend.git
+```
+
+### Testando a aplicação
+
+Abra o arquivo `index.html` usando seu navegador ou, preferencialmente, utilize uma extensão de visualizador de html com web server, como o [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
+
+### Implementação no Github Pages
+
+Para implementar o projeto no Github Pages, basta realizar commit do seu projeto usando versionamento padrão no arquivo [`package.json`](https://github.com/DexDevLab/ebac-engenheiro-frontend/tree/main/package.json)`. Alternativamente, você pode realizar a configuração padrão do [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) em seu repositório.
+
+### Configurando o GitHub Actions
+
+Este repositório contém 2 scripts do GitHub Actions. Para que ambos funcionem corretamente, é necessário realizar os seguintes ajustes no repositório:
+
+Vá nas Configurações Gerais de Ações do repositório (`<https://github.com/><NOME_DO_USUARIO>/<NOME_DO_REPOSITORIO>/settings/actions`)
+
+1 - Marque 'Allow all actions and reusable workflows' em 'Actions permissions'
+
+2 - Marque 'Read and write permissions' em 'Workflow permissions'
+
+<br>
+
 ## Notas de versão
 
 <br>
+
+### v3.15.0-240508
+
+- Atualização do README
+- Atualização da documentação
+- Testes de implementação do GitHub Actions
+- Elaboração parcial do exercício do Módulo 15 (React do Zero ao Pro)
 
 ### v3.14.0-240427
 

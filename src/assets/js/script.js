@@ -115,12 +115,14 @@ jQuery(async function ($) {
     $("#section-modulo-container").append(componentModulos);
   });
 
+  // LIMPANDO TAGS DE ID VAZIA PARA NÃO SE REPETIREM COM OS RESULTADOS
   availableTags = availableTags.filter((item) => {
     if (item.id !== "") {
       return item;
     }
   });
 
+  // CONFIGIRAÇÃO DO AUTOCOMPLETE
   $("#form-search")
     .autocomplete({
       minLength: 1,
