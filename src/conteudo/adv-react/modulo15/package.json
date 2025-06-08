@@ -5,24 +5,37 @@
   "homepage": "./",
   "private": true,
   "scripts": {
-    "dev": "run-p start tachyons",
+    "dev": "run-p start tachyons:watch sass5s",
+    "build": "run-s tachyons:build sass:build react:build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "react:build": "react-scripts build",
     "eject": "react-scripts eject",
     "serve": "serve -s build -l 4000",
-    "tachyons": "node src/tachyons.js"
+    "tachyons:build": "node src/tachyons.js",
+    "tachyons:watch": "nodemon --watch tachyons.json src/tachyons.js",
+    "sass:build": "node-sass src/assets/styles/scss/styles.scss -o src/ds/globals",
+    "sass:watch": "node-sass -rw src/assets/styles/scss -o src/ds/globals",
+    "sleep5s": "node -e \"setTimeout(() => process.exit(0), 5000)\"",
+    "sass5s": "npm run sleep5s && npm run sass:watch"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "chokidar": "^3.6.0",
     "lodash": "^4.17.21",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0",
     "npm-run-all2": "^6.1.2",
     "postcss": "^7.0.36",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.2.1",
     "react-scripts": "5.0.1",
+    "sass": "^1.77.0",
     "serve": "^14.2.1",
     "tachyons": "^4.12.0",
-    "tachyons-generator": "^0.23.0"
+    "tachyons-generator": "^0.23.0",
+    "use-react-breakpoint": "^1.1.1"
   },
   "eslintConfig": {
     "extends": [

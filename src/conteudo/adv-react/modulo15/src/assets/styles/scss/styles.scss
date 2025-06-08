@@ -1,0 +1,123 @@
+@import "../css/tachyons.min";
+
+body[data-theme="dark"] {
+  @extend .bg-dark-bg;
+}
+
+body[data-theme="light"] {
+  @extend .bg-light-bg;
+}
+
+body[data-theme="toggle-light"] {
+  @extend .bg-light-bg;
+  @extend .transitions-body-light;
+}
+
+body[data-theme="toggle-dark"] {
+  @extend .bg-dark-bg;
+  @extend .transitions-body-dark;
+}
+
+.zIndex {
+  &-bottom {
+    z-index: -1;
+  }
+  &-normal {
+    z-index: 0;
+  }
+  &-1 {
+    z-index: 1;
+  }
+  &-2 {
+    z-index: 2;
+  }
+  &-3 {
+    z-index: 3;
+  }
+  &-top {
+    z-index: 100;
+  }
+  &-navbar {
+    z-index: 500;
+  }
+  &-overlay {
+    z-index: 1000;
+  }
+  &-modal {
+    z-index: 9999;
+  }
+}
+
+.overflow {
+  &-hidden {
+    overflow: hidden;
+  }
+  &-unset {
+    overflow: unset;
+  }
+  &-scroll {
+    overflow: scroll;
+  }
+  &-onlyX {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  &-onlyY {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+
+.boxShadow {
+  &-switchMarker {
+    box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25);
+  }
+  &-navbar {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    &-mobile {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+  }
+  &-modal {
+    &-box {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      &-dark {
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+          rgba(255, 255, 255, 0.12) 0px -12px 30px,
+          rgba(255, 255, 255, 0.12) 0px 4px 6px,
+          rgba(255, 255, 255, 0.17) 0px 12px 13px,
+          rgba(255, 255, 255, 0.09) 0px -3px 5px;
+      }
+    }
+  }
+}
+
+.transitions {
+  &-body {
+    &-light {
+      -webkit-transition: background-color 400ms linear;
+      -ms-transition: background-color 400ms linear;
+      transition: background-color 400ms linear;
+    }
+    &-dark {
+      -webkit-transition: background-color 400ms linear;
+      -ms-transition: background-color 400ms linear;
+      transition: background-color 400ms linear;
+    }
+  }
+}
+
+@import "../../../ds/box/box";
+@import "../../../ds/button/button";
+@import "../../../ds/heading/heading";
+@import "../../../ds/hyperlink/hyperlink";
+@import "../../../ds/imageComponent/imageComponent";
+@import "../../../ds/navbar/navbar";
+@import "../../../ds/switch/switch";
+@import "../../../ds/text/text";
+@import "../../../ds/toast/toast";
+@import "../../../ds/modal/modal";

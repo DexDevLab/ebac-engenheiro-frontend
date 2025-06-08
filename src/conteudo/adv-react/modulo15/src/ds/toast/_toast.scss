@@ -1,0 +1,54 @@
+.toast {
+  &-primary {
+    @extend .zIndex-modal;
+    @extend .b--white;
+    @extend .black;
+    &-dark {
+      @extend .toast-primary;
+      @extend .bg-secondary;
+      @extend .white;
+      @extend .b--dark-bg;
+    }
+  }
+  &-success {
+    @extend .zIndex-modal;
+    @extend .black;
+    @extend .b--dark-green;
+    @extend .bg-green;
+    &-dark {
+      @extend .toast-success;
+    }
+  }
+  &-warning {
+    @extend .zIndex-modal;
+    @extend .black;
+    @extend .b--orange;
+    @extend .bg-light-yellow;
+    &-dark {
+      @extend .toast-warning;
+    }
+  }
+  &-error {
+    @extend .zIndex-modal;
+    @extend .white;
+    @extend .b--error;
+    @extend .bg-red;
+    &-box {
+      @extend .relative;
+      min-width: 50px;
+      width: fit-content;
+      height: fit-content;
+      &-buttonFrame {
+        @extend .pointer;
+        @extend .absolute;
+        margin-left: auto;
+        margin-bottom: auto;
+        right: -12px;
+        top: -8px;
+      }
+    }
+    &-dark {
+      @extend .toast-error;
+    }
+  }
+}

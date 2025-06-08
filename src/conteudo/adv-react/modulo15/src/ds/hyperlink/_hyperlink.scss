@@ -1,0 +1,7 @@
+.hyperlink {
+  &-a {
+    @extend .no-underline;
+    @extend .pointer;
+    color: inherit;
+  }
+}

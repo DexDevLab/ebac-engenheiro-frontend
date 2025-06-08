@@ -1,0 +1,78 @@
+.switch {
+  --switch-animation-duration: 0.2s;
+  @extend .flex;
+  @extend .items-center;
+  @extend .relative;
+  @extend .br-pill;
+  @extend .zIndex-normal;
+  flex-shrink: 0;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  padding: var(--switch-padding) 0;
+  &-sm {
+    --switch-height: 20px;
+    --switch-width: 35px;
+    --switch-padding: 2px;
+    @extend .switch;
+  }
+  &-md {
+    --switch-height: 25px;
+    --switch-width: 45px;
+    --switch-padding: 3px;
+    @extend .switch;
+  }
+  &-lg {
+    --switch-height: 30px;
+    --switch-width: 60px;
+    --switch-padding: 3px;
+    @extend .switch;
+  }
+}
+
+.switch-icon {
+  @extend .absolute;
+  @extend .bg-transparent;
+  @extend .zIndex-3;
+}
+
+.switch-input,
+.switch-label {
+  @extend .absolute;
+  @extend .left-0;
+  @extend .top-0;
+}
+
+.switch-input {
+  @extend .ma0;
+  @extend .pa0;
+  @extend .o-0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+
+  &:checked + .switch-label + .switch-marker {
+    left: calc(100% - var(--switch-height) + var(--switch-padding));
+  }
+}
+
+.switch-label {
+  @extend .w-100;
+  @extend .h-100;
+  @extend .zIndex-1;
+  @extend .shadow-1;
+  color: transparent;
+  user-select: none;
+  border-radius: inherit;
+  transition: background var(--switch-animation-duration);
+}
+
+.switch-marker {
+  @extend .relative;
+  @extend .br-pill;
+  @extend .zIndex-2;
+  width: calc(var(--switch-height) - var(--switch-padding) * 2);
+  height: calc(var(--switch-height) - var(--switch-padding) * 2);
+  left: var(--switch-padding);
+  transition: left var(--switch-animation-duration);
+  will-change: left;
+}

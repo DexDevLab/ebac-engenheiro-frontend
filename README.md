@@ -9,32 +9,32 @@
 
 <div align="center">
 
-<a href="https://www.w3.org/Style/CSS/Overview.en.html"><img src="https://img.shields.io/badge/CSS3-%231572B6.svg?logo=css3&logoColor=white" height="22" alt="CSS3"></a>
-<a href="https://html.com"><img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?logo=html5&logoColor=white" height="22" alt="HTML5">
-<a href="https://sass-lang.com"><img src="https://img.shields.io/badge/SASS-hotpink.svg?logo=SASS&logoColor=white" height="22" alt="SASS"></a>
-<a href="https://jquery.com"><img src="https://img.shields.io/badge/JQuery-%230769AD.svg?logo=jquery&logoColor=white" height="22" alt="jQuery"></a>
+<a href="https://www.w3.org/Style/CSS/Overview.en.html"><img src="https://img.shields.io/badge/CSS3-%231572B6.svg?logo=css3&logoColor=white" height="22" alt="CSS3"></a>&nbsp;
+<a href="https://html.com"><img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?logo=html5&logoColor=white" height="22" alt="HTML5"></a>&nbsp;
+<a href="https://sass-lang.com"><img src="https://img.shields.io/badge/SASS-hotpink.svg?logo=SASS&logoColor=white" height="22" alt="SASS"></a>&nbsp;
+<a href="https://jquery.com"><img src="https://img.shields.io/badge/JQuery-%230769AD.svg?logo=jquery&logoColor=white" height="22" alt="jQuery"></a>&nbsp;
 <a href="https://getbootstrap.com"><img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?logo=bootstrap&logoColor=white" height="22" alt="Bootstrap"></a>
 <br>
-<a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white" height="22" alt="NodeJS"></a>
-<a href="https://reactjs.org"><img src="https://img.shields.io/badge/react-black?logo=react&logoColor=white" height="22" alt="React"/></a>
-<a href="https://babeljs.io"><img src="https://img.shields.io/badge/Babel-F9DC3e?logo=babel&logoColor=black" height="22" alt="Babel"></a>
-<a href="https://gulpjs.com"><img src="https://img.shields.io/badge/Gulp-%23CF4647.svg?logo=gulp&logoColor=white" height="22" alt="Gulp"></a>
+<a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white" height="22" alt="NodeJS"></a>&nbsp;
+<a href="https://reactjs.org"><img src="https://img.shields.io/badge/react-black?logo=react&logoColor=white" height="22" alt="React"/></a>&nbsp;
+<a href="https://babeljs.io"><img src="https://img.shields.io/badge/Babel-F9DC3e?logo=babel&logoColor=black" height="22" alt="Babel"></a>&nbsp;
+<a href="https://gulpjs.com"><img src="https://img.shields.io/badge/Gulp-%23CF4647.svg?logo=gulp&logoColor=white" height="22" alt="Gulp"></a>&nbsp;
 <a href="https://webpack.js.org"><img src="https://img.shields.io/badge/webpack-%238DD6F9.svg?logo=webpack&logoColor=black" height="22" alt="Webpack"/></a>
 <br>
-<a href="https://vuejs.org/guide/introduction.html"><img src="https://img.shields.io/badge/Vue.js-35495E?logo=vuedotjs&logoColor=4FC08D" height="22" alt="Vue"/></a>
-<a href="https://mui.com/material-ui/getting-started/"><img src="https://img.shields.io/badge/Material--UI-0081CB?logo=material-ui&logoColor=white" height="22" alt="MaterialUI"/></a>
-<a href="https://www.javascript.com"><img src="https://img.shields.io/badge/JavaScript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E" height="22" alt="JavaScript"/></a>
+<a href="https://vuejs.org/guide/introduction.html"><img src="https://img.shields.io/badge/Vue.js-35495E?logo=vuedotjs&logoColor=4FC08D" height="22" alt="Vue"/></a>&nbsp;
+<a href="https://mui.com/material-ui/getting-started/"><img src="https://img.shields.io/badge/Material--UI-0081CB?logo=material-ui&logoColor=white" height="22" alt="MaterialUI"/></a>&nbsp;
+<a href="https://www.javascript.com"><img src="https://img.shields.io/badge/JavaScript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E" height="22" alt="JavaScript"/></a>&nbsp;
 <a href="https://www.netlify.com"><img src="https://img.shields.io/badge/Netlify-%23000000.svg?logo=netlify&logoColor=#00C7B7" height="22" alt="Netlify"/></a>
 <br>
-<a href="https://.chromatic.com"><img src="https://img.shields.io/badge/Chromatic-%23323330.svg?logo=chromatic" height="22" alt="SB-on-Chromatic"/></a>
+<a href="https://.chromatic.com"><img src="https://img.shields.io/badge/Chromatic-%23323330.svg?logo=chromatic" height="22" alt="SB-on-Chromatic"/></a>&nbsp;
 <a href="https://storybook.js.org"><img src="https://img.shields.io/badge/Storybook-%23323330.svg?logo=storybook" height="22" alt="Storybook"/></a>
 <br>
-<a href=""><img src="https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg" height="22" alt="Maintenance-actively-developed"/></a>
-<a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend" height="22" alt="LastCommit"/></a>
+<a href=""><img src="https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg" height="22" alt="Maintenance-actively-developed"/></a>&nbsp;
+<a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/ebac-engenheiro-frontend" height="22" alt="LastCommit"/></a>&nbsp;
 <a href=""><img src="https://img.shields.io/github/v/release/dexdevlab/ebac-engenheiro-frontend" height="22" alt="Version"/></a>
 <br>
-<a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-engenheiro-frontend" height="22" alt="CodeSize"/></a>
-<a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-engenheiro-frontend" height="22" alt="RepoSize"/></a>
+<a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/ebac-engenheiro-frontend" height="22" alt="CodeSize"/></a>&nbsp;
+<a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/ebac-engenheiro-frontend" height="22" alt="RepoSize"/></a>&nbsp;
 <a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/ebac-engenheiro-frontend" height="22" alt="License"/></a>
 
 </div>
@@ -54,8 +54,6 @@ Esta aplicação é um SPA baseado em Bootstrap e JQuery, com um funcionamento e
 - Em [`src/components/banners.js`](https://github.com/DexDevLab/ebac-engenheiro-frontend/blob/main/src/components/banners.js) é possível adicionar, remover e modificar o conteúdo exibido nos banners da página principal
 
 Uma implementação no Github Pages pode ser testada <a href="https://dexdevlab.github.io/ebac-engenheiro-frontend/" target="_blank">`aqui`</a>.
-
-<br>
 
 ## Instruções
 
@@ -87,11 +85,13 @@ Vá nas Configurações Gerais de Ações do repositório (`<https://github.com/
 
 2 - Marque 'Read and write permissions' em 'Workflow permissions'
 
-<br>
-
 ## Notas de versão
 
 <br>
+
+### v3.15.1-250608
+
+- Elaboração parcial do exercício do Módulo 15 (React do Zero ao Pro)
 
 ### v3.15.0-240508
 
@@ -458,14 +458,6 @@ branches poderá se refeita em caso de necessidade
 - Criação do repositório
 - Remoção dos arquivos zipados conforme solicitado
 - Criação da documentação (README e CHANGELOG)
-
-## Autores
-
-<br>
-
-<a href="https://github.com/dexdevlab/ebac-engenheiro-frontend/graphs/contributors">
-  <img alt="contrib" src="https://contrib.rocks/image?repo=dexdevlab/ebac-engenheiro-frontend" />
-</a>
 
 ## Contato
 

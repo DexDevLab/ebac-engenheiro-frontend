@@ -1,0 +1,76 @@
+.txt {
+  width: fit-content;
+  word-break: break-all;
+  font-weight: normal;
+  &-primary {
+    font-size: 1rem;
+    @extend .txt;
+    &-dark {
+      @extend .txt-primary;
+      @extend .white;
+    }
+  }
+  &-secondary {
+    @extend .txt;
+    @extend .f5;
+    &-dark {
+      @extend .txt-secondary;
+      @extend .white;
+    }
+  }
+  &-success {
+    @extend .txt;
+    @extend .f5;
+    @extend .success;
+    &-dark {
+      @extend .txt-success;
+    }
+  }
+  &-warning {
+    @extend .txt;
+    @extend .f5;
+    @extend .warning;
+    &-dark {
+      @extend .txt-warning;
+    }
+  }
+  &-error {
+    @extend .txt;
+    @extend .f5;
+    @extend .error;
+    &-dark {
+      @extend .txt-error;
+    }
+  }
+  &-sm {
+    @extend .txt;
+    font-size: 0.7rem;
+    &-dark {
+      @extend .txt-sm;
+      @extend .white;
+    }
+  }
+  &-md {
+    @extend .txt;
+    @extend .txt-primary;
+    &-dark {
+      @extend .txt-primary-dark;
+    }
+  }
+  &-lg {
+    @extend .txt;
+    font-size: 1.2rem;
+    &-dark {
+      @extend .txt-lg;
+      @extend .white;
+    }
+  }
+  &-xl {
+    @extend .txt;
+    font-size: 1.6rem;
+    &-dark {
+      @extend .txt-xl;
+      @extend .white;
+    }
+  }
+}

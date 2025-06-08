@@ -1,0 +1,49 @@
+.btn {
+  @extend .white;
+  @extend .pointer;
+  @extend .bw1;
+  @extend .br2;
+  @extend .pv1;
+  @extend .ph3;
+  @extend .shadow-1;
+  &-primary {
+    @extend .btn;
+    @extend .b--primary;
+    @extend .bg-primary;
+    &-dark {
+      @extend .btn-primary;
+    }
+  }
+  &-secondary {
+    @extend .btn;
+    @extend .b--secondary;
+    @extend .bg-secondary;
+    &-dark {
+      @extend .btn-secondary;
+    }
+  }
+  &-success {
+    @extend .btn;
+    @extend .b--success;
+    @extend .bg-success;
+    &-dark {
+      @extend .btn-success;
+    }
+  }
+  &-warning {
+    @extend .btn;
+    @extend .b--warning;
+    @extend .bg-warning;
+    &-dark {
+      @extend .btn-warning;
+    }
+  }
+  &-error {
+    @extend .btn;
+    @extend .b--error;
+    @extend .bg-error;
+    &-dark {
+      @extend .btn-error;
+    }
+  }
+}

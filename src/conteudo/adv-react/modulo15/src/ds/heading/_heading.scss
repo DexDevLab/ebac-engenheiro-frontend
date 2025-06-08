@@ -1,0 +1,42 @@
+.h {
+  @extend .ph1;
+  @extend .h-auto;
+  width: fit-content;
+  &-primary {
+    @extend .f1;
+    &-dark {
+      @extend .h-primary;
+      @extend .white;
+    }
+  }
+  &-secondary {
+    @extend .f3;
+    &-dark {
+      @extend .h-secondary;
+      @extend .white;
+    }
+  }
+  &-success {
+    @extend .f5;
+    &-dark {
+      @extend .h-success;
+      @extend .success;
+    }
+  }
+  &-warning {
+    @extend .f5;
+    @extend .warning;
+    &-dark {
+      @extend .h-warning;
+      @extend .warning;
+    }
+  }
+  &-error {
+    @extend .f5;
+    @extend .error;
+    &-dark {
+      @extend .h-error;
+      @extend .error;
+    }
+  }
+}

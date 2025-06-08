@@ -1,6 +1,5 @@
-const fs = require("fs");
+const fs = require("fs").promises;
 const path = require("path");
-const chokidar = require("chokidar");
 
 const tachyonsGenerator = async (config) => {
   const libpath = "../node_modules/tachyons-generator";
@@ -18,7 +17,6 @@ const tachyonsGenerator = async (config) => {
     const post = await assembleCss(modules, _config);
     const min = await buildCss(post, { minify: true });
     const css = await buildCss(post);
-    console.log("Tachyons generated successfully.");
 
     return {
       post,
@@ -30,47 +28,18 @@ const tachyonsGenerator = async (config) => {
   return await generateFn();
 };
 
-const tachyGenerate = async (config) => {
-  const out = await tachyonsGenerator(config);
+const tachyGenerate = async (config, dst) => {
+  const src = await tachyonsGenerator(config);
 
-  const outputPath = "./src/ds/globals";
-  const publicPath = "./public";
-  tachyWrite(outputPath, publicPath, out);
+  await tachyWrite(dst, src);
+  console.log("Tachyons generated successfully.");
 };
 
-const tachyWrite = (dst, publicDst, src) => {
-  fs.writeFileSync(path.join(dst, "tachyons.css"), src.css);
-  fs.writeFileSync(path.join(dst, "tachyons.min.css"), src.min);
-  fs.writeFileSync(path.join(publicDst, "tachyons.min.css"), src.min);
-};
-
-const watcher = () => {
-  const configFilePath = path.join(__dirname, "..", "tachyons.json");
-  const watcher = chokidar.watch(configFilePath, {
-    persistent: true,
-  });
-
-  const node = () =>{
-    try {
-      require("child_process").execSync("npm run tachyons", {
-        stdio: "inherit",
-      });
-    } catch (error) {
-      console.log("Error during tachyons script. Running again...");
-      node();
-    }
-  }
-  
-  watcher.on("change", async (path, stats) => {
-    if (stats) {
-      watcher.close();
-      console.log("tachyons.json was changed. Updating tachyons...");
-      node();
-    }
-  });
+const tachyWrite = async (dst, src) => {
+  await fs.writeFile(path.join(dst, "tachyons.css"), src.css);
+  await fs.writeFile(path.join(dst, "tachyons.min.css"), src.min);
 };
 
 const config = require("../tachyons.json");
-tachyGenerate(config);
-
-watcher();
+const outputPath = "./src/assets/styles/css";
+tachyGenerate(config, outputPath);

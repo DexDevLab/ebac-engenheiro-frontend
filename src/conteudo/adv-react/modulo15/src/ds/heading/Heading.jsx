@@ -1,27 +1,23 @@
 import useStyle from "../globals/useStyle";
 
-export default function Button({
-  children = "Button",
+export default function Heading({
+  children = "Heading",
   variant,
   sx,
   style,
   ...props
 }) {
   const { classNameProps, styledProps } = useStyle(
-    "btn",
+    "h",
     variant,
-    true,
+    false,
     sx,
     style
   );
 
   return (
-    <button
-      className={classNameProps}
-      style={{ cursor: "pointer", ...styledProps }}
-      {...props}
-    >
+    <h1 className={classNameProps} style={styledProps} {...props}>
       {children}
-    </button>
+    </h1>
   );
 }

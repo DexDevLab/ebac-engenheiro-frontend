@@ -1,0 +1,9 @@
+.navbar {
+  position: sticky;
+  @extend .top-0;
+  @extend .zIndex-navbar;
+  @extend .boxShadow-navbar;
+  &-mobile {
+    @extend .boxShadow-navbar-mobile;
+  }
+}

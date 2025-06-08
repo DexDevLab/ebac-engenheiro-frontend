@@ -1,0 +1,46 @@
+.img,
+.svg {
+  &-primary {
+    @extend .zIndex-normal;
+    @extend .w-25;
+    &-dark {
+      @extend .img-primary;
+    }
+  }
+  &-secondary {
+    @extend .w-50;
+    &-dark {
+      @extend .img-secondary;
+    }
+  }
+  &-xs {
+    @extend .w1;
+    &-dark {
+      @extend .img-xs;
+    }
+  }
+  &-sm {
+    @extend .w3;
+    &-dark {
+      @extend .img-sm;
+    }
+  }
+  &-md {
+    @extend .img-primary;
+    &-dark {
+      @extend .img-md;
+    }
+  }
+  &-lg {
+    @extend .w-75;
+    &-dark {
+      @extend .img-lg;
+    }
+  }
+  &-xl {
+    @extend .w-100;
+    &-dark {
+      @extend .img-xl;
+    }
+  }
+}

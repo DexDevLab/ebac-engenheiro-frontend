@@ -1,0 +1,37 @@
+.box {
+  &-xs {
+    @extend .w1;
+    @extend .h1;
+    &-dark {
+      @extend .box-xs;
+    }
+  }
+  &-sm {
+    @extend .w3;
+    @extend .h3;
+    &-dark {
+      @extend .box-sm;
+    }
+  }
+  &-md {
+    @extend .w5;
+    @extend .h5;
+    &-dark {
+      @extend .box-md;
+    }
+  }
+  &-lg {
+    @extend .w-75;
+    @extend .vh-50;
+    &-dark {
+      @extend .box-lg;
+    }
+  }
+  &-xl {
+    @extend .w-100;
+    @extend .vh-75;
+    &-dark {
+      @extend .box-xl;
+    }
+  }
+}
